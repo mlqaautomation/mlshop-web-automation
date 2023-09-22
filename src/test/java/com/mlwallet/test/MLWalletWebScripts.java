@@ -4,22 +4,22 @@ import org.testng.annotations.Test;
 
 public class MLWalletWebScripts extends BaseTest{
 
-//    @Test(priority = 1)
-//    public void mlShopProfileNameAndDropDownValidation() throws Exception {
-//        mlWalletWeb.mlShopProfileNameAndDropDownValidation();
-//    }
-//    @Test(priority = 2)
-//    public void shopItemsProfilePageNavigation() throws Exception {
-//        mlWalletWeb.shopItemsProfilePageNavigation();
-//    }
-//    @Test(priority = 3)
-//    public void shopItemsPurchaseHistoryPageNavigation() throws Exception {
-//        mlWalletWeb.shopItemsPurchaseHistoryPageNavigation();
-//    }
-//    @Test(priority = 4)
-//    public  void shopItemsLogoutValidation() throws Exception {
-//        mlWalletWeb.shopItemsLogoutValidation();
-//    }
+    @Test(priority = 1)
+    public void mlShopProfileNameAndDropDownValidation() throws Exception {
+        mlWalletWeb.mlShopProfileNameAndDropDownValidation();
+    }
+    @Test(priority = 2)
+    public void shopItemsProfilePageNavigation() throws Exception {
+        mlWalletWeb.shopItemsProfilePageNavigation();
+    }
+    @Test(priority = 3)
+    public void shopItemsPurchaseHistoryPageNavigation() throws Exception {
+        mlWalletWeb.shopItemsPurchaseHistoryPageNavigation();
+    }
+    @Test(priority = 4)
+    public  void shopItemsLogoutValidation() throws Exception {
+        mlWalletWeb.shopItemsLogoutValidation();
+    }
 //    @Test(priority = 5)
 //    public void shopItemsProfileSuccessfulLogin() throws Exception {
 //        mlWalletWeb.shopItemsProfileSuccessfulLogin();

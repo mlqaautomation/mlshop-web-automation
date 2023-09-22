@@ -303,7 +303,7 @@
 					<!--suppress UnresolvedMavenProperty -->
 					<groups>${groups}</groups>
 					<suiteXmlFiles>
-<!--						<suiteXmlFile>${suiteXmlFile}</suiteXmlFile>-->
+						<suiteXmlFile>mlwalletWeb.xml</suiteXmlFile>
 						<!--						     <suiteXmlFile>mlwalletios.xml</suiteXmlFile>-->
 					</suiteXmlFiles>
 				</configuration>
