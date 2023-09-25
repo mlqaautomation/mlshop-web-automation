@@ -1,15 +1,13 @@
-package com.business.mlwallet;
+package com.business.mlshop;
 
-import com.mlWalletWebPages.MLShopHomePage;
-import com.mlWalletWebPages.MLShopProfileLoginPage;
-import com.mlWalletWebPages.MLShopRingsPage;
-import com.mlWalletWebPages.MLShopWatchPage;
-import com.utility.ExtentReporter;
+import com.MLShopPageObjects.MLShopHomePage;
+import com.MLShopPageObjects.MLShopProfileLoginPage;
+import com.MLShopPageObjects.MLShopRingsPage;
+import com.MLShopPageObjects.MLShopWatchPage;
 import org.openqa.selenium.WebElement;
 
 import java.util.List;
 
-import static com.business.mlwallet.BaseClass.prop;
 import static com.utility.ExtentReporter.*;
 import static com.utility.Utilities.*;
 

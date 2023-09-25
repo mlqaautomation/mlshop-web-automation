@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>MLWallet</groupId>
-	<artifactId>MLWallet</artifactId>
+	<artifactId>MLShop</artifactId>
 	<version>1.0-SNAPSHOT</version>
 	<repositories>
 		<repository>
@@ -303,8 +303,8 @@
 					<!--suppress UnresolvedMavenProperty -->
 					<groups>${groups}</groups>
 					<suiteXmlFiles>
-						<suiteXmlFile>mlwalletWeb.xml</suiteXmlFile>
-						<!--						     <suiteXmlFile>mlwalletios.xml</suiteXmlFile>-->
+						<suiteXmlFile>MLShopWeb.xml</suiteXmlFile>
+						<!--<suiteXmlFile>mlwalletios.xml</suiteXmlFile>-->
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>

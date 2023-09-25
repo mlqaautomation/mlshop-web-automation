@@ -1,4 +1,4 @@
-package com.mlWalletWebPages;
+package com.MLShopPageObjects;
 
 import org.openqa.selenium.By;
 

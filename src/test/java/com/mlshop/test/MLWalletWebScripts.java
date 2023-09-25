@@ -1,4 +1,4 @@
-package com.mlwallet.test;
+package com.mlshop.test;
 
 import org.testng.annotations.Test;
 

@@ -1,21 +1,19 @@
 
-package com.mlwallet.test;
+package com.mlshop.test;
 
 import com.aventstack.extentreports.ExtentTest;
-import com.business.mlwallet.*;
+import com.business.mlshop.*;
 import org.testng.annotations.*;
 import com.driverInstance.AppiumServer;
 import com.propertyfilereader.PropertyFileReader;
 import com.utility.LoggingUtils;
 import org.testng.asserts.SoftAssert;
 
-import java.io.IOException;
 import static com.utility.Utilities.softAssert;
-import static com.utility.Utilities.*;
 
 public class BaseTest {
 
-    protected com.business.mlwallet.BaseClass baseClass;
+    protected com.business.mlshop.BaseClass baseClass;
 
     protected MLWalletWeb mlWalletWeb;
 

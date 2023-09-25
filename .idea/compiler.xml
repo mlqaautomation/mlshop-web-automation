@@ -8,7 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="mlwallet-regression" />
         <module name="MLWalletWeb-master" />
-        <module name="MLWallet" />
+        <module name="MLShop" />
       </profile>
     </annotationProcessing>
   </component>

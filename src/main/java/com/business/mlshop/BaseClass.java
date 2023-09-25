@@ -1,4 +1,4 @@
-package com.business.mlwallet;
+package com.business.mlshop;
 
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.Reporter;
