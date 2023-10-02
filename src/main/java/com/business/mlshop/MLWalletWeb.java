@@ -1,9 +1,6 @@
 package com.business.mlshop;
 
-import com.MLShopPageObjects.MLShopHomePage;
-import com.MLShopPageObjects.MLShopProfileLoginPage;
-import com.MLShopPageObjects.MLShopRingsPage;
-import com.MLShopPageObjects.MLShopWatchPage;
+import com.MLShopPageObjects.*;
 import org.openqa.selenium.WebElement;
 import com.MLShopPageObjects.MLShoopShippingDetails;
 
@@ -278,16 +275,25 @@ public class MLWalletWeb extends BaseClass{
 
     }
 
+
     public void shopItemsShippingDetailsPageUIValidation() throws Exception {
         HeaderChildNode("Shop Items Shipping Details Page UI Validation");
         waitTime(15000);
         profileLogin();
         scrollByWEB(0,500);
         verifyElementPresentAndClick(MLShopRingsPage.objRingsItemBtn,getTextVal(MLShopRingsPage.objRingsItemBtn,"Button"));
+
+    public void shopItemsAddedItemInCartDeletedPopupValidationYesButton() throws Exception {
+        HeaderChildNode("Shop Items Added Item In Cart Deleted Popup Validation Cancel Button");
+        waitTime(15000);
+        profileLogin();
+        verifyElementPresentAndClick(MLShopRingsPage.objRingsItemBtn, getTextVal(MLShopRingsPage.objRingsItemBtn, "Button"));
+
         verifyElementPresentAndClick(MLShopRingsPage.objRingsProduct,getTextVal(MLShopRingsPage.objRingsProduct,"Ring Product"));
         waitTime(5000);
         verifyElementPresentAndClick(MLShopRingsPage.objAddToCartBtn,getTextVal(MLShopRingsPage.objAddToCartBtn,"Button"));
         waitTime(5000);
+
         verifyElementPresent(MLShopRingsPage.objPopup,getTextVal(MLShopRingsPage.objPopup,"Popup"));
         verifyElementPresentAndClick(MLShopRingsPage.objConfirmBtn,getTextVal(MLShopRingsPage.objConfirmBtn,"button"));
         verifyElementPresentAndClick(MLShopRingsPage.objCartIcon,"Cart icon");
@@ -315,4 +321,65 @@ public class MLWalletWeb extends BaseClass{
         }
 
     }
+
+        verifyElementPresent(MLShopRingsPage.objPopup, getTextVal(MLShopRingsPage.objPopup, "Popup"));
+        if (verifyElementPresent(MLShoppingCartPage.objItemIsAlreadyInTheCart, "Validate Item if it is already in the cart")) {
+            logger.info("This is item is already in the cart");
+            verifyElementPresentAndClick(MLShopRingsPage.objConfirmBtn, getTextVal(MLShopRingsPage.objConfirmBtn, "button"));
+            verifyElementPresentAndClick(MLShopRingsPage.objCartIcon, "Cart Icon");
+            verifyElementPresentAndClick(MLShoppingCartPage.objCheckBox, "Check box");
+            verifyElementPresentAndClick(MLShoppingCartPage.objDeletebtn, "Delete Item");
+            verifyElementPresent(MLShoppingCartPage.objConfirmationQuestion, "Confirmation Question");
+            verifyElementPresentAndClick(MLShoppingCartPage.objYesbtn, "Yes button");
+            if (verifyElementPresent(MLShoppingCartPage.objConfirmationQuestion, "PopOut")) {
+                logger.info("Item is now Deleted");
+                logger.info("Yes button validated");
+            }
+        } else {
+            verifyElementPresent(MLShopRingsPage.objPopup, getTextVal(MLShopRingsPage.objPopup, "Popup"));
+            verifyElementPresentAndClick(MLShopRingsPage.objConfirmBtn, getTextVal(MLShopRingsPage.objConfirmBtn, "button"));
+            verifyElementPresentAndClick(MLShopRingsPage.objCartIcon, "Cart icon");
+            verifyElementPresentAndClick(MLShoppingCartPage.objCheckBox, "Check box");
+            verifyElementPresentAndClick(MLShoppingCartPage.objDeletebtn, "Delete Item");
+            verifyElementPresent(MLShoppingCartPage.objConfirmationQuestion, "Confirmation Question");
+            verifyElementPresentAndClick(MLShoppingCartPage.objYesbtn, "Yes button");
+            if (verifyElementPresent(MLShoppingCartPage.objConfirmationQuestion, "PopOut")) {
+                logger.info("Item is now Deleted");
+                logger.info("Yes button validated");
+            }
+        }
+    }
+
+    public void shopItemsAddedItemInCartDeletedPopupValidationCancelButton() throws Exception {
+        HeaderChildNode("Shop Items Added Item In Cart Deleted Popup Validation Cancel Button");
+        waitTime(15000);
+        profileLogin();
+        verifyElementPresentAndClick(MLShopRingsPage.objRingsItemBtn, getTextVal(MLShopRingsPage.objRingsItemBtn, "Button"));
+        verifyElementPresentAndClick(MLShopRingsPage.objRingsProduct,getTextVal(MLShopRingsPage.objRingsProduct,"Ring Product"));
+        waitTime(5000);
+        verifyElementPresentAndClick(MLShopRingsPage.objAddToCartBtn,getTextVal(MLShopRingsPage.objAddToCartBtn,"Button"));
+        waitTime(5000);
+        verifyElementPresent(MLShopRingsPage.objPopup, getTextVal(MLShopRingsPage.objPopup, "Popup"));
+        if (verifyElementPresent(MLShoppingCartPage.objItemIsAlreadyInTheCart, "Validate Item if it is already in the cart")) {
+            logger.info("This is item is already in the cart");
+            verifyElementPresentAndClick(MLShopRingsPage.objConfirmBtn, getTextVal(MLShopRingsPage.objConfirmBtn, "button"));
+            verifyElementPresentAndClick(MLShopRingsPage.objCartIcon, "Cart icon");
+            verifyElementPresentAndClick(MLShoppingCartPage.objCheckBox, "Check box");
+            verifyElementPresentAndClick(MLShoppingCartPage.objDeletebtn, "Delete Item");
+            verifyElementPresent(MLShoppingCartPage.objConfirmationQuestion, "Confirmation Question");
+            verifyElementPresentAndClick(MLShoppingCartPage.objCancelbtn, "Cancel button");
+            logger.info("Shop Items Added Item In Cart Deleted Popup Validation Cancel Button validated");
+        } else {
+            verifyElementPresentAndClick(MLShopRingsPage.objConfirmBtn, getTextVal(MLShopRingsPage.objConfirmBtn, "button"));
+            verifyElementPresentAndClick(MLShopRingsPage.objCartIcon, "Cart icon");
+            verifyElementPresentAndClick(MLShoppingCartPage.objCheckBox, "Check box");
+            verifyElementPresentAndClick(MLShoppingCartPage.objDeletebtn, "Delete Item");
+            verifyElementPresent(MLShoppingCartPage.objConfirmationQuestion, "Confirmation Question");
+            verifyElementPresentAndClick(MLShoppingCartPage.objCancelbtn, "Cancel button");
+            logger.info("Shop Items Added Item In Cart Deleted Popup Validation Cancel Button validated");
+        }
+    }
+
+
+
 }

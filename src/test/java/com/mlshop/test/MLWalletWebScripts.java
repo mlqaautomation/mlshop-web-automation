@@ -62,5 +62,16 @@ public class MLWalletWebScripts extends BaseTest{
         mlWalletWeb.shopItemsShippingDetailsPageUIValidation();
     }
 
+    @Test(priority = 13)
+    public void shopItemsAddedItemInCartDeletedPopupValidationYesButton() throws Exception
+    {
+        mlWalletWeb.shopItemsAddedItemInCartDeletedPopupValidationYesButton();
+    }
+
+    @Test(priority = 14)
+    public void shopItemsAddedItemInCartDeletedPopupValidationCancelButton() throws Exception
+    {
+        mlWalletWeb.shopItemsAddedItemInCartDeletedPopupValidationCancelButton();
+    }
 
 }
