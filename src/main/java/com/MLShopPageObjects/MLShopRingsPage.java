@@ -13,7 +13,7 @@ public class MLShopRingsPage {
 //  Add to cart
     public static By objAddToCartBtn = By.xpath("//*[@class=' bg-[#303030] px-5 py-1  flex mt-2 rounded-lg hover:bg-gray-300 text-[#FFFFFF] place-items-center justify-center font-medium lg:w-[130px] 2sm:w-full 3sm:w-full']");
 //  Successfully added to cart popup
-    public static By objPopup = By.xpath("//*[@id='swal2-html-container']");
+    public static By objPopup = By.xpath("//*[@class='translate duration-300 h-full w-full translate-y-0 opacity-100']");
 //  Confirm btn
     public static By objConfirmBtn = By.xpath("//*[contains(text(),'Confirm')]");
 //  Cart icon
