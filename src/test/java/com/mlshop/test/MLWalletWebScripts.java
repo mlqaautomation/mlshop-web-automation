@@ -57,6 +57,10 @@ public class MLWalletWebScripts extends BaseTest{
     public void shopItemsRingProductPurchaseScenario() throws Exception {
         mlWalletWeb.shopItemsRingProductPurchaseScenario();
     }
+    @Test(priority = 1)
+    public void shopItemsShippingDetailsPageUIValidation() throws Exception {
+        mlWalletWeb.shopItemsShippingDetailsPageUIValidation();
+    }
 
 
 }

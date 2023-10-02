@@ -5,6 +5,7 @@ import com.MLShopPageObjects.MLShopProfileLoginPage;
 import com.MLShopPageObjects.MLShopRingsPage;
 import com.MLShopPageObjects.MLShopWatchPage;
 import org.openqa.selenium.WebElement;
+import com.MLShopPageObjects.MLShoopShippingDetails;
 
 import java.util.List;
 
@@ -277,8 +278,41 @@ public class MLWalletWeb extends BaseClass{
 
     }
 
+    public void shopItemsShippingDetailsPageUIValidation() throws Exception {
+        HeaderChildNode("Shop Items Shipping Details Page UI Validation");
+        waitTime(15000);
+        profileLogin();
+        scrollByWEB(0,500);
+        verifyElementPresentAndClick(MLShopRingsPage.objRingsItemBtn,getTextVal(MLShopRingsPage.objRingsItemBtn,"Button"));
+        verifyElementPresentAndClick(MLShopRingsPage.objRingsProduct,getTextVal(MLShopRingsPage.objRingsProduct,"Ring Product"));
+        waitTime(5000);
+        verifyElementPresentAndClick(MLShopRingsPage.objAddToCartBtn,getTextVal(MLShopRingsPage.objAddToCartBtn,"Button"));
+        waitTime(5000);
+        verifyElementPresent(MLShopRingsPage.objPopup,getTextVal(MLShopRingsPage.objPopup,"Popup"));
+        verifyElementPresentAndClick(MLShopRingsPage.objConfirmBtn,getTextVal(MLShopRingsPage.objConfirmBtn,"button"));
+        verifyElementPresentAndClick(MLShopRingsPage.objCartIcon,"Cart icon");
+        verifyElementPresentAndClick(MLShopRingsPage.objCheckout,getTextVal(MLShopRingsPage.objCheckout,"Button"));
+        waitTime(5000);
+        if (verifyElementPresent(MLShoopShippingDetails.objMlShoppingDetailsPage,"Page"))
+        {
+            verifyElementPresent(MLShoopShippingDetails.objMlShopProductHeader,getTextVal(MLShoopShippingDetails.objMlShopProductHeader,"Header"));
+            verifyElementPresent(MLShoopShippingDetails.objQuantity,getTextVal(MLShoopShippingDetails.objQuantity,"Product Quantity"));
+            verifyElementPresent(MLShoopShippingDetails.objItemSubtotal,getTextVal(MLShoopShippingDetails.objItemSubtotal,"Item Subtotal"));
+            verifyElementPresent(MLShoopShippingDetails.objTotalOrder,getTextVal(MLShoopShippingDetails.objTotalOrder,"Total Order"));
+            scrollByWEB(0,900);
+            verifyElementPresent(MLShoopShippingDetails.objServiceFee,getTextVal(MLShoopShippingDetails.objServiceFee,"Service Fee Header"));
+            verifyElementPresent(MLShoopShippingDetails.objServiceFeeDetails,getTextVal(MLShoopShippingDetails.objServiceFeeDetails,"Service Fee Details"));
+            verifyElementPresent(MLShoopShippingDetails.objPaymentMethodMlWallet,getTextVal(MLShoopShippingDetails.objPaymentMethodMlWallet,"ML Wallet"));
+            verifyElementPresent(MLShoopShippingDetails.objPaymentMethodOnlineBanking,getTextVal(MLShoopShippingDetails.objPaymentMethodOnlineBanking,"Direct Online Banking"));
+            verifyElementPresent(MLShoopShippingDetails.objMerchandiseTotal,getTextVal(MLShoopShippingDetails.objMerchandiseTotal,"Merchandise Total"));
+            verifyElementPresent(MLShoopShippingDetails.objServiceTotal,getTextVal(MLShoopShippingDetails.objServiceTotal,"Service Total"));
+            verifyElementPresent(MLShoopShippingDetails.objShippingTotal,getTextVal(MLShoopShippingDetails.objShippingTotal,"Shipping Total"));
+            verifyElementPresent(MLShoopShippingDetails.objTotalPayment,getTextVal(MLShoopShippingDetails.objTotalPayment,"Total Payment"));
+            verifyElementPresent(MLShoopShippingDetails.objPlaceOrder,getTextVal(MLShoopShippingDetails.objPlaceOrder,"Button"));
+            logger.info("Shop Items Shipping Details Page UI Validated");
+            extentLoggerPass("", "Shop Items Shipping Details Page UI Validated");
+            System.out.println("-----------------------------------------------------------");
+        }
 
-
-
-
+    }
 }
