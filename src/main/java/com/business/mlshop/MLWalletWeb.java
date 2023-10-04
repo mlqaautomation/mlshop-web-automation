@@ -1,6 +1,7 @@
 package com.business.mlshop;
 
 import com.MLShopPageObjects.*;
+import com.utility.ExtentReporter;
 import org.openqa.selenium.WebElement;
 import com.MLShopPageObjects.MLShoopShippingDetails;
 
@@ -376,6 +377,47 @@ public class MLWalletWeb extends BaseClass{
             verifyElementPresent(MLShoppingCartPage.objConfirmationQuestion, "Confirmation Question");
             verifyElementPresentAndClick(MLShoppingCartPage.objCancelbtn, "Cancel button");
             logger.info("Shop Items Added Item In Cart Deleted Popup Validation Cancel Button validated");
+        }
+    }
+    public void shopItemsPlacingAnOrderWithOutSelectingPaymentMethod() throws Exception {
+        HeaderChildNode("Shop Items Placing An Order WithOut Selecting Payment Method");
+        waitTime(15000);
+        profileLogin();
+        scrollByWEB(0,500);
+        verifyElementPresentAndClick(MLShopRingsPage.objRingsItemBtn,getTextVal(MLShopRingsPage.objRingsItemBtn,"Button"));
+        verifyElementPresentAndClick(MLShopRingsPage.objRingsProduct,getTextVal(MLShopRingsPage.objRingsProduct,"Ring Product"));
+        waitTime(5000);
+        verifyElementPresentAndClick(MLShopRingsPage.objAddToCartBtn,getTextVal(MLShopRingsPage.objAddToCartBtn,"Button"));
+        waitTime(5000);
+        verifyElementPresent(MLShopRingsPage.objPopup,getTextVal(MLShopRingsPage.objPopup,"Popup"));
+        verifyElementPresentAndClick(MLShopRingsPage.objConfirmBtn,getTextVal(MLShopRingsPage.objConfirmBtn,"button"));
+        verifyElementPresentAndClick(MLShopRingsPage.objCartIcon,"Cart icon");
+        verifyElementPresentAndClick(MLShopRingsPage.objCheckout,getTextVal(MLShopRingsPage.objCheckout,"Button"));
+        scrollByWEB(0,200);
+        waitTime(10000);
+        selectByVisibleTextFromDD(MLShopRingsPage.objBranchNameDropdown,"ML CAMALIG ALBAY");
+        scrollByWEB(0,300);
+        waitTime(5000);
+        verifyElementPresentAndClick(MLShopRingsPage.objPlaceOrder,getTextVal(MLShopRingsPage.objPlaceOrder,"button"));
+        waitTime(2000);
+        if (verifyElementPresent(MLShoopShippingDetails.objErrorPopup, getTextVal(MLShoopShippingDetails.objErrorPopup, "Error Popup"))) {
+            String sActualErrorPopup = getText(MLShoopShippingDetails.objErrorPopup);
+            String sExpectedErrorPopup = "Please Select Payment Method";
+            assertionValidation(sActualErrorPopup, sExpectedErrorPopup);
+            verifyElementPresent(MLShoopShippingDetails.objOkBtn, getTextVal(MLShoopShippingDetails.objOkBtn, "Button"));
+            logger.info("Shop Items Placing An Order WithOut Selecting Payment Method validated");
+            extentLoggerPass("", "Shop Items Placing An Order WithOut Selecting Payment Method validated");
+            System.out.println("-----------------------------------------------------------");
+        }
+    }
+    public void shopItemsOkBtnFunctionalityOnErrorPopup() throws Exception {
+        ExtentReporter.HeaderChildNode("Shop Items Ok Button Functionality On Error popup");
+        shopItemsPlacingAnOrderWithOutSelectingPaymentMethod();
+        click(MLShoopShippingDetails.objOkBtn, getTextVal(MLShoopShippingDetails.objOkBtn, "Button"));
+        if (verifyElementNotPresent(MLShoopShippingDetails.objErrorPopup,"Error popup", 5)) {
+            logger.info("MLS_TC_34, Error popup disappeared after clicking on Ok Button is validated");
+            ExtentReporter.extentLoggerPass("MLS_TC_34", "MLS_TC_34, Error popup disappeared after clicking on Ok Button is validated");
+            System.out.println("-----------------------------------------------------------");
         }
     }
 

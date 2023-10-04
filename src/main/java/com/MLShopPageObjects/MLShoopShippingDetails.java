@@ -23,6 +23,9 @@ public class MLShoopShippingDetails {
     public static By objTotalPayment = By.xpath("//*[contains(text(),'Total Payment')]");
     public static By objPlaceOrder = By.xpath("//*[contains(text(),'Place Order')]");
 
+    public static By objErrorPopup = By.xpath("//*[contains(text(),'Please Select Payment Method')]");
+    public static By objOkBtn = By.xpath("//*[contains(text(),'Confirm')]");
+
 
 
 }

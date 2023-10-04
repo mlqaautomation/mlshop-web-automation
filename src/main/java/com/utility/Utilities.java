@@ -41,14 +41,10 @@ import io.appium.java_client.touch.LongPressOptions;
 import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.ElementOption;
 import io.appium.java_client.touch.offset.PointOption;
-import java.io.File;
-import java.util.UUID;
 
 
 import static com.driverInstance.DriverInstance.tlWebDriver;
 import static java.awt.event.KeyEvent.VK_CONTROL;
-import static java.awt.event.KeyEvent.VK_META;
-import static org.apache.commons.lang3.SystemUtils.IS_OS_MAC;
 
 public class Utilities extends ExtentReporter {
 
@@ -231,17 +227,32 @@ public class Utilities extends ExtentReporter {
     /**
      * Check element not present.
      *
-     * @param : byLocator the by locator
+     * @param :          byLocator the by locator
+     * @param errorPopup
      * @return true, if successful
      */
-    public static boolean verifyElementNotPresent(By byLocator, int iTimeOut) {
+//    public static boolean verifyElementNotPresent(By byLocator, int iTimeOut) {
+//        try {
+//            WebDriverWait wait = new WebDriverWait(DriverManager.getAppiumDriver(), iTimeOut);
+//            wait.until(ExpectedConditions.invisibilityOfElementLocated(byLocator));
+//            return false;
+//        } catch (NoSuchElementException e) {
+//            return true;
+//        }
+//    }
+    public static boolean verifyElementNotPresent(By byLocator, String ValidationText,int iTimeOut) throws Exception {
         try {
             WebDriverWait wait = new WebDriverWait(DriverManager.getAppiumDriver(), iTimeOut);
             wait.until(ExpectedConditions.invisibilityOfElementLocated(byLocator));
+            logger.info(ValidationText+" is not displayed");
+            ExtentReporter.extentLoggerPass("checkElementPresent", ValidationText + " is not displayed");
             return false;
-        } catch (NoSuchElementException e) {
+        } catch (Exception e) {
+            logger.info(ValidationText + " is present");
+            ExtentReporter.extentLoggerPass("checkElementPresent", ValidationText + " is displayed");
             return true;
         }
+
     }
 
     /*
