@@ -74,4 +74,21 @@ public class MLWalletWebScripts extends BaseTest{
         mlWalletWeb.shopItemsAddedItemInCartDeletedPopupValidationCancelButton();
     }
 
+    @Test(priority = 15)
+    public void  shopItemsRedirectToPayMongoPageGrabPayValidation() throws Exception
+    {
+        mlWalletWeb.shopItemsRedirectToPayMongoPageGrabPayValidation();
+    }
+
+    @Test(priority = 16)
+    public void  shopItemsRedirectToPayMongoPageGcashValidation() throws Exception
+    {
+        mlWalletWeb.shopItemsRedirectToPayMongoPageGcashValidation();
+    }
+
+    @Test(priority = 17)
+    public void  shopItemsRedirectToPayMongoPagePayMayaValidation() throws Exception
+    {
+        mlWalletWeb.shopItemsRedirectToPayMongoPagePayMayaValidation();
+    }
 }
