@@ -380,7 +380,7 @@ public class MLWalletWeb extends BaseClass{
         }
     }
 
-    public void shopItemsRedirectToPayMongoPageGrabPayValidation() throws Exception {
+    public void shopItemsRedirectToPayMongoPageGrabPayValidation_SI_TC_225() throws Exception {
         HeaderChildNode("Shop items redirect to Pay Mongo Page Validation");
         waitTime(15000);
         profileLogin();
@@ -412,7 +412,7 @@ public class MLWalletWeb extends BaseClass{
         }
     }
 
-    public void shopItemsRedirectToPayMongoPageGcashValidation() throws Exception {
+    public void shopItemsRedirectToPayMongoPageGcashValidation_SI_TC_226() throws Exception {
         HeaderChildNode("Shop items redirect to Pay Mongo Page Validation");
         waitTime(15000);
         profileLogin();
@@ -444,7 +444,7 @@ public class MLWalletWeb extends BaseClass{
         }
     }
 
-    public void shopItemsRedirectToPayMongoPagePayMayaValidation() throws Exception {
+    public void shopItemsRedirectToPayMongoPagePayMayaValidation_SI_TC_227() throws Exception {
         HeaderChildNode("Shop items redirect to Pay Mongo Page Validation");
         waitTime(15000);
         profileLogin();

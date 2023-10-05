@@ -75,20 +75,20 @@ public class MLWalletWebScripts extends BaseTest{
     }
 
     @Test(priority = 15)
-    public void  shopItemsRedirectToPayMongoPageGrabPayValidation() throws Exception
+    public void  shopItemsRedirectToPayMongoPageGrabPayValidation_SI_TC_225() throws Exception
     {
-        mlWalletWeb.shopItemsRedirectToPayMongoPageGrabPayValidation();
+        mlWalletWeb.shopItemsRedirectToPayMongoPageGrabPayValidation_SI_TC_225();
     }
 
     @Test(priority = 16)
-    public void  shopItemsRedirectToPayMongoPageGcashValidation() throws Exception
+    public void  shopItemsRedirectToPayMongoPageGcashValidation_SI_TC_226() throws Exception
     {
-        mlWalletWeb.shopItemsRedirectToPayMongoPageGcashValidation();
+        mlWalletWeb.shopItemsRedirectToPayMongoPageGcashValidation_SI_TC_226();
     }
 
     @Test(priority = 17)
-    public void  shopItemsRedirectToPayMongoPagePayMayaValidation() throws Exception
+    public void  shopItemsRedirectToPayMongoPagePayMayaValidation_SI_TC_227() throws Exception
     {
-        mlWalletWeb.shopItemsRedirectToPayMongoPagePayMayaValidation();
+        mlWalletWeb.shopItemsRedirectToPayMongoPagePayMayaValidation_SI_TC_227();
     }
 }
