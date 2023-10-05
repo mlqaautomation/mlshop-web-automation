@@ -9,6 +9,7 @@ import java.util.List;
 
 import static com.utility.ExtentReporter.*;
 import static com.utility.Utilities.*;
+import static com.utility.Utilities.verifyElementPresent;
 
 public class MLWalletWeb extends BaseClass{
 
@@ -418,6 +419,102 @@ public class MLWalletWeb extends BaseClass{
             logger.info("MLS_TC_34, Error popup disappeared after clicking on Ok Button is validated");
             ExtentReporter.extentLoggerPass("MLS_TC_34", "MLS_TC_34, Error popup disappeared after clicking on Ok Button is validated");
             System.out.println("-----------------------------------------------------------");
+        }
+    }
+
+    public void shopItemsRedirectToPayMongoPageGrabPayValidation_SI_TC_225() throws Exception {
+        HeaderChildNode("Shop items redirect to Pay Mongo Page Validation");
+        waitTime(15000);
+        profileLogin();
+        verifyElementPresentAndClick(MLShopRingsPage.objRingsItemBtn, getTextVal(MLShopRingsPage.objRingsItemBtn, "Button"));
+        verifyElementPresentAndClick(MLShopRingsPage.objRingsProduct, getTextVal(MLShopRingsPage.objRingsProduct, "Ring Product"));
+        waitTime(5000);
+        verifyElementPresentAndClick(MLShopRingsPage.objAddToCartBtn, getTextVal(MLShopRingsPage.objAddToCartBtn, "Button"));
+        waitTime(5000);
+        verifyElementPresent(MLShopRingsPage.objPopup, getTextVal(MLShopRingsPage.objPopup, "Popup"));
+        verifyElementPresentAndClick(MLShopRingsPage.objConfirmBtn, getTextVal(MLShopRingsPage.objConfirmBtn, "button"));
+        verifyElementPresentAndClick(MLShopRingsPage.objCartIcon, "Cart icon");
+        verifyElementPresentAndClick(MLShopRingsPage.objCheckout, getTextVal(MLShopRingsPage.objCheckout, "Button"));
+        scrollByWEB(0, 200);
+        waitTime(10000);
+        selectByVisibleTextFromDD(MLShopRingsPage.objBranchNameDropdown, "ML CAMALIG ALBAY");
+        scrollByWEB(0, 300);
+        verifyElementPresentAndClick(MLShopPaymongoPage.objEWallet, "E-Wallet");
+        verifyElementPresentAndClick(MLShopPaymongoPage.objGrabPay, "Grab Pay");
+        waitTime(5000);
+        verifyElementPresentAndClick(MLShopRingsPage.objPlaceOrder, getTextVal(MLShopRingsPage.objPlaceOrder, "button"));
+        waitTime(5000);
+        verifyElementPresentAndClick(MLShopPaymongoPage.objProceedbtn, "Proceed button");
+        waitTime(5000);
+        validateRedirectedUrl(prop.getproperty("PayMongoLink"));
+        if (verifyElementPresent(MLShopPaymongoPage.objPayMongoFooterImg, "Pay Monggo")){
+            logger.info("Redirect to Pay Mongo Page validate Successfully");
+        }else {
+            logger.info("Redirect to Pay Mongo Page validation Failed");
+        }
+    }
+
+    public void shopItemsRedirectToPayMongoPageGcashValidation_SI_TC_226() throws Exception {
+        HeaderChildNode("Shop items redirect to Pay Mongo Page Validation");
+        waitTime(15000);
+        profileLogin();
+        verifyElementPresentAndClick(MLShopRingsPage.objRingsItemBtn, getTextVal(MLShopRingsPage.objRingsItemBtn, "Button"));
+        verifyElementPresentAndClick(MLShopRingsPage.objRingsProduct, getTextVal(MLShopRingsPage.objRingsProduct, "Ring Product"));
+        waitTime(5000);
+        verifyElementPresentAndClick(MLShopRingsPage.objAddToCartBtn, getTextVal(MLShopRingsPage.objAddToCartBtn, "Button"));
+        waitTime(5000);
+        verifyElementPresent(MLShopRingsPage.objPopup, getTextVal(MLShopRingsPage.objPopup, "Popup"));
+        verifyElementPresentAndClick(MLShopRingsPage.objConfirmBtn, getTextVal(MLShopRingsPage.objConfirmBtn, "button"));
+        verifyElementPresentAndClick(MLShopRingsPage.objCartIcon, "Cart icon");
+        verifyElementPresentAndClick(MLShopRingsPage.objCheckout, getTextVal(MLShopRingsPage.objCheckout, "Button"));
+        scrollByWEB(0, 200);
+        waitTime(10000);
+        selectByVisibleTextFromDD(MLShopRingsPage.objBranchNameDropdown, "ML CAMALIG ALBAY");
+        scrollByWEB(0, 300);
+        verifyElementPresentAndClick(MLShopPaymongoPage.objEWallet, "E-Wallet");
+        verifyElementPresentAndClick(MLShopPaymongoPage.objGcash, "G Cash");
+        waitTime(5000);
+        verifyElementPresentAndClick(MLShopRingsPage.objPlaceOrder, getTextVal(MLShopRingsPage.objPlaceOrder, "button"));
+        waitTime(5000);
+        verifyElementPresentAndClick(MLShopPaymongoPage.objProceedbtn, "Proceed button");
+        waitTime(5000);
+        validateRedirectedUrl(prop.getproperty("PayMongoLink"));
+        if (verifyElementPresent(MLShopPaymongoPage.objPayMongoFooterImg, "Pay Monggo")){
+            logger.info("Redirect to Pay Mongo Page validate Successfully");
+        }else {
+            logger.info("Redirect to Pay Mongo Page validation Failed");
+        }
+    }
+
+    public void shopItemsRedirectToPayMongoPagePayMayaValidation_SI_TC_227() throws Exception {
+        HeaderChildNode("Shop items redirect to Pay Mongo Page Validation");
+        waitTime(15000);
+        profileLogin();
+        verifyElementPresentAndClick(MLShopRingsPage.objRingsItemBtn, getTextVal(MLShopRingsPage.objRingsItemBtn, "Button"));
+        verifyElementPresentAndClick(MLShopRingsPage.objRingsProduct, getTextVal(MLShopRingsPage.objRingsProduct, "Ring Product"));
+        waitTime(5000);
+        verifyElementPresentAndClick(MLShopRingsPage.objAddToCartBtn, getTextVal(MLShopRingsPage.objAddToCartBtn, "Button"));
+        waitTime(5000);
+        verifyElementPresent(MLShopRingsPage.objPopup, getTextVal(MLShopRingsPage.objPopup, "Popup"));
+        verifyElementPresentAndClick(MLShopRingsPage.objConfirmBtn, getTextVal(MLShopRingsPage.objConfirmBtn, "button"));
+        verifyElementPresentAndClick(MLShopRingsPage.objCartIcon, "Cart icon");
+        verifyElementPresentAndClick(MLShopRingsPage.objCheckout, getTextVal(MLShopRingsPage.objCheckout, "Button"));
+        scrollByWEB(0, 200);
+        waitTime(10000);
+        selectByVisibleTextFromDD(MLShopRingsPage.objBranchNameDropdown, "ML CAMALIG ALBAY");
+        scrollByWEB(0, 300);
+        verifyElementPresentAndClick(MLShopPaymongoPage.objEWallet, "E-Wallet");
+        verifyElementPresentAndClick(MLShopPaymongoPage.objPayMaya, "Pay Maya");
+        waitTime(5000);
+        verifyElementPresentAndClick(MLShopRingsPage.objPlaceOrder, getTextVal(MLShopRingsPage.objPlaceOrder, "button"));
+        waitTime(5000);
+        verifyElementPresentAndClick(MLShopPaymongoPage.objProceedbtn, "Proceed button");
+        waitTime(5000);
+        validateRedirectedUrl(prop.getproperty("PayMongoLink"));
+        if (verifyElementPresent(MLShopPaymongoPage.objPayMongoFooterImg, "Pay Monggo")){
+            logger.info("Redirect to Pay Mongo Page validate Successfully");
+        }else {
+            logger.info("Redirect to Pay Mongo Page validation Failed");
         }
     }
 
