@@ -13,6 +13,7 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 
+import com.MLShopPageObjects.MLShopProfileLoginPage;
 import com.driverInstance.DriverInstance;
 import com.driverInstance.DriverManager;
 
@@ -45,6 +46,7 @@ import java.io.File;
 import java.util.UUID;
 
 
+import static com.business.mlshop.BaseClass.prop;
 import static com.driverInstance.DriverInstance.tlWebDriver;
 import static java.awt.event.KeyEvent.VK_CONTROL;
 import static java.awt.event.KeyEvent.VK_META;
@@ -3856,6 +3858,36 @@ public class Utilities extends ExtentReporter {
             extentLoggerFail("Assertion",actual+" and "+expected+" are matched");
         }
     }
+
+    public static void validateRedirectedUrl(String urlToCheck) throws Exception {
+        WebDriver driver = getWebDriver();
+        driver.switchTo().window(driver.getWindowHandles().toArray(new String[0])[1]);
+        try {
+            String currentUrl = driver.getCurrentUrl();
+            String paymongoUrl = urlToCheck;
+
+            if (currentUrl == null || paymongoUrl == null) {
+                throw new IllegalArgumentException("One or both URLs are null.");
+            }
+
+            logger.info("Redirected to" + currentUrl + "Validated successfully");
+
+            softAssert.assertNotEquals(currentUrl, paymongoUrl);
+
+            String redirectedUrl = driver.getCurrentUrl();
+
+            if (redirectedUrl.contains(paymongoUrl)) {
+                logger.info("Redirected Url Contains " + paymongoUrl);
+                extentLoggerPass("Assertion", redirectedUrl + " contains " + paymongoUrl);
+                logger.info( redirectedUrl + " contains " + paymongoUrl);
+            } else {
+                logger.info(redirectedUrl + " does not contain " + paymongoUrl);
+            }
+        } catch (Exception e) {
+            logger.error(e);
+        }
+    }
+
 }
 
 
