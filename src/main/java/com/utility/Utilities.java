@@ -42,9 +42,6 @@ import io.appium.java_client.touch.LongPressOptions;
 import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.ElementOption;
 import io.appium.java_client.touch.offset.PointOption;
-import java.io.File;
-import java.util.UUID;
-
 
 import static com.business.mlshop.BaseClass.prop;
 import static com.driverInstance.DriverInstance.tlWebDriver;
@@ -2835,13 +2832,23 @@ public class Utilities extends ExtentReporter {
 	}
 
 	public static void closeWebBrowser() {
-		waitTime(5000);
-//		Set<String> win = getWebDriver().getWindowHandles();
-//		for (String winHandle : win) {
-//			getWebDriver().switchTo().window(winHandle);
-			getWebDriver().close();
-//		}
-	}
+    waitTime(5000);
+    WebDriver driver = getWebDriver();
+    if (driver != null) {
+        String currentWindowHandle = driver.getWindowHandle();
+        Set<String> windowHandles = driver.getWindowHandles();   
+        // Close all windows except the current one
+        for (String windowHandle : windowHandles) {
+            if (!windowHandle.equals(currentWindowHandle)) {
+                driver.switchTo().window(windowHandle);
+                driver.close();
+            }
+        }     
+        // Switch back to the current window and close it
+        driver.switchTo().window(currentWindowHandle);
+        driver.quit();
+    }
+}
 
 	/**
 	 * @param locator

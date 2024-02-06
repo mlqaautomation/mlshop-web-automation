@@ -17,7 +17,7 @@
 		<documentTitle>Automation Reports</documentTitle>
 
 		<!-- report headline - displayed at top-nav, after reportHeadline -->
-		<reportName>MLWallet Automation</reportName>
+		<reportName>ML Shop</reportName>
 
 		<!-- global date format override -->
 		<!-- defaults to yyyy-MM-dd -->
