@@ -13,22 +13,16 @@
       <class name="com.mlshop.test.MLWalletWebScripts">
         <methods>
           <include name="shopItemsProfilePageNavigation"/>
-          <include name="shopItemsProfileSuccessfulLogin"/>
           <include name="shopItemsAddedItemInCartDeletedPopupValidationCancelButton"/>
           <include name="shopItemsAddedItemInCartDeletedPopupValidationYesButton"/>
           <include name="shopItemsRedirectToPayMongoPagePayMayaValidation_SI_TC_227"/>
           <include name="shopItemsBraceletsAndBanglesProductTypePageNavigationValidation"/>
-          <include name="shopItemsWatchItemsValidation"/>
           <include name="afterTest"/>
-          <include name="shopItemsAvailableJewelryItemsValidation"/>
           <include name="shopItemsRedirectToPayMongoPageGrabPayValidation_SI_TC_225"/>
           <include name="shopItemsWatchProductTypePageNavigationValidation"/>
           <include name="shopItemsNecklacesAndPendantsProductTypePageNavigationValidation"/>
-          <include name="shopItemsPurchaseHistoryPageNavigation"/>
           <include name="beforeMethod"/>
-          <include name="mlShopProfileNameAndDropDownValidation"/>
           <include name="shopItemsEarringsProductTypePageNavigationValidation"/>
-          <include name="shopItemsLogoutValidation"/>
           <include name="shopItemsRingsProductTypePageNavigationValidation"/>
           <include name="shopItemsRedirectToPayMongoPageGcashValidation_SI_TC_226"/>
           <include name="shopItemsRingProductPurchaseScenario"/>

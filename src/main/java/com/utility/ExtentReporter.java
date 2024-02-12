@@ -156,7 +156,6 @@ public class ExtentReporter implements ITestListener {
 	public synchronized void onStart(ITestContext context) {
 //		System.out.println(context.getSuite().getName());
 		testTag.add(context.getCurrentXmlTest().getParameter("deviceName"));
-
 		extent=ExtentReportGenerator(context);
 		ExcelUpdate.UserType = context.getCurrentXmlTest().getParameter("userType");
 		testContext=context;

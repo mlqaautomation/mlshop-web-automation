@@ -5,6 +5,7 @@ D:\Projects\mlshop-web-automation\src\main\java\com\utility\Utilities.java
 D:\Projects\mlshop-web-automation\src\main\java\com\driverInstance\DriverManager.java
 D:\Projects\mlshop-web-automation\src\main\java\com\emailReport\GmailInbox.java
 D:\Projects\mlshop-web-automation\src\main\java\com\driverInstance\ExcelFunctions.java
+D:\Projects\mlshop-web-automation\src\main\java\com\business\mlshop\Logout.java
 D:\Projects\mlshop-web-automation\src\main\java\com\utility\BasePage.java
 D:\Projects\mlshop-web-automation\src\main\java\com\driverInstance\DriverInstance.java
 D:\Projects\mlshop-web-automation\src\main\java\com\utility\RandomStringGenerator.java
@@ -35,6 +36,7 @@ D:\Projects\mlshop-web-automation\src\main\java\com\MLShopPageObjects\MLShopPaym
 D:\Projects\mlshop-web-automation\src\main\java\com\MLShopPageObjects\MLShoppingCartPage.java
 D:\Projects\mlshop-web-automation\src\main\java\com\utility\ExcelUpdate.java
 D:\Projects\mlshop-web-automation\src\main\java\com\MLShopPageObjects\MLShopRingsPage.java
+D:\Projects\mlshop-web-automation\src\main\java\com\business\mlshop\Login.java
 D:\Projects\mlshop-web-automation\src\main\java\com\driverInstance\CommandBase.java
 D:\Projects\mlshop-web-automation\src\main\java\com\emailReport\SendEmail.java
 D:\Projects\mlshop-web-automation\src\main\java\com\utility\Excel.java

@@ -1,0 +1,37 @@
+# Created at 2024-02-12T10:18:03.884
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:398)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:390)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+
+# Created at 2024-02-12T10:18:05.388
+Unexpected IOException with stream: 2024-02-12 10:18:05,386 [main] INFO  binary_data_logger - Profile Icon is displayed
+
+
+# Created at 2024-02-12T10:18:05.591
+Unexpected IOException with stream: 2024-02-12 10:18:05,589 [main] INFO  binary_data_logger - Clicked on Profile Icon
+
+
+# Created at 2024-02-12T10:18:05.647
+Unexpected IOException with stream: 2024-02-12 10:18:05,646 [main] INFO  binary_data_logger - Clicked on Mobile Number input field
+
+
+# Created at 2024-02-12T10:18:10.727
+Unexpected IOException with stream: 2024-02-12 10:18:10,725 [main] INFO  binary_data_logger - Typed the value 09999999912 into Mobile Number Input field
+
+
+# Created at 2024-02-12T10:18:15.824
+Unexpected IOException with stream: 2024-02-12 10:18:15,822 [main] INFO  binary_data_logger - Clicked on Get OTP Button
+
+
+# Created at 2024-02-12T10:18:18.455
+Unexpected IOException with stream: 2024-02-12 10:18:18,454 [main] INFO  binary_data_logger - One Time Pin popup is displayed
+
+
+# Created at 2024-02-12T10:18:18.483
+Unexpected IOException with stream: 2024-02-12 10:18:18,480 [main] INFO  binary_data_logger - Typed the value 111111 into ONe Time Pin Input field
+
+

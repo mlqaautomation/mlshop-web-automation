@@ -1,118 +1,173 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 38, Failures: 38, Errors: 0, Skipped: 0, Time elapsed: 5.913 s <<< FAILURE! - in TestSuite
-beforeMethod(com.mlshop.test.MLWalletWebScripts)  Time elapsed: 1.352 s  <<< FAILURE!
-java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because the return value of "com.propertyfilereader.PropertyFileReader.getproperty(String)" is null
+Tests run: 19, Failures: 13, Errors: 0, Skipped: 0, Time elapsed: 1,508.246 s <<< FAILURE! - in TestSuite
+shopItemsRingProductPurchaseScenario(com.mlshop.test.MLWalletWebScripts)  Time elapsed: 93.45 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(),'Rings')]"}
+  (Session info: chrome-headless-shell=121.0.6167.140)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HOTGQA008', ip: '10.0.8.67', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 121.0.6167.140, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\MELG20~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54458}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: eager, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7b409dcb9ea0ee5a70d3ee336aa18f86
+*** Element info: {Using=xpath, value=//*[contains(text(),'Rings')]}
+	at com.mlshop.test.MLWalletWebScripts.shopItemsRingProductPurchaseScenario(MLWalletWebScripts.java:58)
 
-mlShopProfileNameAndDropDownValidation(com.mlshop.test.MLWalletWebScripts)  Time elapsed: 0.004 s  <<< FAILURE!
-java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because the return value of "com.propertyfilereader.PropertyFileReader.getproperty(String)" is null
+shopItemsShippingDetailsPageUIValidation(com.mlshop.test.MLWalletWebScripts)  Time elapsed: 94.278 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(),'Rings')]"}
+  (Session info: chrome-headless-shell=121.0.6167.140)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HOTGQA008', ip: '10.0.8.67', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 121.0.6167.140, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\MELG20~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54620}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: eager, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e7746aea54ec2b82f8a3f0105f548813
+*** Element info: {Using=xpath, value=//*[contains(text(),'Rings')]}
+	at com.mlshop.test.MLWalletWebScripts.shopItemsShippingDetailsPageUIValidation(MLWalletWebScripts.java:62)
 
-beforeMethod(com.mlshop.test.MLWalletWebScripts)  Time elapsed: 0.187 s  <<< FAILURE!
-java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because the return value of "com.propertyfilereader.PropertyFileReader.getproperty(String)" is null
+shopItemsProfilePageNavigation(com.mlshop.test.MLWalletWebScripts)  Time elapsed: 94.073 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"(//*[@class='bg-gray-200 px-[10px] py-[5px] rounded-[3px] min-w-[50%] max-w-[75%] 2sm:text-[13px] 3sm:text-[13px] 3sm:max-w-[100%] 3sm:w-[200px] sm:w-[300px] 2sm:w-[200px]'])[1]"}
+  (Session info: chrome-headless-shell=121.0.6167.140)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HOTGQA008', ip: '10.0.8.67', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 121.0.6167.140, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\MELG20~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54788}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: eager, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e233c07a54baa8269a9c316bf74c6052
+*** Element info: {Using=xpath, value=(//*[@class='bg-gray-200 px-[10px] py-[5px] rounded-[3px] min-w-[50%] max-w-[75%] 2sm:text-[13px] 3sm:text-[13px] 3sm:max-w-[100%] 3sm:w-[200px] sm:w-[300px] 2sm:w-[200px]'])[1]}
+	at com.mlshop.test.MLWalletWebScripts.shopItemsProfilePageNavigation(MLWalletWebScripts.java:13)
 
-shopItemsRingProductPurchaseScenario(com.mlshop.test.MLWalletWebScripts)  Time elapsed: 0.001 s  <<< FAILURE!
-java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because the return value of "com.propertyfilereader.PropertyFileReader.getproperty(String)" is null
+shopItemsRingsProductTypePageNavigationValidation(com.mlshop.test.MLWalletWebScripts)  Time elapsed: 45.011 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(),'GREAT SUMMER SALE')]"}
+  (Session info: chrome-headless-shell=121.0.6167.140)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HOTGQA008', ip: '10.0.8.67', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 121.0.6167.140, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\MELG20~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55570}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: eager, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bfee783c0c6bac222de66b0ec9a2e995
+*** Element info: {Using=xpath, value=//*[contains(text(),'GREAT SUMMER SALE')]}
+	at com.mlshop.test.MLWalletWebScripts.shopItemsRingsProductTypePageNavigationValidation(MLWalletWebScripts.java:37)
 
-beforeMethod(com.mlshop.test.MLWalletWebScripts)  Time elapsed: 0.182 s  <<< FAILURE!
-java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because the return value of "com.propertyfilereader.PropertyFileReader.getproperty(String)" is null
+shopItemsNecklacesAndPendantsProductTypePageNavigationValidation(com.mlshop.test.MLWalletWebScripts)  Time elapsed: 45.035 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(),'GREAT SUMMER SALE')]"}
+  (Session info: chrome-headless-shell=121.0.6167.140)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HOTGQA008', ip: '10.0.8.67', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 121.0.6167.140, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\MELG20~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55653}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: eager, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ed90d918152758187847d4bd1983fa9a
+*** Element info: {Using=xpath, value=//*[contains(text(),'GREAT SUMMER SALE')]}
+	at com.mlshop.test.MLWalletWebScripts.shopItemsNecklacesAndPendantsProductTypePageNavigationValidation(MLWalletWebScripts.java:41)
 
-shopItemsShippingDetailsPageUIValidation(com.mlshop.test.MLWalletWebScripts)  Time elapsed: 0.001 s  <<< FAILURE!
-java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because the return value of "com.propertyfilereader.PropertyFileReader.getproperty(String)" is null
+shopItemsBraceletsAndBanglesProductTypePageNavigationValidation(com.mlshop.test.MLWalletWebScripts)  Time elapsed: 45.029 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(),'GREAT SUMMER SALE')]"}
+  (Session info: chrome-headless-shell=121.0.6167.140)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HOTGQA008', ip: '10.0.8.67', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 121.0.6167.140, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\MELG20~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55737}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: eager, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 412deb133884dbfa747ed8251f996fe8
+*** Element info: {Using=xpath, value=//*[contains(text(),'GREAT SUMMER SALE')]}
+	at com.mlshop.test.MLWalletWebScripts.shopItemsBraceletsAndBanglesProductTypePageNavigationValidation(MLWalletWebScripts.java:45)
 
-beforeMethod(com.mlshop.test.MLWalletWebScripts)  Time elapsed: 0.19 s  <<< FAILURE!
-java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because the return value of "com.propertyfilereader.PropertyFileReader.getproperty(String)" is null
+shopItemsEarringsProductTypePageNavigationValidation(com.mlshop.test.MLWalletWebScripts)  Time elapsed: 45.027 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(),'GREAT SUMMER SALE')]"}
+  (Session info: chrome-headless-shell=121.0.6167.140)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HOTGQA008', ip: '10.0.8.67', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 121.0.6167.140, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\MELG20~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55815}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: eager, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9e4457c72a4a00e274b2e0d07b68cda3
+*** Element info: {Using=xpath, value=//*[contains(text(),'GREAT SUMMER SALE')]}
+	at com.mlshop.test.MLWalletWebScripts.shopItemsEarringsProductTypePageNavigationValidation(MLWalletWebScripts.java:49)
 
-shopItemsProfilePageNavigation(com.mlshop.test.MLWalletWebScripts)  Time elapsed: 0.001 s  <<< FAILURE!
-java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because the return value of "com.propertyfilereader.PropertyFileReader.getproperty(String)" is null
+shopItemsWatchProductTypePageNavigationValidation(com.mlshop.test.MLWalletWebScripts)  Time elapsed: 45.061 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"(//*[@class=' flex flex-wrap justify-center gap-5 mt-5 pb-[50px]']/child::a/child::div)[1]"}
+  (Session info: chrome-headless-shell=121.0.6167.140)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HOTGQA008', ip: '10.0.8.67', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 121.0.6167.140, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\MELG20~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55911}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: eager, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 467055fc186c6df4e4afc1b493ec6c36
+*** Element info: {Using=xpath, value=(//*[@class=' flex flex-wrap justify-center gap-5 mt-5 pb-[50px]']/child::a/child::div)[1]}
+	at com.mlshop.test.MLWalletWebScripts.shopItemsWatchProductTypePageNavigationValidation(MLWalletWebScripts.java:53)
 
-beforeMethod(com.mlshop.test.MLWalletWebScripts)  Time elapsed: 0.181 s  <<< FAILURE!
-java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because the return value of "com.propertyfilereader.PropertyFileReader.getproperty(String)" is null
+shopItemsAddedItemInCartDeletedPopupValidationYesButton(com.mlshop.test.MLWalletWebScripts)  Time elapsed: 94.698 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(),'Rings')]"}
+  (Session info: chrome-headless-shell=121.0.6167.140)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HOTGQA008', ip: '10.0.8.67', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 121.0.6167.140, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\MELG20~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56006}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: eager, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9a6e2b8021a4b6665270b2cdf232eadb
+*** Element info: {Using=xpath, value=//*[contains(text(),'Rings')]}
+	at com.mlshop.test.MLWalletWebScripts.shopItemsAddedItemInCartDeletedPopupValidationYesButton(MLWalletWebScripts.java:68)
 
-shopItemsPurchaseHistoryPageNavigation(com.mlshop.test.MLWalletWebScripts)  Time elapsed: 0 s  <<< FAILURE!
-java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because the return value of "com.propertyfilereader.PropertyFileReader.getproperty(String)" is null
+shopItemsAddedItemInCartDeletedPopupValidationCancelButton(com.mlshop.test.MLWalletWebScripts)  Time elapsed: 93.485 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(),'Rings')]"}
+  (Session info: chrome-headless-shell=121.0.6167.140)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HOTGQA008', ip: '10.0.8.67', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 121.0.6167.140, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\MELG20~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56141}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: eager, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a172938f72b428a995a4fd82d6e03ff4
+*** Element info: {Using=xpath, value=//*[contains(text(),'Rings')]}
+	at com.mlshop.test.MLWalletWebScripts.shopItemsAddedItemInCartDeletedPopupValidationCancelButton(MLWalletWebScripts.java:74)
 
-beforeMethod(com.mlshop.test.MLWalletWebScripts)  Time elapsed: 0.179 s  <<< FAILURE!
-java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because the return value of "com.propertyfilereader.PropertyFileReader.getproperty(String)" is null
+shopItemsRedirectToPayMongoPageGrabPayValidation_SI_TC_225(com.mlshop.test.MLWalletWebScripts)  Time elapsed: 93.66 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(),'Rings')]"}
+  (Session info: chrome-headless-shell=121.0.6167.140)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HOTGQA008', ip: '10.0.8.67', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 121.0.6167.140, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\MELG20~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56289}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: eager, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c6d75ae73bde505073852d0ec3bfea01
+*** Element info: {Using=xpath, value=//*[contains(text(),'Rings')]}
+	at com.mlshop.test.MLWalletWebScripts.shopItemsRedirectToPayMongoPageGrabPayValidation_SI_TC_225(MLWalletWebScripts.java:80)
 
-shopItemsLogoutValidation(com.mlshop.test.MLWalletWebScripts)  Time elapsed: 0.001 s  <<< FAILURE!
-java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because the return value of "com.propertyfilereader.PropertyFileReader.getproperty(String)" is null
+shopItemsRedirectToPayMongoPageGcashValidation_SI_TC_226(com.mlshop.test.MLWalletWebScripts)  Time elapsed: 94.021 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(),'Rings')]"}
+  (Session info: chrome-headless-shell=121.0.6167.140)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HOTGQA008', ip: '10.0.8.67', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 121.0.6167.140, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\MELG20~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56452}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: eager, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 57959712cece7a79e3372e83943f8e41
+*** Element info: {Using=xpath, value=//*[contains(text(),'Rings')]}
+	at com.mlshop.test.MLWalletWebScripts.shopItemsRedirectToPayMongoPageGcashValidation_SI_TC_226(MLWalletWebScripts.java:86)
 
-beforeMethod(com.mlshop.test.MLWalletWebScripts)  Time elapsed: 0.175 s  <<< FAILURE!
-java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because the return value of "com.propertyfilereader.PropertyFileReader.getproperty(String)" is null
-
-shopItemsProfileSuccessfulLogin(com.mlshop.test.MLWalletWebScripts)  Time elapsed: 0.001 s  <<< FAILURE!
-java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because the return value of "com.propertyfilereader.PropertyFileReader.getproperty(String)" is null
-
-beforeMethod(com.mlshop.test.MLWalletWebScripts)  Time elapsed: 0.163 s  <<< FAILURE!
-java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because the return value of "com.propertyfilereader.PropertyFileReader.getproperty(String)" is null
-
-shopItemsAvailableJewelryItemsValidation(com.mlshop.test.MLWalletWebScripts)  Time elapsed: 0.001 s  <<< FAILURE!
-java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because the return value of "com.propertyfilereader.PropertyFileReader.getproperty(String)" is null
-
-beforeMethod(com.mlshop.test.MLWalletWebScripts)  Time elapsed: 0.19 s  <<< FAILURE!
-java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because the return value of "com.propertyfilereader.PropertyFileReader.getproperty(String)" is null
-
-shopItemsWatchItemsValidation(com.mlshop.test.MLWalletWebScripts)  Time elapsed: 0.001 s  <<< FAILURE!
-java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because the return value of "com.propertyfilereader.PropertyFileReader.getproperty(String)" is null
-
-beforeMethod(com.mlshop.test.MLWalletWebScripts)  Time elapsed: 0.173 s  <<< FAILURE!
-java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because the return value of "com.propertyfilereader.PropertyFileReader.getproperty(String)" is null
-
-shopItemsRingsProductTypePageNavigationValidation(com.mlshop.test.MLWalletWebScripts)  Time elapsed: 0.001 s  <<< FAILURE!
-java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because the return value of "com.propertyfilereader.PropertyFileReader.getproperty(String)" is null
-
-beforeMethod(com.mlshop.test.MLWalletWebScripts)  Time elapsed: 0.154 s  <<< FAILURE!
-java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because the return value of "com.propertyfilereader.PropertyFileReader.getproperty(String)" is null
-
-shopItemsNecklacesAndPendantsProductTypePageNavigationValidation(com.mlshop.test.MLWalletWebScripts)  Time elapsed: 0.002 s  <<< FAILURE!
-java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because the return value of "com.propertyfilereader.PropertyFileReader.getproperty(String)" is null
-
-beforeMethod(com.mlshop.test.MLWalletWebScripts)  Time elapsed: 0.166 s  <<< FAILURE!
-java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because the return value of "com.propertyfilereader.PropertyFileReader.getproperty(String)" is null
-
-shopItemsBraceletsAndBanglesProductTypePageNavigationValidation(com.mlshop.test.MLWalletWebScripts)  Time elapsed: 0.002 s  <<< FAILURE!
-java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because the return value of "com.propertyfilereader.PropertyFileReader.getproperty(String)" is null
-
-beforeMethod(com.mlshop.test.MLWalletWebScripts)  Time elapsed: 0.17 s  <<< FAILURE!
-java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because the return value of "com.propertyfilereader.PropertyFileReader.getproperty(String)" is null
-
-shopItemsEarringsProductTypePageNavigationValidation(com.mlshop.test.MLWalletWebScripts)  Time elapsed: 0.002 s  <<< FAILURE!
-java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because the return value of "com.propertyfilereader.PropertyFileReader.getproperty(String)" is null
-
-beforeMethod(com.mlshop.test.MLWalletWebScripts)  Time elapsed: 0.183 s  <<< FAILURE!
-java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because the return value of "com.propertyfilereader.PropertyFileReader.getproperty(String)" is null
-
-shopItemsWatchProductTypePageNavigationValidation(com.mlshop.test.MLWalletWebScripts)  Time elapsed: 0.001 s  <<< FAILURE!
-java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because the return value of "com.propertyfilereader.PropertyFileReader.getproperty(String)" is null
-
-beforeMethod(com.mlshop.test.MLWalletWebScripts)  Time elapsed: 0.206 s  <<< FAILURE!
-java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because the return value of "com.propertyfilereader.PropertyFileReader.getproperty(String)" is null
-
-shopItemsAddedItemInCartDeletedPopupValidationYesButton(com.mlshop.test.MLWalletWebScripts)  Time elapsed: 0 s  <<< FAILURE!
-java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because the return value of "com.propertyfilereader.PropertyFileReader.getproperty(String)" is null
-
-beforeMethod(com.mlshop.test.MLWalletWebScripts)  Time elapsed: 0.172 s  <<< FAILURE!
-java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because the return value of "com.propertyfilereader.PropertyFileReader.getproperty(String)" is null
-
-shopItemsAddedItemInCartDeletedPopupValidationCancelButton(com.mlshop.test.MLWalletWebScripts)  Time elapsed: 0.001 s  <<< FAILURE!
-java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because the return value of "com.propertyfilereader.PropertyFileReader.getproperty(String)" is null
-
-beforeMethod(com.mlshop.test.MLWalletWebScripts)  Time elapsed: 0.177 s  <<< FAILURE!
-java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because the return value of "com.propertyfilereader.PropertyFileReader.getproperty(String)" is null
-
-shopItemsRedirectToPayMongoPageGrabPayValidation_SI_TC_225(com.mlshop.test.MLWalletWebScripts)  Time elapsed: 0.001 s  <<< FAILURE!
-java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because the return value of "com.propertyfilereader.PropertyFileReader.getproperty(String)" is null
-
-beforeMethod(com.mlshop.test.MLWalletWebScripts)  Time elapsed: 0.273 s  <<< FAILURE!
-java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because the return value of "com.propertyfilereader.PropertyFileReader.getproperty(String)" is null
-
-shopItemsRedirectToPayMongoPageGcashValidation_SI_TC_226(com.mlshop.test.MLWalletWebScripts)  Time elapsed: 0.002 s  <<< FAILURE!
-java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because the return value of "com.propertyfilereader.PropertyFileReader.getproperty(String)" is null
-
-beforeMethod(com.mlshop.test.MLWalletWebScripts)  Time elapsed: 0.195 s  <<< FAILURE!
-java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because the return value of "com.propertyfilereader.PropertyFileReader.getproperty(String)" is null
-
-shopItemsRedirectToPayMongoPagePayMayaValidation_SI_TC_227(com.mlshop.test.MLWalletWebScripts)  Time elapsed: 0.001 s  <<< FAILURE!
-java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because the return value of "com.propertyfilereader.PropertyFileReader.getproperty(String)" is null
+shopItemsRedirectToPayMongoPagePayMayaValidation_SI_TC_227(com.mlshop.test.MLWalletWebScripts)  Time elapsed: 93.775 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(),'Rings')]"}
+  (Session info: chrome-headless-shell=121.0.6167.140)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HOTGQA008', ip: '10.0.8.67', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 121.0.6167.140, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\MELG20~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56596}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: eager, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fec2eb80f572097b503156c84da467ed
+*** Element info: {Using=xpath, value=//*[contains(text(),'Rings')]}
+	at com.mlshop.test.MLWalletWebScripts.shopItemsRedirectToPayMongoPagePayMayaValidation_SI_TC_227(MLWalletWebScripts.java:92)
 

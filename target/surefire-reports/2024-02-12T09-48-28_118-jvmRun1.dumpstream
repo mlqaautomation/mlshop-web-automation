@@ -1,0 +1,1058 @@
+# Created at 2024-02-12T09:51:29.490
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:398)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:390)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+
+# Created at 2024-02-12T09:51:30.383
+Unexpected IOException: 8,1,com.mlshop.test.MLWalletWebScripts,shopItemsRingProductPurchaseScenario(com.mlshop.test.MLWalletWebScripts),null,no such element: Unable to locate element: {"method":"xpath"\002C"selector":"//*[contains(text()\002C'Rings')]"}\000A  (Session info: chrome-headless-shell=121.0.6167.140)\000AFor documentation on this error\002C please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'HOTGQA008'\002C ip: '10.0.8.67'\002C os.name: 'Windows 11'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '17.0.7'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome-headless-shell\002C browserVersion: 121.0.6167.140\002C chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e...\002C userDataDir: C:\005CUsers\005CMELG20~1\005CAppData\005CL...}\002C fedcm:accounts: true\002C goog:chromeOptions: {debuggerAddress: localhost:56023}\002C javascriptEnabled: true\002C networkConnectionEnabled: false\002C pageLoadStrategy: eager\002C platform: WINDOWS\002C platformName: WINDOWS\002C proxy: Proxy()\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify\002C webauthn:extension:credBlob: true\002C webauthn:extension:largeBlob: true\002C webauthn:extension:minPinLength: true\002C webauthn:extension:prf: true\002C webauthn:virtualAuthenticators: true}\000ASession ID: 4ad13b5a5d0417729519d252008c495f\000A*** Element info: {Using=xpath\002C value=//*[contains(text()\002C'Rings')]},null,no such element: Unable to locate element: {"method":"xpath"\002C"selector":"//*[contains(text()\002C'Rings')]"}\000A  (Session info: chrome-headless-shell=121.0.6167.140)\000AFor documentation on this error\002C please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'HOTGQA008'\002C ip: '10.0.8.67'\002C os.name: 'Windows 11'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '17.0.7'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome-headless-shell\002C browserVersion: 121.0.6167.140\002C chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e...\002C userDataDir: C:\005CUsers\005CMELG20~1\005CAppData\005CL...}\002C fedcm:accounts: true\002C goog:chromeOptions: {debuggerAddress: localhost:56023}\002C javascriptEnabled: true\002C networkConnectionEnabled: false\002C pageLoadStrategy: eager\002C platform: WINDOWS\002C platformName: WINDOWS\002C proxy: Proxy()\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify\002C webauthn:extension:credBlob: true\002C webauthn:extension:largeBlob: true\002C webauthn:extension:minPinLength: true\002C webauthn:extension:prf: true\002C webauthn:virtualAuthenticators: true}\000ASession ID: 4ad13b5a5d0417729519d252008c495f\000A*** Element info: {Using=xpath\002C value=//*[contains(text()\002C'Rings')]},MLWalletWebScripts.shopItemsRingProductPurchaseScenario:58 \00BB NoSuchElement no ...,org.openqa.selenium.NoSuchElementException: \000Ano such element: Unable to locate element: {"method":"xpath"\002C"selector":"//*[contains(text()\002C'Rings')]"}\000A  (Session info: chrome-headless-shell=121.0.6167.140)\000AFor documentation on this error\002C please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'HOTGQA008'\002C ip: '10.0.8.67'\002C os.name: 'Windows 11'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '17.0.7'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome-headless-shell\002C browserVersion: 121.0.6167.140\002C chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e...\002C userDataDir: C:\005CUsers\005CMELG20~1\005CAppData\005CL...}\002C fedcm:accounts: true\002C goog:chromeOptions: {debuggerAddress: localhost:56023}\002C javascriptEnabled: true\002C networkConnectionEnabled: false\002C pageLoadStrategy: eager\002C platform: WINDOWS\002C platformName: WINDOWS\002C proxy: Proxy()\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify\002C webauthn:extension:credBlob: true\002C webauthn:extension:largeBlob: true\002C webauthn:extension:minPinLength: true\002C webauthn:extension:prf: true\002C webauthn:virtualAuthenticators: true}\000ASession ID: 4ad13b5a5d0417729519d252008c495f\000A*** Element info: {Using=xpath\002C value=//*[contains(text()\002C'Rings')]}\000A\0009at com.mlshop.test.MLWalletWebScripts.shopItemsRingProductPurchaseScenario(MLWalletWebScripts.java:58)\000A
+
+
+# Created at 2024-02-12T09:51:30.388
+Unexpected IOException with stream: 2024-02-12 09:51:30,387 [main] INFO  binary_data_logger - ::::::::::Relaunching The App::::::::::
+
+
+# Created at 2024-02-12T09:51:36.087
+Unexpected IOException with stream: 2024-02-12 09:51:36,086 [main] INFO  binary_data_logger - PlatForm :: Web
+
+
+# Created at 2024-02-12T09:51:36.093
+Unexpected IOException with stream: 2024-02-12 09:51:36,092 [main] INFO  binary_data_logger - Running Test :: MLSHOP
+
+
+# Created at 2024-02-12T09:51:36.099
+Unexpected IOException with stream: 2024-02-12 09:51:36,097 [main] INFO  binary_data_logger - Run Mode :: YES
+
+
+# Created at 2024-02-12T09:51:36.111
+Unexpected IOException with stream: Feb 12, 2024 9:51:36 AM io.github.bonigarcia.wdm.WebDriverManager resolveDriverVersion
+INFO: Using chromedriver 121.0.6167.85 (resolved driver for Chrome 121)
+
+
+# Created at 2024-02-12T09:51:36.122
+Unexpected IOException with stream: Feb 12, 2024 9:51:36 AM io.github.bonigarcia.wdm.WebDriverManager exportDriver
+INFO: Exporting webdriver.chrome.driver as C:\Users\MELG20229793\.cache\selenium\chromedriver\win64\121.0.6167.85\chromedriver.exe
+
+
+# Created at 2024-02-12T09:51:36.132
+Unexpected IOException with stream: Feb 12, 2024 9:51:36 AM io.github.bonigarcia.wdm.versions.VersionDetector getDriverVersionFromRepository
+WARNING: Exception reading null to get version of chromedriver (For input string: "116.0.5845.97")
+
+
+# Created at 2024-02-12T09:51:36.494
+Unexpected IOException with stream: Feb 12, 2024 9:51:36 AM io.github.bonigarcia.wdm.online.HttpClient execute
+SEVERE: Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_116.0.5845.97
+
+
+# Created at 2024-02-12T09:51:36.498
+Unexpected IOException with stream: Feb 12, 2024 9:51:36 AM io.github.bonigarcia.wdm.versions.VersionDetector getDriverVersionFromRepository
+WARNING: Exception reading https://chromedriver.storage.googleapis.com/LATEST_RELEASE_116.0.5845.97 to get latest version of chromedriver (Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_116.0.5845.97)
+
+
+# Created at 2024-02-12T09:51:36.662
+Unexpected IOException with stream: Feb 12, 2024 9:51:36 AM io.github.bonigarcia.wdm.WebDriverManager exportDriver
+INFO: Exporting webdriver.chrome.driver as C:\Users\MELG20229793\.cache\selenium\chromedriver\win64\121.0.6167.85\chromedriver.exe
+
+
+# Created at 2024-02-12T09:51:36.758
+Unexpected IOException with stream: S
+
+# Created at 2024-02-12T09:51:36.763
+Unexpected IOException with stream: t
+
+# Created at 2024-02-12T09:51:36.768
+Unexpected IOException with stream: a
+
+# Created at 2024-02-12T09:51:36.773
+Unexpected IOException with stream: r
+
+# Created at 2024-02-12T09:51:36.778
+Unexpected IOException with stream: t
+
+# Created at 2024-02-12T09:51:36.783
+Unexpected IOException with stream: i
+
+# Created at 2024-02-12T09:51:36.787
+Unexpected IOException with stream: n
+
+# Created at 2024-02-12T09:51:36.793
+Unexpected IOException with stream: g
+
+# Created at 2024-02-12T09:51:36.800
+Unexpected IOException with stream:  
+
+# Created at 2024-02-12T09:51:36.806
+Unexpected IOException with stream: C
+
+# Created at 2024-02-12T09:51:36.812
+Unexpected IOException with stream: h
+
+# Created at 2024-02-12T09:51:36.816
+Unexpected IOException with stream: r
+
+# Created at 2024-02-12T09:51:36.822
+Unexpected IOException with stream: o
+
+# Created at 2024-02-12T09:51:36.827
+Unexpected IOException with stream: m
+
+# Created at 2024-02-12T09:51:36.832
+Unexpected IOException with stream: e
+
+# Created at 2024-02-12T09:51:36.836
+Unexpected IOException with stream: D
+
+# Created at 2024-02-12T09:51:36.842
+Unexpected IOException with stream: r
+
+# Created at 2024-02-12T09:51:36.847
+Unexpected IOException with stream: i
+
+# Created at 2024-02-12T09:51:36.852
+Unexpected IOException with stream: v
+
+# Created at 2024-02-12T09:51:36.858
+Unexpected IOException with stream: e
+
+# Created at 2024-02-12T09:51:36.864
+Unexpected IOException with stream: r
+
+# Created at 2024-02-12T09:51:36.870
+Unexpected IOException with stream:  
+
+# Created at 2024-02-12T09:51:36.875
+Unexpected IOException with stream: 1
+
+# Created at 2024-02-12T09:51:36.879
+Unexpected IOException with stream: 2
+
+# Created at 2024-02-12T09:51:36.884
+Unexpected IOException with stream: 1
+
+# Created at 2024-02-12T09:51:36.889
+Unexpected IOException with stream: .
+
+# Created at 2024-02-12T09:51:36.894
+Unexpected IOException with stream: 0
+
+# Created at 2024-02-12T09:51:36.898
+Unexpected IOException with stream: .
+
+# Created at 2024-02-12T09:51:36.904
+Unexpected IOException with stream: 6
+
+# Created at 2024-02-12T09:51:36.909
+Unexpected IOException with stream: 1
+
+# Created at 2024-02-12T09:51:36.913
+Unexpected IOException with stream: 6
+
+# Created at 2024-02-12T09:51:36.917
+Unexpected IOException with stream: 7
+
+# Created at 2024-02-12T09:51:36.922
+Unexpected IOException with stream: .
+
+# Created at 2024-02-12T09:51:36.927
+Unexpected IOException with stream: 8
+
+# Created at 2024-02-12T09:51:36.931
+Unexpected IOException with stream: 5
+
+# Created at 2024-02-12T09:51:36.934
+Unexpected IOException with stream:  
+
+# Created at 2024-02-12T09:51:36.940
+Unexpected IOException with stream: (
+
+# Created at 2024-02-12T09:51:36.944
+Unexpected IOException with stream: 3
+
+# Created at 2024-02-12T09:51:36.948
+Unexpected IOException with stream: f
+
+# Created at 2024-02-12T09:51:36.953
+Unexpected IOException with stream: 9
+
+# Created at 2024-02-12T09:51:36.957
+Unexpected IOException with stream: 8
+
+# Created at 2024-02-12T09:51:36.962
+Unexpected IOException with stream: d
+
+# Created at 2024-02-12T09:51:36.966
+Unexpected IOException with stream: 6
+
+# Created at 2024-02-12T09:51:36.970
+Unexpected IOException with stream: 9
+
+# Created at 2024-02-12T09:51:36.974
+Unexpected IOException with stream: 0
+
+# Created at 2024-02-12T09:51:36.979
+Unexpected IOException with stream: a
+
+# Created at 2024-02-12T09:51:36.984
+Unexpected IOException with stream: d
+
+# Created at 2024-02-12T09:51:36.988
+Unexpected IOException with stream: 7
+
+# Created at 2024-02-12T09:51:36.992
+Unexpected IOException with stream: e
+
+# Created at 2024-02-12T09:51:36.997
+Unexpected IOException with stream: 5
+
+# Created at 2024-02-12T09:51:37.002
+Unexpected IOException with stream: 9
+
+# Created at 2024-02-12T09:51:37.007
+Unexpected IOException with stream: 2
+
+# Created at 2024-02-12T09:51:37.011
+Unexpected IOException with stream: 4
+
+# Created at 2024-02-12T09:51:37.015
+Unexpected IOException with stream: 2
+
+# Created at 2024-02-12T09:51:37.020
+Unexpected IOException with stream: e
+
+# Created at 2024-02-12T09:51:37.023
+Unexpected IOException with stream: f
+
+# Created at 2024-02-12T09:51:37.028
+Unexpected IOException with stream: 1
+
+# Created at 2024-02-12T09:51:37.032
+Unexpected IOException with stream: 1
+
+# Created at 2024-02-12T09:51:37.037
+Unexpected IOException with stream: 0
+
+# Created at 2024-02-12T09:51:37.042
+Unexpected IOException with stream: 1
+
+# Created at 2024-02-12T09:51:37.046
+Unexpected IOException with stream: 4
+
+# Created at 2024-02-12T09:51:37.051
+Unexpected IOException with stream: 4
+
+# Created at 2024-02-12T09:51:37.055
+Unexpected IOException with stream: c
+
+# Created at 2024-02-12T09:51:37.059
+Unexpected IOException with stream: 7
+
+# Created at 2024-02-12T09:51:37.064
+Unexpected IOException with stream: 5
+
+# Created at 2024-02-12T09:51:37.069
+Unexpected IOException with stream: 7
+
+# Created at 2024-02-12T09:51:37.073
+Unexpected IOException with stream: b
+
+# Created at 2024-02-12T09:51:37.078
+Unexpected IOException with stream: 2
+
+# Created at 2024-02-12T09:51:37.083
+Unexpected IOException with stream: a
+
+# Created at 2024-02-12T09:51:37.089
+Unexpected IOException with stream: c
+
+# Created at 2024-02-12T09:51:37.093
+Unexpected IOException with stream: 4
+
+# Created at 2024-02-12T09:51:37.097
+Unexpected IOException with stream: e
+
+# Created at 2024-02-12T09:51:37.103
+Unexpected IOException with stream: e
+
+# Created at 2024-02-12T09:51:37.107
+Unexpected IOException with stream: f
+
+# Created at 2024-02-12T09:51:37.112
+Unexpected IOException with stream: 1
+
+# Created at 2024-02-12T09:51:37.117
+Unexpected IOException with stream: a
+
+# Created at 2024-02-12T09:51:37.121
+Unexpected IOException with stream: 2
+
+# Created at 2024-02-12T09:51:37.125
+Unexpected IOException with stream: -
+
+# Created at 2024-02-12T09:51:37.130
+Unexpected IOException with stream: r
+
+# Created at 2024-02-12T09:51:37.136
+Unexpected IOException with stream: e
+
+# Created at 2024-02-12T09:51:37.142
+Unexpected IOException with stream: f
+
+# Created at 2024-02-12T09:51:37.146
+Unexpected IOException with stream: s
+
+# Created at 2024-02-12T09:51:37.151
+Unexpected IOException with stream: /
+
+# Created at 2024-02-12T09:51:37.157
+Unexpected IOException with stream: b
+
+# Created at 2024-02-12T09:51:37.161
+Unexpected IOException with stream: r
+
+# Created at 2024-02-12T09:51:37.166
+Unexpected IOException with stream: a
+
+# Created at 2024-02-12T09:51:37.172
+Unexpected IOException with stream: n
+
+# Created at 2024-02-12T09:51:37.179
+Unexpected IOException with stream: c
+
+# Created at 2024-02-12T09:51:37.185
+Unexpected IOException with stream: h
+
+# Created at 2024-02-12T09:51:37.192
+Unexpected IOException with stream: -
+
+# Created at 2024-02-12T09:51:37.198
+Unexpected IOException with stream: h
+
+# Created at 2024-02-12T09:51:37.205
+Unexpected IOException with stream: e
+
+# Created at 2024-02-12T09:51:37.211
+Unexpected IOException with stream: a
+
+# Created at 2024-02-12T09:51:37.219
+Unexpected IOException with stream: d
+
+# Created at 2024-02-12T09:51:37.226
+Unexpected IOException with stream: s
+
+# Created at 2024-02-12T09:51:37.232
+Unexpected IOException with stream: /
+
+# Created at 2024-02-12T09:51:37.239
+Unexpected IOException with stream: 6
+
+# Created at 2024-02-12T09:51:37.245
+Unexpected IOException with stream: 1
+
+# Created at 2024-02-12T09:51:37.252
+Unexpected IOException with stream: 6
+
+# Created at 2024-02-12T09:51:37.259
+Unexpected IOException with stream: 7
+
+# Created at 2024-02-12T09:51:37.267
+Unexpected IOException with stream: @
+
+# Created at 2024-02-12T09:51:37.274
+Unexpected IOException with stream: {
+
+# Created at 2024-02-12T09:51:37.281
+Unexpected IOException with stream: #
+
+# Created at 2024-02-12T09:51:37.288
+Unexpected IOException with stream: 1
+
+# Created at 2024-02-12T09:51:37.294
+Unexpected IOException with stream: 5
+
+# Created at 2024-02-12T09:51:37.300
+Unexpected IOException with stream: 3
+
+# Created at 2024-02-12T09:51:37.305
+Unexpected IOException with stream: 9
+
+# Created at 2024-02-12T09:51:37.312
+Unexpected IOException with stream: }
+
+# Created at 2024-02-12T09:51:37.317
+Unexpected IOException with stream: )
+
+# Created at 2024-02-12T09:51:37.323
+Unexpected IOException with stream:  
+
+# Created at 2024-02-12T09:51:37.328
+Unexpected IOException with stream: o
+
+# Created at 2024-02-12T09:51:37.333
+Unexpected IOException with stream: n
+
+# Created at 2024-02-12T09:51:37.338
+Unexpected IOException with stream:  
+
+# Created at 2024-02-12T09:51:37.343
+Unexpected IOException with stream: p
+
+# Created at 2024-02-12T09:51:37.349
+Unexpected IOException with stream: o
+
+# Created at 2024-02-12T09:51:37.355
+Unexpected IOException with stream: r
+
+# Created at 2024-02-12T09:51:37.361
+Unexpected IOException with stream: t
+
+# Created at 2024-02-12T09:51:37.366
+Unexpected IOException with stream:  
+
+# Created at 2024-02-12T09:51:37.372
+Unexpected IOException with stream: 4
+
+# Created at 2024-02-12T09:51:37.377
+Unexpected IOException with stream: 2
+
+# Created at 2024-02-12T09:51:37.382
+Unexpected IOException with stream: 0
+
+# Created at 2024-02-12T09:51:37.388
+Unexpected IOException with stream: 1
+
+# Created at 2024-02-12T09:51:37.393
+Unexpected IOException with stream: 8
+
+# Created at 2024-02-12T09:51:37.399
+Unexpected IOException with stream: 
+
+# Created at 2024-02-12T09:51:37.404
+Unexpected IOException with stream: 
+
+
+# Created at 2024-02-12T09:51:37.408
+Unexpected IOException with stream: O
+
+# Created at 2024-02-12T09:51:37.413
+Unexpected IOException with stream: n
+
+# Created at 2024-02-12T09:51:37.418
+Unexpected IOException with stream: l
+
+# Created at 2024-02-12T09:51:37.423
+Unexpected IOException with stream: y
+
+# Created at 2024-02-12T09:51:37.429
+Unexpected IOException with stream:  
+
+# Created at 2024-02-12T09:51:37.434
+Unexpected IOException with stream: l
+
+# Created at 2024-02-12T09:51:37.438
+Unexpected IOException with stream: o
+
+# Created at 2024-02-12T09:51:37.443
+Unexpected IOException with stream: c
+
+# Created at 2024-02-12T09:51:37.448
+Unexpected IOException with stream: a
+
+# Created at 2024-02-12T09:51:37.452
+Unexpected IOException with stream: l
+
+# Created at 2024-02-12T09:51:37.456
+Unexpected IOException with stream:  
+
+# Created at 2024-02-12T09:51:37.461
+Unexpected IOException with stream: c
+
+# Created at 2024-02-12T09:51:37.466
+Unexpected IOException with stream: o
+
+# Created at 2024-02-12T09:51:37.470
+Unexpected IOException with stream: n
+
+# Created at 2024-02-12T09:51:37.475
+Unexpected IOException with stream: n
+
+# Created at 2024-02-12T09:51:37.479
+Unexpected IOException with stream: e
+
+# Created at 2024-02-12T09:51:37.483
+Unexpected IOException with stream: c
+
+# Created at 2024-02-12T09:51:37.487
+Unexpected IOException with stream: t
+
+# Created at 2024-02-12T09:51:37.492
+Unexpected IOException with stream: i
+
+# Created at 2024-02-12T09:51:37.498
+Unexpected IOException with stream: o
+
+# Created at 2024-02-12T09:51:37.503
+Unexpected IOException with stream: n
+
+# Created at 2024-02-12T09:51:37.507
+Unexpected IOException with stream: s
+
+# Created at 2024-02-12T09:51:37.512
+Unexpected IOException with stream:  
+
+# Created at 2024-02-12T09:51:37.516
+Unexpected IOException with stream: a
+
+# Created at 2024-02-12T09:51:37.521
+Unexpected IOException with stream: r
+
+# Created at 2024-02-12T09:51:37.526
+Unexpected IOException with stream: e
+
+# Created at 2024-02-12T09:51:37.529
+Unexpected IOException with stream:  
+
+# Created at 2024-02-12T09:51:37.534
+Unexpected IOException with stream: a
+
+# Created at 2024-02-12T09:51:37.538
+Unexpected IOException with stream: l
+
+# Created at 2024-02-12T09:51:37.543
+Unexpected IOException with stream: l
+
+# Created at 2024-02-12T09:51:37.547
+Unexpected IOException with stream: o
+
+# Created at 2024-02-12T09:51:37.553
+Unexpected IOException with stream: w
+
+# Created at 2024-02-12T09:51:37.556
+Unexpected IOException with stream: e
+
+# Created at 2024-02-12T09:51:37.561
+Unexpected IOException with stream: d
+
+# Created at 2024-02-12T09:51:37.566
+Unexpected IOException with stream: .
+
+# Created at 2024-02-12T09:51:37.571
+Unexpected IOException with stream: 
+
+# Created at 2024-02-12T09:51:37.576
+Unexpected IOException with stream: 
+
+
+# Created at 2024-02-12T09:51:37.581
+Unexpected IOException with stream: P
+
+# Created at 2024-02-12T09:51:37.585
+Unexpected IOException with stream: l
+
+# Created at 2024-02-12T09:51:37.590
+Unexpected IOException with stream: e
+
+# Created at 2024-02-12T09:51:37.595
+Unexpected IOException with stream: a
+
+# Created at 2024-02-12T09:51:37.600
+Unexpected IOException with stream: s
+
+# Created at 2024-02-12T09:51:37.605
+Unexpected IOException with stream: e
+
+# Created at 2024-02-12T09:51:37.609
+Unexpected IOException with stream:  
+
+# Created at 2024-02-12T09:51:37.613
+Unexpected IOException with stream: s
+
+# Created at 2024-02-12T09:51:37.618
+Unexpected IOException with stream: e
+
+# Created at 2024-02-12T09:51:37.623
+Unexpected IOException with stream: e
+
+# Created at 2024-02-12T09:51:37.627
+Unexpected IOException with stream:  
+
+# Created at 2024-02-12T09:51:37.632
+Unexpected IOException with stream: h
+
+# Created at 2024-02-12T09:51:37.637
+Unexpected IOException with stream: Feb 12, 2024 9:51:37 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+
+
+# Created at 2024-02-12T09:51:37.641
+Unexpected IOException with stream: t
+
+# Created at 2024-02-12T09:51:37.646
+Unexpected IOException with stream: t
+
+# Created at 2024-02-12T09:51:37.652
+Unexpected IOException with stream: p
+
+# Created at 2024-02-12T09:51:37.656
+Unexpected IOException with stream: s
+
+# Created at 2024-02-12T09:51:37.661
+Unexpected IOException with stream: :
+
+# Created at 2024-02-12T09:51:37.667
+Unexpected IOException with stream: /
+
+# Created at 2024-02-12T09:51:37.671
+Unexpected IOException with stream: /
+
+# Created at 2024-02-12T09:51:37.676
+Unexpected IOException with stream: c
+
+# Created at 2024-02-12T09:51:37.681
+Unexpected IOException with stream: h
+
+# Created at 2024-02-12T09:51:37.687
+Unexpected IOException with stream: r
+
+# Created at 2024-02-12T09:51:37.692
+Unexpected IOException with stream: o
+
+# Created at 2024-02-12T09:51:37.697
+Unexpected IOException with stream: m
+
+# Created at 2024-02-12T09:51:37.702
+Unexpected IOException with stream: e
+
+# Created at 2024-02-12T09:51:37.707
+Unexpected IOException with stream: d
+
+# Created at 2024-02-12T09:51:37.712
+Unexpected IOException with stream: r
+
+# Created at 2024-02-12T09:51:37.717
+Unexpected IOException with stream: i
+
+# Created at 2024-02-12T09:51:37.721
+Unexpected IOException with stream: v
+
+# Created at 2024-02-12T09:51:37.725
+Unexpected IOException with stream: e
+
+# Created at 2024-02-12T09:51:37.731
+Unexpected IOException with stream: r
+
+# Created at 2024-02-12T09:51:37.736
+Unexpected IOException with stream: .
+
+# Created at 2024-02-12T09:51:37.742
+Unexpected IOException with stream: c
+
+# Created at 2024-02-12T09:51:37.746
+Unexpected IOException with stream: h
+
+# Created at 2024-02-12T09:51:37.751
+Unexpected IOException with stream: r
+
+# Created at 2024-02-12T09:51:37.755
+Unexpected IOException with stream: o
+
+# Created at 2024-02-12T09:51:37.761
+Unexpected IOException with stream: m
+
+# Created at 2024-02-12T09:51:37.765
+Unexpected IOException with stream: i
+
+# Created at 2024-02-12T09:51:37.769
+Unexpected IOException with stream: u
+
+# Created at 2024-02-12T09:51:37.773
+Unexpected IOException with stream: m
+
+# Created at 2024-02-12T09:51:37.779
+Unexpected IOException with stream: .
+
+# Created at 2024-02-12T09:51:37.784
+Unexpected IOException with stream: o
+
+# Created at 2024-02-12T09:51:37.789
+Unexpected IOException with stream: r
+
+# Created at 2024-02-12T09:51:37.794
+Unexpected IOException with stream: g
+
+# Created at 2024-02-12T09:51:37.801
+Unexpected IOException with stream: /
+
+# Created at 2024-02-12T09:51:37.806
+Unexpected IOException with stream: s
+
+# Created at 2024-02-12T09:51:37.810
+Unexpected IOException with stream: e
+
+# Created at 2024-02-12T09:51:37.815
+Unexpected IOException with stream: c
+
+# Created at 2024-02-12T09:51:37.820
+Unexpected IOException with stream: u
+
+# Created at 2024-02-12T09:51:37.825
+Unexpected IOException with stream: r
+
+# Created at 2024-02-12T09:51:37.829
+Unexpected IOException with stream: i
+
+# Created at 2024-02-12T09:51:37.834
+Unexpected IOException with stream: t
+
+# Created at 2024-02-12T09:51:37.839
+Unexpected IOException with stream: y
+
+# Created at 2024-02-12T09:51:37.844
+Unexpected IOException with stream: -
+
+# Created at 2024-02-12T09:51:37.850
+Unexpected IOException with stream: c
+
+# Created at 2024-02-12T09:51:37.855
+Unexpected IOException with stream: o
+
+# Created at 2024-02-12T09:51:37.859
+Unexpected IOException with stream: n
+
+# Created at 2024-02-12T09:51:37.865
+Unexpected IOException with stream: s
+
+# Created at 2024-02-12T09:51:37.871
+Unexpected IOException with stream: i
+
+# Created at 2024-02-12T09:51:37.876
+Unexpected IOException with stream: d
+
+# Created at 2024-02-12T09:51:37.880
+Unexpected IOException with stream: e
+
+# Created at 2024-02-12T09:51:37.884
+Unexpected IOException with stream: r
+
+# Created at 2024-02-12T09:51:37.889
+Unexpected IOException with stream: a
+
+# Created at 2024-02-12T09:51:37.895
+Unexpected IOException with stream: t
+
+# Created at 2024-02-12T09:51:37.899
+Unexpected IOException with stream: i
+
+# Created at 2024-02-12T09:51:37.904
+Unexpected IOException with stream: o
+
+# Created at 2024-02-12T09:51:37.910
+Unexpected IOException with stream: n
+
+# Created at 2024-02-12T09:51:37.914
+Unexpected IOException with stream: s
+
+# Created at 2024-02-12T09:51:37.920
+Unexpected IOException with stream:  
+
+# Created at 2024-02-12T09:51:37.925
+Unexpected IOException with stream: f
+
+# Created at 2024-02-12T09:51:37.929
+Unexpected IOException with stream: o
+
+# Created at 2024-02-12T09:51:37.933
+Unexpected IOException with stream: r
+
+# Created at 2024-02-12T09:51:37.938
+Unexpected IOException with stream:  
+
+# Created at 2024-02-12T09:51:37.943
+Unexpected IOException with stream: s
+
+# Created at 2024-02-12T09:51:37.947
+Unexpected IOException with stream: u
+
+# Created at 2024-02-12T09:51:37.951
+Unexpected IOException with stream: g
+
+# Created at 2024-02-12T09:51:37.956
+Unexpected IOException with stream: g
+
+# Created at 2024-02-12T09:51:37.962
+Unexpected IOException with stream: e
+
+# Created at 2024-02-12T09:51:37.966
+Unexpected IOException with stream: s
+
+# Created at 2024-02-12T09:51:37.971
+Unexpected IOException with stream: t
+
+# Created at 2024-02-12T09:51:37.975
+Unexpected IOException with stream: i
+
+# Created at 2024-02-12T09:51:37.981
+Unexpected IOException with stream: o
+
+# Created at 2024-02-12T09:51:37.986
+Unexpected IOException with stream: n
+
+# Created at 2024-02-12T09:51:37.990
+Unexpected IOException with stream: s
+
+# Created at 2024-02-12T09:51:37.995
+Unexpected IOException with stream:  
+
+# Created at 2024-02-12T09:51:38.001
+Unexpected IOException with stream: o
+
+# Created at 2024-02-12T09:51:38.007
+Unexpected IOException with stream: n
+
+# Created at 2024-02-12T09:51:38.014
+Unexpected IOException with stream:  
+
+# Created at 2024-02-12T09:51:38.020
+Unexpected IOException with stream: k
+
+# Created at 2024-02-12T09:51:38.025
+Unexpected IOException with stream: e
+
+# Created at 2024-02-12T09:51:38.030
+Unexpected IOException with stream: e
+
+# Created at 2024-02-12T09:51:38.035
+Unexpected IOException with stream: p
+
+# Created at 2024-02-12T09:51:38.039
+Unexpected IOException with stream: i
+
+# Created at 2024-02-12T09:51:38.043
+Unexpected IOException with stream: n
+
+# Created at 2024-02-12T09:51:38.048
+Unexpected IOException with stream: g
+
+# Created at 2024-02-12T09:51:38.053
+Unexpected IOException with stream:  
+
+# Created at 2024-02-12T09:51:38.057
+Unexpected IOException with stream: C
+
+# Created at 2024-02-12T09:51:38.061
+Unexpected IOException with stream: h
+
+# Created at 2024-02-12T09:51:38.065
+Unexpected IOException with stream: r
+
+# Created at 2024-02-12T09:51:38.071
+Unexpected IOException with stream: o
+
+# Created at 2024-02-12T09:51:38.075
+Unexpected IOException with stream: m
+
+# Created at 2024-02-12T09:51:38.081
+Unexpected IOException with stream: e
+
+# Created at 2024-02-12T09:51:38.085
+Unexpected IOException with stream: D
+
+# Created at 2024-02-12T09:51:38.089
+Unexpected IOException with stream: r
+
+# Created at 2024-02-12T09:51:38.095
+Unexpected IOException with stream: i
+
+# Created at 2024-02-12T09:51:38.101
+Unexpected IOException with stream: v
+
+# Created at 2024-02-12T09:51:38.106
+Unexpected IOException with stream: e
+
+# Created at 2024-02-12T09:51:38.112
+Unexpected IOException with stream: r
+
+# Created at 2024-02-12T09:51:38.117
+Unexpected IOException with stream:  
+
+# Created at 2024-02-12T09:51:38.122
+Unexpected IOException with stream: s
+
+# Created at 2024-02-12T09:51:38.126
+Unexpected IOException with stream: a
+
+# Created at 2024-02-12T09:51:38.130
+Unexpected IOException with stream: f
+
+# Created at 2024-02-12T09:51:38.135
+Unexpected IOException with stream: e
+
+# Created at 2024-02-12T09:51:38.139
+Unexpected IOException with stream: .
+
+# Created at 2024-02-12T09:51:38.144
+Unexpected IOException with stream: 
+
+# Created at 2024-02-12T09:51:38.149
+Unexpected IOException with stream: 
+
+
+# Created at 2024-02-12T09:51:38.153
+Unexpected IOException with stream: C
+
+# Created at 2024-02-12T09:51:38.158
+Unexpected IOException with stream: h
+
+# Created at 2024-02-12T09:51:38.165
+Unexpected IOException with stream: r
+
+# Created at 2024-02-12T09:51:38.171
+Unexpected IOException with stream: o
+
+# Created at 2024-02-12T09:51:38.176
+Unexpected IOException with stream: m
+
+# Created at 2024-02-12T09:51:38.181
+Unexpected IOException with stream: e
+
+# Created at 2024-02-12T09:51:38.186
+Unexpected IOException with stream: D
+
+# Created at 2024-02-12T09:51:38.191
+Unexpected IOException with stream: r
+
+# Created at 2024-02-12T09:51:38.196
+Unexpected IOException with stream: i
+
+# Created at 2024-02-12T09:51:38.202
+Unexpected IOException with stream: v
+
+# Created at 2024-02-12T09:51:38.207
+Unexpected IOException with stream: e
+
+# Created at 2024-02-12T09:51:38.212
+Unexpected IOException with stream: r
+
+# Created at 2024-02-12T09:51:38.216
+Unexpected IOException with stream:  
+
+# Created at 2024-02-12T09:51:38.221
+Unexpected IOException with stream: w
+
+# Created at 2024-02-12T09:51:38.226
+Unexpected IOException with stream: a
+
+# Created at 2024-02-12T09:51:38.231
+Unexpected IOException with stream: s
+
+# Created at 2024-02-12T09:51:38.237
+Unexpected IOException with stream:  
+
+# Created at 2024-02-12T09:51:38.241
+Unexpected IOException with stream: s
+
+# Created at 2024-02-12T09:51:38.246
+Unexpected IOException with stream: t
+
+# Created at 2024-02-12T09:51:38.251
+Unexpected IOException with stream: a
+
+# Created at 2024-02-12T09:51:38.256
+Unexpected IOException with stream: r
+
+# Created at 2024-02-12T09:51:38.262
+Unexpected IOException with stream: t
+
+# Created at 2024-02-12T09:51:38.268
+Unexpected IOException with stream: e
+
+# Created at 2024-02-12T09:51:38.273
+Unexpected IOException with stream: d
+
+# Created at 2024-02-12T09:51:38.277
+Unexpected IOException with stream:  
+
+# Created at 2024-02-12T09:51:38.283
+Unexpected IOException with stream: s
+
+# Created at 2024-02-12T09:51:38.288
+Unexpected IOException with stream: u
+
+# Created at 2024-02-12T09:51:38.293
+Unexpected IOException with stream: c
+
+# Created at 2024-02-12T09:51:38.299
+Unexpected IOException with stream: c
+
+# Created at 2024-02-12T09:51:38.304
+Unexpected IOException with stream: e
+
+# Created at 2024-02-12T09:51:38.310
+Unexpected IOException with stream: s
+
+# Created at 2024-02-12T09:51:38.315
+Unexpected IOException with stream: s
+
+# Created at 2024-02-12T09:51:38.320
+Unexpected IOException with stream: f
+
+# Created at 2024-02-12T09:51:38.325
+Unexpected IOException with stream: u
+
+# Created at 2024-02-12T09:51:38.333
+Unexpected IOException with stream: l
+
+# Created at 2024-02-12T09:51:38.337
+Unexpected IOException with stream: l
+
+# Created at 2024-02-12T09:51:38.343
+Unexpected IOException with stream: y
+
+# Created at 2024-02-12T09:51:38.348
+Unexpected IOException: 5,1,com.mlshop.test.MLWalletWebScripts,shopItemsShippingDetailsPageUIValidation(com.mlshop.test.MLWalletWebScripts),com.mlshop.test.MLWalletWebScripts,null,null
+
+
+# Created at 2024-02-12T09:51:38.353
+Unexpected IOException with stream: .
+
+# Created at 2024-02-12T09:51:38.360
+Unexpected IOException with stream: 
+
+# Created at 2024-02-12T09:51:38.365
+Unexpected IOException with stream: 
+
+
+# Created at 2024-02-12T09:51:38.370
+Unexpected IOException with stream: 2024-02-12 09:51:38,353 [main] INFO  binary_data_logger - :::::::::Test shopItemsShippingDetailsPageUIValidation Started::::::::
+
+
+# Created at 2024-02-12T09:51:53.427
+Unexpected IOException with stream: 2024-02-12 09:51:53,425 [main] INFO  binary_data_logger - Profile Icon is displayed
+
+
+# Created at 2024-02-12T09:51:53.627
+Unexpected IOException with stream: 2024-02-12 09:51:53,625 [main] INFO  binary_data_logger - Clicked on Profile Icon
+
+
+# Created at 2024-02-12T09:51:53.679
+Unexpected IOException with stream: 2024-02-12 09:51:53,677 [main] INFO  binary_data_logger - Clicked on Mobile Number input field
+
+
+# Created at 2024-02-12T09:51:58.749
+Unexpected IOException with stream: 2024-02-12 09:51:58,745 [main] INFO  binary_data_logger - Typed the value 09999999912 into Mobile Number Input field
+
+
+# Created at 2024-02-12T09:52:03.812
+Unexpected IOException with stream: 2024-02-12 09:52:03,811 [main] INFO  binary_data_logger - Clicked on Get OTP Button
+
+
+# Created at 2024-02-12T09:52:06.431
+Unexpected IOException with stream: 2024-02-12 09:52:06,429 [main] INFO  binary_data_logger - One Time Pin popup is displayed
+
+
+# Created at 2024-02-12T09:52:06.455
+Unexpected IOException with stream: 2024-02-12 09:52:06,454 [main] INFO  binary_data_logger - Typed the value 111111 into ONe Time Pin Input field
+
+

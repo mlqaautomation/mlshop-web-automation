@@ -2841,12 +2841,15 @@ public class Utilities extends ExtentReporter {
         for (String windowHandle : windowHandles) {
             if (!windowHandle.equals(currentWindowHandle)) {
                 driver.switchTo().window(windowHandle);
+                logger.info("Switch to window " + windowHandle);
                 driver.close();
+                logger.info("Driver closed");
             }
         }     
         // Switch back to the current window and close it
-        driver.switchTo().window(currentWindowHandle);
+        driver.switchTo().window(currentWindowHandle);  
         driver.quit();
+        logger.info("Driver quit");
     }
 }
 

@@ -27,6 +27,7 @@ import org.testng.SkipException;
 import com.deviceDetails.DeviceDetails;
 import com.google.common.collect.ImmutableMap;
 import com.propertyfilereader.PropertyFileReader;
+import com.utility.LoggingUtils;
 import com.utility.Utilities;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
@@ -39,6 +40,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
+
 import static com.utility.Utilities.getWebDriver;
 
 public class DriverInstance extends Drivertools {
@@ -46,9 +48,9 @@ public class DriverInstance extends Drivertools {
 	public static String osName=System.getProperty("os.name").toLowerCase();
 	public String devicesName;
 	public static ThreadLocal<WebDriver> tlWebDriver = new ThreadLocal<>();
+	protected static LoggingUtils logger = new LoggingUtils();
 	public DriverInstance() {
 	}
-
 
 	@SuppressWarnings("static-access")
 	public DriverInstance(String Application, String deviceName, String portno) {
@@ -101,6 +103,7 @@ public class DriverInstance extends Drivertools {
 			throw new SkipException("Device not connected OR Appium Studio service is down...");
 		}
 		Utilities.initDriver();
+		logger.info("Device Name: "+deviceName);
 	}
 
 	/**
@@ -368,6 +371,7 @@ public class DriverInstance extends Drivertools {
 				System.out.println("Invalid browser name: " + browserName);
 				break;
 		}		
+		logger.info("Browser Name: "+browserName);
 		tlWebDriver.get().manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		tlWebDriver.get().get(getURL());
 		tlWebDriver.get().manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
