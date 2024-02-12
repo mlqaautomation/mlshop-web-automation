@@ -1,3 +1,4 @@
+D:\Projects\mlshop-web-automation\src\main\java\com\MLShopPageObjects\Login_page.java
 D:\Projects\mlshop-web-automation\src\main\java\com\metadata\ResponseInstance.java
 D:\Projects\mlshop-web-automation\src\main\java\com\deviceDetails\DeviceDetails.java
 D:\Projects\mlshop-web-automation\src\main\java\com\business\mlshop\MLWalletWeb.java
@@ -12,6 +13,7 @@ D:\Projects\mlshop-web-automation\src\main\java\com\utility\RandomStringGenerato
 D:\Projects\mlshop-web-automation\src\main\java\com\driverInstance\AppiumServer.java
 D:\Projects\mlshop-web-automation\src\main\java\com\metadata\APIResult.java
 D:\Projects\mlshop-web-automation\src\main\java\com\utility\Json.java
+D:\Projects\mlshop-web-automation\src\main\java\com\MLShopPageObjects\Home_page.java
 D:\Projects\mlshop-web-automation\src\main\java\com\MLShopPageObjects\MLShoopShippingDetails.java
 D:\Projects\mlshop-web-automation\src\main\java\com\driverInstance\SeleniumGrid.java
 D:\Projects\mlshop-web-automation\src\main\java\com\propertyfilereader\PropertyFileReader.java

@@ -3,6 +3,8 @@ package com.mlshop.test;
 
 import com.aventstack.extentreports.ExtentTest;
 import com.business.mlshop.*;
+import com.business.mlshop.Login;
+
 import org.testng.annotations.*;
 import com.driverInstance.AppiumServer;
 import com.propertyfilereader.PropertyFileReader;
@@ -16,7 +18,7 @@ public class BaseTest {
     protected com.business.mlshop.BaseClass baseClass;
 
     protected MLWalletWeb mlWalletWeb;
-
+    protected Login loginTC;
     public static ExtentTest testLogger;
     AppiumServer server = new AppiumServer();
     protected static LoggingUtils logger = new LoggingUtils();
@@ -42,6 +44,7 @@ public class BaseTest {
     public void beforeMethod(String deviceName, String portno) throws Exception {
         baseClass = new BaseClass("mlwallet", deviceName, portno);
         mlWalletWeb = new MLWalletWeb();
+        loginTC = new Login();
         propertyFileReader();
         softAssert = new SoftAssert();
     }

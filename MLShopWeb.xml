@@ -13,7 +13,9 @@
         <parameter name="portno" value="4723"></parameter>
         <parameter name="deviceName" value="n/a"></parameter>
         <classes>
-            <class name="com.mlshop.test.MLWalletWebScripts">
+            <!-- <class name="com.mlshop.test.MLWalletWebScripts">
+            </class> -->
+            <class name="com.mlshop.test.Login">
             </class>
         </classes>
     </test>

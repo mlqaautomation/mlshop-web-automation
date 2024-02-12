@@ -8,27 +8,15 @@
   </listeners>
   <test thread-count="1" name="MLSHOP(failed)" verbose="0">
     <parameter name="portno" value="4723"/>
-    <parameter name="deviceName" value="00008101-0013245C2600801E"/>
+    <parameter name="deviceName" value="n/a"/>
     <classes>
-      <class name="com.mlshop.test.MLWalletWebScripts">
+      <class name="com.mlshop.test.Login">
         <methods>
-          <include name="shopItemsProfilePageNavigation"/>
-          <include name="shopItemsAddedItemInCartDeletedPopupValidationCancelButton"/>
-          <include name="shopItemsAddedItemInCartDeletedPopupValidationYesButton"/>
-          <include name="shopItemsRedirectToPayMongoPagePayMayaValidation_SI_TC_227"/>
-          <include name="shopItemsBraceletsAndBanglesProductTypePageNavigationValidation"/>
-          <include name="afterTest"/>
-          <include name="shopItemsRedirectToPayMongoPageGrabPayValidation_SI_TC_225"/>
-          <include name="shopItemsWatchProductTypePageNavigationValidation"/>
-          <include name="shopItemsNecklacesAndPendantsProductTypePageNavigationValidation"/>
+          <include name="MLS_TC_02_ValidateErrorPrompt_MobileNumber_Field"/>
           <include name="beforeMethod"/>
-          <include name="shopItemsEarringsProductTypePageNavigationValidation"/>
-          <include name="shopItemsRingsProductTypePageNavigationValidation"/>
-          <include name="shopItemsRedirectToPayMongoPageGcashValidation_SI_TC_226"/>
-          <include name="shopItemsRingProductPurchaseScenario"/>
-          <include name="shopItemsShippingDetailsPageUIValidation"/>
+          <include name="afterTest"/>
         </methods>
-      </class> <!-- com.mlshop.test.MLWalletWebScripts -->
+      </class> <!-- com.mlshop.test.Login -->
     </classes>
   </test> <!-- MLSHOP(failed) -->
 </suite> <!-- Failed suite [Web] -->
