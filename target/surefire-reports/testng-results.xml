@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-12T20:34:47 CST" name="Web" finished-at="2024-02-12T20:35:07 CST" duration-ms="20236">
+  <suite started-at="2024-02-13T15:05:02 CST" name="Web" finished-at="2024-02-13T15:05:25 CST" duration-ms="23794">
     <groups>
     </groups>
-    <test started-at="2024-02-12T20:34:47 CST" name="MLSHOP" finished-at="2024-02-12T20:35:07 CST" duration-ms="20236">
+    <test started-at="2024-02-13T15:05:02 CST" name="MLSHOP" finished-at="2024-02-13T15:05:25 CST" duration-ms="23794">
       <class name="com.mlshop.test.Login">
-        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.Login@3549bca9]" started-at="2024-02-12T20:34:47 CST" name="beforeMethod" finished-at="2024-02-12T20:34:53 CST" duration-ms="6128" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.Login@3549bca9]" started-at="2024-02-13T15:05:02 CST" name="beforeMethod" finished-at="2024-02-13T15:05:05 CST" duration-ms="3636" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,11 +23,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="MLS_TC_02_ValidateErrorPrompt_MobileNumber_Field()[pri:2, instance:com.mlshop.test.Login@3549bca9]" started-at="2024-02-12T20:34:53 CST" name="MLS_TC_02_ValidateErrorPrompt_MobileNumber_Field" finished-at="2024-02-12T20:35:02 CST" duration-ms="8475" status="PASS">
+        <test-method signature="MLS_TC_06_ValidateLogin_Function()[pri:4, instance:com.mlshop.test.Login@3549bca9]" started-at="2024-02-13T15:05:05 CST" name="MLS_TC_06_ValidateLogin_Function" finished-at="2024-02-13T15:05:20 CST" duration-ms="14385" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- MLS_TC_02_ValidateErrorPrompt_MobileNumber_Field -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.Login@3549bca9]" started-at="2024-02-12T20:35:02 CST" name="afterTest" finished-at="2024-02-12T20:35:07 CST" duration-ms="5378" status="PASS">
+        </test-method> <!-- MLS_TC_06_ValidateLogin_Function -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.Login@3549bca9]" started-at="2024-02-13T15:05:20 CST" name="afterTest" finished-at="2024-02-13T15:05:25 CST" duration-ms="5397" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->

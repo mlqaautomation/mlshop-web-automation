@@ -2848,8 +2848,7 @@ public class Utilities extends ExtentReporter {
         }     
         // Switch back to the current window and close it
         driver.switchTo().window(currentWindowHandle);  
-        driver.quit();
-        logger.info("Driver quit");
+        driver.quit();      
     }
 }
 
