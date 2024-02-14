@@ -89,9 +89,27 @@ public class Login extends BaseClass{
         }
     }
     public void MLS_TC_08_ValidateLogin_RegisterRedirection() throws Exception{
-        HeaderChildNode("MLS_TC_06, To validate the login functionality using a valid registered number.");
+        HeaderChildNode("MLS_TC_08, To Validate proceed button in the \"account not found\" modal redirects to registration page");
         navigateLoginPage();
         typeWeb(Login_page.objMobileNumber_field, prop.getproperty("Unregistered_Number"), "Mobile Number");
         click(Login_page.objLogin_btn, "Login Button");
+        assertionValidation(getText(Login_page.objAccNotFound), prop.getproperty("AccNotFound"));
+        click(Login_page.objProceed_btn, "Proceed Button");
+        assertionValidation(getWebDriver().getCurrentUrl(), prop.getproperty("RegisterLink"));
+      
+        logger.info("MLS_TC_08, Successfully validated  proceed button in the \\\"account not found\\\" modal redirects to registration page");
+        extentLogger("MLS_TC_06", "Successfully validated  proceed button in the \\\"account not found\\\" modal redirects to registration page");
+    }
+    public void MLS_TC_09_ValidateLogin_CancelRegister() throws Exception{
+        HeaderChildNode("MLS_TC_09, To Validate cancel button in the \"account not found \"modal redirects to login page");
+        navigateLoginPage();
+        typeWeb(Login_page.objMobileNumber_field, prop.getproperty("Unregistered_Number"), "Mobile Number");
+        click(Login_page.objLogin_btn, "Login Button");
+        assertionValidation(getText(Login_page.objAccNotFound), prop.getproperty("AccNotFound"));
+        click(Login_page.objCancel_btn, "Cancel Button");
+        if(verifyElementPresent(Login_page.objLogin_btn, "Login Button")){
+            logger.info("MLS_TC_09, Successfully validated  cancel button in the \"account not found \"modal redirects to login page");
+            extentLogger("MLS_TC_09", "Successfully validated  cancel button in the \"account not found \"modal redirects to login page");
+        }
     }
 }

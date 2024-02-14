@@ -13,7 +13,7 @@
       <class name="com.mlshop.test.Login">
         <methods>
           <include name="beforeMethod"/>
-          <include name="MLS_TC_06_ValidateLogin_Function"/>
+          <include name="MLS_TC_09_ValidateLogin_CancelRegister"/>
           <include name="afterTest"/>
         </methods>
       </class> <!-- com.mlshop.test.Login -->
