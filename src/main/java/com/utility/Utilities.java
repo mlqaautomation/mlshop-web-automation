@@ -303,6 +303,20 @@ public class Utilities extends ExtentReporter {
             return false;
         }
     }
+    public static boolean verifyElementPresent(WebElement element, String validationText) throws Exception {
+        //waitTime(2000);
+        if (element.isDisplayed()) {
+            softAssert.assertEquals(true, true, validationText + " is displayed");
+            logger.info(validationText + " is displayed");
+            ExtentReporter.extentLoggerPass("checkElementPresent", validationText + " is displayed");
+            return true;
+        } else {
+            softAssert.assertEquals(false, true, validationText + " is not displayed");
+            logger.info(validationText + " is not displayed");
+            screencapture();
+            return false;
+        }
+    }
 
     public static boolean verifyElementExist(By byLocator, String str) throws Exception {
         WebElement element;

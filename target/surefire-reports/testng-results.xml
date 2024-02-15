@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-13T17:42:44 CST" name="Web" finished-at="2024-02-13T17:43:01 CST" duration-ms="17001">
+  <suite started-at="2024-02-15T18:53:30 CST" name="Web" finished-at="2024-02-15T18:53:46 CST" duration-ms="16574">
     <groups>
     </groups>
-    <test started-at="2024-02-13T17:42:44 CST" name="MLSHOP" finished-at="2024-02-13T17:43:01 CST" duration-ms="17001">
-      <class name="com.mlshop.test.Login">
-        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.Login@3549bca9]" started-at="2024-02-13T17:42:44 CST" name="beforeMethod" finished-at="2024-02-13T17:42:48 CST" duration-ms="3568" status="PASS">
+    <test started-at="2024-02-15T18:53:30 CST" name="MLSHOP" finished-at="2024-02-15T18:53:46 CST" duration-ms="16574">
+      <class name="com.mlshop.test.Home">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.Home@3549bca9]" started-at="2024-02-15T18:53:30 CST" name="beforeMethod" finished-at="2024-02-15T18:53:36 CST" duration-ms="5981" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,15 +23,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="MLS_TC_09_ValidateLogin_CancelRegister()[pri:6, instance:com.mlshop.test.Login@3549bca9]" started-at="2024-02-13T17:42:48 CST" name="MLS_TC_09_ValidateLogin_CancelRegister" finished-at="2024-02-13T17:42:55 CST" duration-ms="7783" status="PASS">
+        <test-method signature="MLS_TC_57_ValidateFilter_WatchAllBrand()[pri:25, instance:com.mlshop.test.Home@3549bca9]" started-at="2024-02-15T18:53:36 CST" name="MLS_TC_57_ValidateFilter_WatchAllBrand" finished-at="2024-02-15T18:53:40 CST" duration-ms="3521" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- MLS_TC_09_ValidateLogin_CancelRegister -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.Login@3549bca9]" started-at="2024-02-13T17:42:55 CST" name="afterTest" finished-at="2024-02-13T17:43:01 CST" duration-ms="5403" status="PASS">
+        </test-method> <!-- MLS_TC_57_ValidateFilter_WatchAllBrand -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.Home@3549bca9]" started-at="2024-02-15T18:53:40 CST" name="afterTest" finished-at="2024-02-15T18:53:46 CST" duration-ms="6224" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-      </class> <!-- com.mlshop.test.Login -->
+      </class> <!-- com.mlshop.test.Home -->
     </test> <!-- MLSHOP -->
   </suite> <!-- Web -->
 </testng-results>

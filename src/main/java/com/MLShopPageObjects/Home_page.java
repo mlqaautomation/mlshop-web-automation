@@ -17,6 +17,7 @@ public  class Home_page{
     public static By objProfile_option=By.xpath("//p[normalize-space()='Profile']");
     public static By objPurchaseHistory_option=By.xpath("//p[normalize-space()='Purchase History']");
     public static By objLogout_option=By.xpath("//p[normalize-space()='Logout']");
+
     
     //Watches Tab//
     //All brands drop down
@@ -51,7 +52,7 @@ public  class Home_page{
     public static By objAllGendersDropDownAllGenders= By.xpath("//div[@class='ml-5 mb-2 absolute z-30 w-full slide-in-top']//span[contains(text(),'All Genders')]");
     public static By objAllGendersDropDownLadies= By.xpath("//button[contains(@title,'Ladies')]");
     public static By objAllGendersDropDownMens= By.xpath("//button[contains(@title,'Mens')]");
-    public static By oobjAllGendersDropDownUnisex= By.xpath("//button[contains(@title,'Unisex')]");
+    public static By objAllGendersDropDownUnisex= By.xpath("//button[contains(@title,'Unisex')]");
 
     //Drop Down: Sort By
     public static By objSortByDropDown= By.xpath("//span[normalize-space()='Sort by']");
@@ -62,7 +63,7 @@ public  class Home_page{
     public static By objSortByDropDownOldNew= By.xpath("//span[normalize-space()='Oldest to Newest']");
 
     //Amparito and Jewelry Drop down Section//
-    //Drop Down: All Types
+    //Drop Down: All Karat Types
     public static By objAllTypesDropDown= By.xpath("//span[normalize-space()='All Types']");
     //Clicked Drop Down: All Types
     public static By objAllTypesDropDownAllTypes= By.xpath("//div[@class='ml-5 mb-2 absolute z-30 w-full slide-in-top']//button[@title='All Types']");
@@ -76,7 +77,7 @@ public  class Home_page{
 
     //Drop Down: All Types
     public static By objAllGoldKaratsDropDown= By.xpath("//span[normalize-space()='All Gold Karats']");
-    //Clicked Drop Down: All Types
+    //Clicked Drop Down: All Karat Types
     public static By objAllGoldKaratsDropDownAllGoldKarats= By.xpath("//div[@class='ml-5 mb-2 absolute z-30 w-full slide-in-top']//span[contains(text(),'All Gold Karats')]");
     public static By objAllGoldKaratsDropDown14K= By.xpath("//button[@title='14k']");
     public static By objAllGoldKaratsDropDown18K= By.xpath("//span[normalize-space()='18k']");
@@ -96,5 +97,19 @@ public  class Home_page{
     public static By objPage1= By.xpath("//button[contains(@title,'1')]");
     public static By objPage2= By.xpath("//button[@title='2']");
     public static By objPage3= By.xpath("//button[@title='3']");
+
+    //Items
+    public static By objitem_all=By.xpath("//div[@class='product-card  w-100%  relative bg-[white]']");
+    public static By objitem_discountBanners=By.xpath("//div[@class='product-card  w-100%  relative bg-[white]']/child::div[1]");
+    public static By objitem_titles=By.xpath("//div[@class='product-card  w-100%  relative bg-[white]']/child::div[3]/child::h1");
+    public static By objitem_descriptions=By.xpath("//div[@class='product-card  w-100%  relative bg-[white]']/child::div[3]/child::p");
+    public static By objitem_discountPrices=By.xpath("//div[@class='product-card  w-100%  relative bg-[white]']/child::div[3]/child::div/child::p");
+    public static By objitem_origPrices=By.xpath("//div[@class='product-card  w-100%  relative bg-[white]']/child::div[3]/child::div/child::div/child::span");
+    
+    //Watches
+    public static By objitem_allWatches=By.xpath("//div[contains(@class, 'product-card')]");
+    public static By objitem_watches_titles=By.xpath("//div[contains(@class, 'product-card')]/child::div[3]/child::h1");
+    public static By objitem_watches_descriptions=By.xpath("//div[contains(@class, 'product-card')]/child::div[3]/child::p");
+    public static By objitem_watches_discountPrices=By.xpath("//div[contains(@class, 'product-card')]/child::div[3]/child::div/child::div/child::p");
   
 }

@@ -10,13 +10,13 @@
     <parameter name="portno" value="4723"/>
     <parameter name="deviceName" value="n/a"/>
     <classes>
-      <class name="com.mlshop.test.Login">
+      <class name="com.mlshop.test.Home">
         <methods>
+          <include name="MLS_TC_57_ValidateFilter_WatchAllBrand"/>
           <include name="beforeMethod"/>
-          <include name="MLS_TC_09_ValidateLogin_CancelRegister"/>
           <include name="afterTest"/>
         </methods>
-      </class> <!-- com.mlshop.test.Login -->
+      </class> <!-- com.mlshop.test.Home -->
     </classes>
   </test> <!-- MLSHOP(failed) -->
 </suite> <!-- Failed suite [Web] -->

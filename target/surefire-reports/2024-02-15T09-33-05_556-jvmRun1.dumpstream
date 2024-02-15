@@ -1,0 +1,29 @@
+# Created at 2024-02-15T09:34:03.681
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:398)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:390)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+
+# Created at 2024-02-15T09:34:14.640
+Unexpected IOException: 6,1,com.mlshop.test.Home,MLS_TC_36_ValidateFilter_Engagement(com.mlshop.test.Home),null,null,null
+
+
+# Created at 2024-02-15T09:34:14.803
+Unexpected IOException with stream: 2024-02-15 09:34:14,802 [main] INFO  binary_data_logger - RP_MESSAGE#FILE#C:\Users\MELG20~1\AppData\Local\Temp\screenshot289566851592934333.png#Attachment
+
+
+# Created at 2024-02-15T09:34:14.808
+Unexpected IOException with stream: 2024-02-15 09:34:14,807 [main] INFO  binary_data_logger - ::::::::::Test MLS_TC_36_ValidateFilter_Engagement PASSED::::::::::
+
+
+# Created at 2024-02-15T09:34:20.321
+Unexpected IOException with stream: 2024-02-15 09:34:20,319 [main] INFO  binary_data_logger - Device Name  : null
+
+
+# Created at 2024-02-15T09:34:20.963
+Unexpected IOException: 2,1,org.apache.maven.surefire.testng.TestNGXmlTestSuite,TestSuite,null,null,null
+
+

@@ -17,7 +17,6 @@ public class Login extends BaseClass{
         //click on user icon
         click(Home_page.objUser_icon, "User icon");     
         //validate if user is in login page by using assertion validation 
-        waitTime(2000);
         assertionValidation(getWebDriver().getCurrentUrl(), prop.getproperty("LoginLink"));
     }
 
@@ -34,7 +33,7 @@ public class Login extends BaseClass{
         navigateLoginPage();
         typeWeb(Login_page.objMobileNumber_field, prop.getproperty("Branch_Verified"), "Mobile Number");
         click(Login_page.objLogin_btn, "Login Button");      
-        waitTime(5000);
+        waitTime(4000);
         inputOTP(); 
         waitTime(2000);
         assertionValidation(getText(Login_page.objOTP_Result), prop.getproperty("SuccessLogin"));
