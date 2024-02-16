@@ -17,8 +17,6 @@ import static com.utility.Utilities.softAssert;
 public class BaseTest {
 
     protected com.business.mlshop.BaseClass baseClass;
-
-    protected MLWalletWeb mlWalletWeb;
     protected Login loginTC;
     protected Home homeTC;
     public static ExtentTest testLogger;
@@ -45,7 +43,6 @@ public class BaseTest {
     @BeforeMethod(alwaysRun = true)
     public void beforeMethod(String deviceName, String portno) throws Exception {
         baseClass = new BaseClass("mlwallet", deviceName, portno);
-        mlWalletWeb = new MLWalletWeb();
         loginTC = new Login();
         homeTC = new Home();
         propertyFileReader();

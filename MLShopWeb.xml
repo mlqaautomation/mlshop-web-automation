@@ -15,8 +15,8 @@
         <classes>
             <!-- <class name="com.mlshop.test.MLWalletWebScripts">
             </class> -->
-            <!-- <class name="com.mlshop.test.Login">
-            </class> -->
+            <class name="com.mlshop.test.Login">
+            </class>
             <class name="com.mlshop.test.Home">
             </class>
         </classes>

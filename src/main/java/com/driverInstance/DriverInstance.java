@@ -231,88 +231,6 @@ public class DriverInstance extends Drivertools {
 	 *
 	 * @param browserName
 	 */
-// 	public void LaunchBrowser(String browserName) {
-// 		setHandler(new PropertyFileReader("properties/AppPackageActivity.properties"));
-// 		if (browserName.equalsIgnoreCase("Firefox")) {
-// 			WebDriverManager.firefoxdriver().browserVersion("0.27.0").setup();
-// 			FirefoxOptions o = new FirefoxOptions();
-// //			o.setHeadless(true);
-// 			System.out.println("browsername" + browserName);
-// 			tlWebDriver.set(new FirefoxDriver(o));
-//
-// 		} else if (browserName.equalsIgnoreCase("Opera")) {
-// 			WebDriverManager.operadriver().setup();
-// 			WebDriver driver = new OperaDriver();
-// 			tlWebDriver.set(driver);
-// 		} else if (browserName.equalsIgnoreCase("Chrome")) {
-// //			WebDriverManager.chromedriver().browserVersion(getDriverVersion()).setup();
-// 			WebDriverManager.chromedriver().browserInDocker().setup();
-// 			if(osName.contains("mac") || osName.contains("linux")) {
-// 				WebDriverManager.chromedriver().setup();
-
-// 				ChromeOptions options = new ChromeOptions();
-// //				options.addArguments("start-maximized");
-// 				options.addArguments("enable-automation");
-// 				options.addArguments("--no-sandbox");
-// 				options.addArguments("--disable-extensions");
-// 				options.addArguments("--disable-infobars");
-// //				options.addArguments("--headless");
-// 				options.addArguments("--disable-dev-shm-usage");
-// 				options.addArguments("--disable-browser-side-navigation");
-// 				options.addArguments("--disable-gpu");
-// 				options.setPageLoadStrategy(PageLoadStrategy.EAGER);
-// 				System.setProperty("webdriver.chrome.whitelistedIps", "");
-// 				options.setHeadless(true);// = new ChromeOptions().setHeadless(true);
-
-// 				if(!osName.contains("mac") && osName.contains("linux")){
-// 					System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/Drivers/chromedriver");
-// //					WebDriver driver = new ChromeDriver();
-// //					options.setExperimentalOption( "enable-automation");
-// //					options.setExperimentalOption("useAutomationExtension", false);
-// 					options.setBinary("/usr/bin/google-chrome");
-
-// 					tlWebDriver.set(new ChromeDriver(options));
-// 					getWebDriver().quit();
-// 					tlWebDriver.set(new ChromeDriver(options));
-// 					System.out.println(browserName);
-
-// 				}else
-// 				if(osName.contains("mac"))
-// 					tlWebDriver.set(new ChromeDriver(options));
-// 			}
-// 			else{
-// 				WebDriverManager.chromedriver().browserVersion(getDriverVersion()).setup();
-// 				ChromeOptions options = new ChromeOptions();
-// 				options.addArguments("start-maximized");
-// 				options.addArguments("enable-automation");
-// 				options.addArguments("--no-sandbox");
-// 				options.addArguments("--disable-extensions");
-// 				options.addArguments("--disable-infobars");
-// //				options.addArguments("--headless");
-// 				options.addArguments("--disable-dev-shm-usage");
-// 				options.addArguments("--disable-browser-side-navigation");
-// 				options.addArguments("--disable-gpu");
-// 				options.setPageLoadStrategy(PageLoadStrategy.EAGER);
-// 				tlWebDriver.set(new ChromeDriver(options));
-// 				}
-// 			}
-// 			else if (browserName.equalsIgnoreCase("ChromeNormal")) {
-// 			WebDriverManager.chromedriver().browserVersion(getDriverVersion()).setup();
-// 			ChromeOptions options = new ChromeOptions();
-// 			options.addArguments("start-maximized");
-// 			options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
-// 			tlWebDriver.set(new ChromeDriver(options));
-// 		}
-// 		else if (browserName.equalsIgnoreCase("IE")) {
-// 			tlWebDriver.set(new InternetExplorerDriver());
-// 		}
-// 		else if (browserName.equalsIgnoreCase("MSEdge")) {
-// 			tlWebDriver.set(new EdgeDriver());
-// 		}
-// 		tlWebDriver.get().manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-// 		tlWebDriver.get().get(getURL());
-// 		tlWebDriver.get().manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-// 	}
 
 	public void LaunchBrowser(String browserName){ 
 		setHandler(new PropertyFileReader("properties/AppPackageActivity.properties"));
@@ -341,7 +259,7 @@ public class DriverInstance extends Drivertools {
 				options.addArguments("--disable-browser-side-navigation");
 				options.addArguments("--disable-gpu");
 				options.setPageLoadStrategy(PageLoadStrategy.EAGER);
-				options.setHeadless(false);			
+				options.setHeadless(true);			
 			if (osName.contains("mac") || osName.contains("linux")) {
 				WebDriverManager.chromedriver().setup();							
 				tlWebDriver.set(new ChromeDriver(options));

@@ -302,6 +302,42 @@ public class Home extends BaseClass{
         filterWatch("All");
         extentLoggerPass("MLS_TC_57", "To Validate Brand Filter function \"All brands\" will display all types of brand");
     }
+    // public void MLS_TC_58_ValidateFilter_RolexBrand()throws Exception{
+    //     HeaderChildNode("MLS_TC_58, To Validate Brand Filter function \"Rolex\" will display rolex watch");
+    //     assertionValidation(getWebDriver().getCurrentUrl(), prop.getproperty("Link"));
+    //     waitTime(1000);
+    //     click(Home_page.objWatchesTab, "Watch Tab");
+    //     waitTime(1000);
+    //     click(Home_page.objAllBrandsDropDown, "All Brands Drop Down");
+    //     click(Home_page.objBrandsDropDownRolex, getText(Home_page.objBrandsDropDownRolex)); 
+    //     waitTime(1000);
+    //     filterWatch("All");
+    //     extentLoggerPass("MLS_TC_58", "To Validate Brand Filter function \"Rolex\" will display rolex watch");
+    // }
+    // public void MLS_TC_59_ValidateFilter_OmegaBrand()throws Exception{
+    //     HeaderChildNode("MLS_TC_59, To Validate Brand Filter function \"Omega\" will display Omega watch");
+    //     assertionValidation(getWebDriver().getCurrentUrl(), prop.getproperty("Link"));
+    //     waitTime(1000);
+    //     click(Home_page.objWatchesTab, "Watch Tab");
+    //     waitTime(1000);
+    //     click(Home_page.objAllBrandsDropDown, "All Brands Drop Down");
+    //     click(Home_page.objBrandsDropDownOmega, getText(Home_page.objBrandsDropDownOmega)); 
+    //     waitTime(1000);
+    //     filterWatch("All");
+    //     extentLoggerPass("MLS_TC_59", "To Validate Brand Filter function \"Omega\" will display Omega watch");
+    // }
+    // public void MLS_TC_60_ValidateFilter_TagHeuer()throws Exception{
+    //     HeaderChildNode("MLS_TC_60, To Validate Brand Filter function \"Tag Heuer\" will display Tag Heuer watch");
+    //     assertionValidation(getWebDriver().getCurrentUrl(), prop.getproperty("Link"));
+    //     waitTime(1000);
+    //     click(Home_page.objWatchesTab, "Watch Tab");
+    //     waitTime(1000);
+    //     click(Home_page.objAllBrandsDropDown, "All Brands Drop Down");
+    //     click(Home_page.objBrandsDropDownOmega, getText(Home_page.objBrandsDropDownOmega)); 
+    //     waitTime(1000);
+    //     filterWatch("All");
+    //     extentLoggerPass("MLS_TC_60", "To Validate Brand Filter function \"Tag Heuer\" will display Tag Heuer watch");
+    // }
     public void filterItems(String filter) throws Exception {
         List<WebElement> itemCard = getWebDriver().findElements(Home_page.objitem_all);
         int iterationCount = 0;  // Counter to track iterations

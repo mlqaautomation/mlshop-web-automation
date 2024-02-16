@@ -10,11 +10,18 @@
     <parameter name="portno" value="4723"/>
     <parameter name="deviceName" value="n/a"/>
     <classes>
-      <class name="com.mlshop.test.Home">
+      <class name="com.mlshop.test.Login">
         <methods>
-          <include name="MLS_TC_57_ValidateFilter_WatchAllBrand"/>
+          <include name="MLS_TC_02_ValidateErrorPrompt_MobileNumber_Field"/>
           <include name="beforeMethod"/>
           <include name="afterTest"/>
+        </methods>
+      </class> <!-- com.mlshop.test.Login -->
+      <class name="com.mlshop.test.Home">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="MLS_TC_27_ValidatePurchaseHistory_Navigation"/>
         </methods>
       </class> <!-- com.mlshop.test.Home -->
     </classes>
