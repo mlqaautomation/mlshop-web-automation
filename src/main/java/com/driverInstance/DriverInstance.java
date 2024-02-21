@@ -259,7 +259,7 @@ public class DriverInstance extends Drivertools {
 				options.addArguments("--disable-browser-side-navigation");
 				options.addArguments("--disable-gpu");
 				options.setPageLoadStrategy(PageLoadStrategy.EAGER);
-				options.setHeadless(true);			
+				options.setHeadless(false);			
 			if (osName.contains("mac") || osName.contains("linux")) {
 				WebDriverManager.chromedriver().setup();							
 				tlWebDriver.set(new ChromeDriver(options));

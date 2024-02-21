@@ -1,7 +1,7 @@
 package com.MLShopPageObjects;
 
 import org.openqa.selenium.By;
-public class MLShoopShippingDetails {
+public class Shipping_Details {
 
      // ?
     public static By objMlShoppingDetailsPage = By.xpath(
@@ -14,12 +14,24 @@ public class MLShoopShippingDetails {
 
     // Products Ordered
     public static By objProductsOrdered = By.xpath("(//*[contains(text(),'Products Ordered')])[1]");
-    public static By objTotalProductOrder = By.xpath("(//*[contains(text(),'Products Ordered')])[2]");
+    public static By objTotalProductOrder = By.xpath("//div[@class='flex-1 px-5 text-right']/child::p");
     public static By objQuantity = By.xpath("//*[contains(text(),'Quantity')]");
     public static By objItemSubtotal = By.xpath("//*[contains(text(),'Item Subtotal')]");
     public static By objServiceFee = By.xpath("//*[contains(text(),'Service Fee')]");
     public static By objShippingFee = By.xpath("//*[contains(text(),'Shipping Fee')]");
-
+    public static By getProductDescriptions(){
+        return By.xpath("(//p[@class='font-semibold text-[#333333] '])");
+    }
+    public static By getProductQuantities(int index){
+        return By.xpath("(//td[contains(@class, 'whitespace-nowrap' )][1])["+index+"]");
+    }
+    public static By getProductPrice(int index){
+        return By.xpath("(//td[contains(@class, 'whitespace-nowrap' )][2])["+index+"]");
+    }
+    public static By getIsRequired(){
+        return By.xpath("//*[contains(text(),'is Required')]");
+    }
+    public static By objUnregNum = By.xpath("//p[normalize-space()='Unregistered mobile phone.']");
     // Account Information Box
     public static By objMobileNum_txt = By.xpath("//*[contains(text(),'Mobile Number')]");
     public static By objMobileNum_txtBox = By.xpath("//input[contains(@placeholder,'Mobile number')]");

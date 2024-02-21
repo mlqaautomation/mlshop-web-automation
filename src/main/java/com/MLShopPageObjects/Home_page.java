@@ -99,7 +99,13 @@ public  class Home_page{
     public static By objPage3= By.xpath("//button[@title='3']");
 
     //Items
-    public static By objitem_all=By.xpath("//div[@class='product-card  w-100%  relative bg-[white]']");
+    public static By objitem_byIndex(int index) {
+        return By.xpath("(//div[contains(@class, 'product-card')][1])["+index+"]");
+    }
+    public static By objitemName_byIndex(int index) {
+        return By.xpath("(//div[contains(@class, 'product-card')][1]/child::div[3]/child::h1)["+index+"]");
+    }
+    public static By objitem_all=By.xpath("//div[contains(@class, 'product-card')]");
     public static By objitem_discountBanners=By.xpath("//div[@class='product-card  w-100%  relative bg-[white]']/child::div[1]");
     public static By objitem_titles=By.xpath("//div[@class='product-card  w-100%  relative bg-[white]']/child::div[3]/child::h1");
     public static By objitem_descriptions=By.xpath("//div[@class='product-card  w-100%  relative bg-[white]']/child::div[3]/child::p");
@@ -110,6 +116,28 @@ public  class Home_page{
     public static By objitem_allWatches=By.xpath("//div[contains(@class, 'product-card')]");
     public static By objitem_watches_titles=By.xpath("//div[contains(@class, 'product-card')]/child::div[3]/child::h1");
     public static By objitem_watches_descriptions=By.xpath("//div[contains(@class, 'product-card')]/child::div[3]/child::p");
-    public static By objitem_watches_discountPrices=By.xpath("//div[contains(@class, 'product-card')]/child::div[3]/child::div/child::div/child::p");
-  
-}
+    public static By objitem_watches_discountPrices=By.xpath("//div[contains(@class, 'productobj-card')]/child::div[3]/child::div/child::div/child::p");
+
+    //Product details - Jewelry and Amaparito
+    public static By objitem_productDetails=By.xpath("//div[contains(@class, 'product-card')]");
+    public static By objitem_productDetails_title=By.xpath("(//p[contains(@class,'text-2xl text-[#555555] uppercase font-bold')])[1]");
+    public static By objitem_productDetails_descriptions=By.xpath("(//p[contains(@class,'text-2xl text-[#555555] uppercase font-bold')])[1]/following-sibling::p[1]");
+    public static By objitem_productDetails_stockNumber=By.xpath("(//p[contains(@class,'text-2xl text-[#555555] uppercase font-bold')])[1]/following-sibling::p[2]");
+    public static By objitem_productDetails_prices=By.xpath("(//p[contains(@class,'text-2xl text-[#555555] uppercase font-bold')])[1]/following-sibling::div[1]");
+    public static By objitem_productDetails_spec_goldKarat=By.xpath("(//div[contains(@class,'flex flex-1 px-5')])[1]");
+    public static By objitem_productDetails_spec_goldColor=By.xpath("(//div[contains(@class,'flex flex-1 px-5')])[2]");
+    public static By objitem_productDetails_spec_stone=By.xpath("(//div[contains(@class,'flex flex-1 px-5')])[3]");
+    public static By objitem_productDetails_spec_stoneColor=By.xpath("(//div[contains(@class,'flex flex-1 px-5')])[4]");
+    public static By objitem_productDetails_spec_size=By.xpath("(//div[contains(@class,'flex flex-1 px-5')])[5]");
+    public static By objitem_productDetails_spec_itemWeight=By.xpath("(//div[contains(@class,'flex flex-1 px-5')])[6]");
+    public static By objitem_productDetails_addToCart_btn = By.xpath("//button[normalize-space()='Add To Cart']");
+    public static By objitem_productDetails_successAddModal = By.xpath("//p[normalize-space()='Item has been successfully added to your cart.']");
+    public static By objitem_productDetails_confirmBtn = By.xpath("//button[normalize-space()='Confirm']");
+    public static By objitem_productDetails_alreadyInCart = By.xpath("//p[normalize-space()='This item is already in your cart.']");
+    //Product details - Watch
+    public static By objitem_productDetails_spec_material=By.xpath("(//div[contains(@class,'flex flex-1 px-5')])[1]");
+    public static By objitem_productDetails_spec_movement=By.xpath("(//div[contains(@class,'flex flex-1 px-5')])[2]");
+    public static By objitem_productDetails_spec_watchsize=By.xpath("(//div[contains(@class,'flex flex-1 px-5')])[3]");
+    public static By objitem_productDetails_spec_notes=By.xpath("(//div[contains(@class,'flex flex-1 px-5')])[4]");
+
+}   //

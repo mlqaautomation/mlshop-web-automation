@@ -1,6 +1,9 @@
 package com.business.mlshop;
 
+import static com.utility.ExtentReporter.CTCurrentTime;
 import static com.utility.ExtentReporter.HeaderChildNode;
+import static com.utility.ExtentReporter.ReportName;
+import static com.utility.ExtentReporter.buildVersion;
 import static com.utility.ExtentReporter.extentLogger;
 import static com.utility.ExtentReporter.extentLoggerPass;
 import static com.utility.ExtentReporter.getWebDriver;
@@ -294,50 +297,393 @@ public class Home extends BaseClass{
         HeaderChildNode("MLS_TC_57, To Validate Brand Filter function \"All brands\" will display all types of brand");
         assertionValidation(getWebDriver().getCurrentUrl(), prop.getproperty("Link"));
         waitTime(1000);
-        click(Home_page.objWatchesTab, "Watch Tab");
-        waitTime(1000);
+        click(Home_page.objWatchesTab, "Watch tab");
+        waitTime(3000);
         click(Home_page.objAllBrandsDropDown, "All Brands Drop Down");
         click(Home_page.objBrandsDropDownAllBrands, getText(Home_page.objBrandsDropDownAllBrands)); 
         waitTime(1000);
         filterWatch("All");
         extentLoggerPass("MLS_TC_57", "To Validate Brand Filter function \"All brands\" will display all types of brand");
     }
-    // public void MLS_TC_58_ValidateFilter_RolexBrand()throws Exception{
-    //     HeaderChildNode("MLS_TC_58, To Validate Brand Filter function \"Rolex\" will display rolex watch");
-    //     assertionValidation(getWebDriver().getCurrentUrl(), prop.getproperty("Link"));
-    //     waitTime(1000);
-    //     click(Home_page.objWatchesTab, "Watch Tab");
-    //     waitTime(1000);
-    //     click(Home_page.objAllBrandsDropDown, "All Brands Drop Down");
-    //     click(Home_page.objBrandsDropDownRolex, getText(Home_page.objBrandsDropDownRolex)); 
-    //     waitTime(1000);
-    //     filterWatch("All");
-    //     extentLoggerPass("MLS_TC_58", "To Validate Brand Filter function \"Rolex\" will display rolex watch");
-    // }
-    // public void MLS_TC_59_ValidateFilter_OmegaBrand()throws Exception{
-    //     HeaderChildNode("MLS_TC_59, To Validate Brand Filter function \"Omega\" will display Omega watch");
-    //     assertionValidation(getWebDriver().getCurrentUrl(), prop.getproperty("Link"));
-    //     waitTime(1000);
-    //     click(Home_page.objWatchesTab, "Watch Tab");
-    //     waitTime(1000);
-    //     click(Home_page.objAllBrandsDropDown, "All Brands Drop Down");
-    //     click(Home_page.objBrandsDropDownOmega, getText(Home_page.objBrandsDropDownOmega)); 
-    //     waitTime(1000);
-    //     filterWatch("All");
-    //     extentLoggerPass("MLS_TC_59", "To Validate Brand Filter function \"Omega\" will display Omega watch");
-    // }
-    // public void MLS_TC_60_ValidateFilter_TagHeuer()throws Exception{
-    //     HeaderChildNode("MLS_TC_60, To Validate Brand Filter function \"Tag Heuer\" will display Tag Heuer watch");
-    //     assertionValidation(getWebDriver().getCurrentUrl(), prop.getproperty("Link"));
-    //     waitTime(1000);
-    //     click(Home_page.objWatchesTab, "Watch Tab");
-    //     waitTime(1000);
-    //     click(Home_page.objAllBrandsDropDown, "All Brands Drop Down");
-    //     click(Home_page.objBrandsDropDownOmega, getText(Home_page.objBrandsDropDownOmega)); 
-    //     waitTime(1000);
-    //     filterWatch("All");
-    //     extentLoggerPass("MLS_TC_60", "To Validate Brand Filter function \"Tag Heuer\" will display Tag Heuer watch");
-    // }
+    public void MLS_TC_58_ValidateFilter_RolexBrand()throws Exception{
+        HeaderChildNode("MLS_TC_58, To Validate Brand Filter function \"Rolex\" will display rolex watch");
+        assertionValidation(getWebDriver().getCurrentUrl(), prop.getproperty("Link"));
+        waitTime(1000);
+        click(Home_page.objWatchesTab, "Watch tab");
+        waitTime(3000);
+        click(Home_page.objAllBrandsDropDown, "All Brands Drop Down");
+        click(Home_page.objBrandsDropDownRolex, getText(Home_page.objBrandsDropDownRolex)); 
+        waitTime(1000);
+        filterWatch("Rolex");
+        extentLoggerPass("MLS_TC_58", "To Validate Brand Filter function \"Rolex\" will display rolex watch");
+    }
+    public void MLS_TC_59_ValidateFilter_OmegaBrand()throws Exception{
+        HeaderChildNode("MLS_TC_59, To Validate Brand Filter function \"Omega\" will display Omega watch");
+        assertionValidation(getWebDriver().getCurrentUrl(), prop.getproperty("Link"));
+        waitTime(1000);
+        click(Home_page.objWatchesTab, "Watch tab");
+        waitTime(3000);
+        click(Home_page.objAllBrandsDropDown, "All Brands Drop Down");
+        click(Home_page.objBrandsDropDownOmega, getText(Home_page.objBrandsDropDownOmega)); 
+        waitTime(1000);
+        filterWatch("Omega");
+        extentLoggerPass("MLS_TC_59", "To Validate Brand Filter function \"Omega\" will display Omega watch");
+    }
+    public void MLS_TC_60_ValidateFilter_TagHeuer()throws Exception{
+        HeaderChildNode("MLS_TC_60, To Validate Brand Filter function \"Tag Heuer\" will display Tag Heuer watch");
+        assertionValidation(getWebDriver().getCurrentUrl(), prop.getproperty("Link"));
+        waitTime(1000);
+        click(Home_page.objWatchesTab, "Watch tab");
+        waitTime(3000);
+        click(Home_page.objAllBrandsDropDown, "All Brands Drop Down");
+        click(Home_page.objBrandsDropDownTagHeuer, getText(Home_page.objBrandsDropDownTagHeuer)); 
+        waitTime(1000);
+        filterWatch("Tag Heuer");
+        extentLoggerPass("MLS_TC_60", "To Validate Brand Filter function \"Tag Heuer\" will display Tag Heuer watch");
+    }
+    
+    public void MLS_TC_61_ValidateFilter_Seiko() throws Exception {
+        HeaderChildNode("MLS_TC_61, To Validate Brand Filter function \"Seiko\" will display Seiko watch");
+        assertionValidation(getWebDriver().getCurrentUrl(), prop.getproperty("Link"));
+        waitTime(1000);
+        click(Home_page.objWatchesTab, "Watch tab");
+        waitTime(3000);
+        click(Home_page.objAllBrandsDropDown, "All Brands Drop Down");
+        click(Home_page.objBrandsDropDownSeiko, getText(Home_page.objBrandsDropDownSeiko));
+        waitTime(1000);
+        filterWatch("Seiko");
+        extentLoggerPass("MLS_TC_61", "To Validate Brand Filter function \"Seiko\" will display Seiko watch");
+    }
+    public void MLS_TC_62_ValidateFilter_Casio() throws Exception {
+        HeaderChildNode("MLS_TC_62, To Validate Brand Filter function \"Casio\" will display Casio watch");
+        assertionValidation(getWebDriver().getCurrentUrl(), prop.getproperty("Link"));
+        waitTime(1000);
+        click(Home_page.objWatchesTab, "Watch tab");
+        waitTime(3000);
+        click(Home_page.objAllBrandsDropDown, "All Brands Drop Down");
+        click(Home_page.objBrandsDropDownCasio, getText(Home_page.objBrandsDropDownCasio));
+        waitTime(1000);
+        filterWatch("Casio");
+        extentLoggerPass("MLS_TC_62", "To Validate Brand Filter function \"Casio\" will display Casio watch");
+    }
+    public void MLS_TC_63_ValidateFilter_AllMovements_watch() throws Exception {
+        HeaderChildNode("MLS_TC_63, To Validate Movements Filter function \"All Movements\" will display all watch");
+        assertionValidation(getWebDriver().getCurrentUrl(), prop.getproperty("Link"));
+        waitTime(1000);
+        click(Home_page.objWatchesTab, "Watch tab");
+        waitTime(3000);
+        click(Home_page.objAllMovementDropDown, "All Movements Drop Down");
+        click(Home_page.objAllMovementDropDownAllMovements, getText(Home_page.objAllMovementDropDownAllMovements));
+        waitTime(1000);
+        filterWatch("All");
+        extentLoggerPass("MLS_TC_63", "To Validate Movements Filter function \\\"All Movements\\\" will display all watch");
+    }
+    public void MLS_TC_64_ValidateFilter_Automatic_watch() throws Exception {
+        HeaderChildNode("MLS_TC_64, To Validate Movements Filter function \"Automatic\" will display all watch");
+        assertionValidation(getWebDriver().getCurrentUrl(), prop.getproperty("Link"));
+        waitTime(1000);
+        click(Home_page.objWatchesTab, "Watch tab");
+        waitTime(3000);
+        click(Home_page.objAllMovementDropDown, "All Movements Drop Down");
+        click(Home_page.objAllMovementDropDownAutomatic, getText(Home_page.objAllMovementDropDownAutomatic));
+        waitTime(1000);
+        filterWatch("All");
+        extentLoggerPass("MLS_TC_64", "To Validate Movements Filter function \\\"Automatic\\\" will display all watch");
+    }
+    public void MLS_TC_65_ValidateFilter_Quartz_watch() throws Exception {
+        HeaderChildNode("MLS_TC_65, To Validate Movements Filter function \"Quartz\" will display all watch");
+        assertionValidation(getWebDriver().getCurrentUrl(), prop.getproperty("Link"));
+        waitTime(1000);
+        click(Home_page.objWatchesTab, "Watch tab");
+        waitTime(3000);
+        click(Home_page.objAllMovementDropDown, "All Movements Drop Down");
+        click(Home_page.objAllMovementDropDownQuartz, getText(Home_page.objAllMovementDropDownQuartz));
+        waitTime(1000);
+        filterWatch("All");
+        extentLoggerPass("MLS_TC_65", "To Validate Movements Filter function \\\"Quartz\\\" will display all watch");
+    }
+    public void MLS_TC_66_ValidateFilter_Others_watch() throws Exception {
+        HeaderChildNode("MLS_TC_66, To Validate Movements Filter function \"Others\" will display all watch");
+        assertionValidation(getWebDriver().getCurrentUrl(), prop.getproperty("Link"));
+        waitTime(1000);
+        click(Home_page.objWatchesTab, "Watch tab");
+        waitTime(3000);
+        click(Home_page.objAllMovementDropDown, "All Movements Drop Down");
+        click(Home_page.objAllMovementDropDownOthers, getText(Home_page.objAllMovementDropDownOthers));
+        waitTime(1000);
+        filterWatch("All");
+        extentLoggerPass("MLS_TC_66", "To Validate Movements Filter function \\\"Others\\\" will display all watch");
+    }
+    public void MLS_TC_67_ValidateFilter_allMaterials_watch() throws Exception {
+        HeaderChildNode("MLS_TC_67, To Validate Material Filter function \"All Materials\" will display all materials watch");
+        assertionValidation(getWebDriver().getCurrentUrl(), prop.getproperty("Link"));
+        waitTime(1000);
+        click(Home_page.objWatchesTab, "Watch tab");
+        waitTime(3000);
+        click(Home_page.objAllMaterialsDropDown, "All Materials Drop Down");
+        click(Home_page.objAllMaterialsDropDownAllMaterials, getText(Home_page.objAllMaterialsDropDownAllMaterials));
+        waitTime(1000);
+        filterWatch("All");
+        extentLoggerPass("MLS_TC_67", "To Validate Material Filter function \\\"All Materials\\\" will display all materials watch");
+    }
+    public void MLS_TC_68_ValidateFilter_Stainless_watch() throws Exception {
+        HeaderChildNode("MLS_TC_68, To Validate Material Filter function \"Stainless\" will display all stainless watch");
+        assertionValidation(getWebDriver().getCurrentUrl(), prop.getproperty("Link"));
+        waitTime(1000);
+        click(Home_page.objWatchesTab, "Watch tab");
+        waitTime(3000);
+        click(Home_page.objAllMaterialsDropDown, "All Materials Drop Down");
+        click(Home_page.objAllMovementDropDownStainlessSteel, getText(Home_page.objAllMovementDropDownStainlessSteel));
+        waitTime(1000);
+        filterWatch("All");
+        extentLoggerPass("MLS_TC_68", "To Validate Material Filter function \\\"Stainless\\\" will display all stainless watch");
+    }
+    public void MLS_TC_69_ValidateFilter_Ceramic_Polymer_watch() throws Exception {
+        HeaderChildNode("MLS_TC_69, To Validate Material Filter function \"Ceramic/Polymer\" will display all cyramic / polymer watch");
+        assertionValidation(getWebDriver().getCurrentUrl(), prop.getproperty("Link"));
+        waitTime(1000);
+        click(Home_page.objWatchesTab, "Watch tab");
+        waitTime(3000);
+        click(Home_page.objAllMaterialsDropDown, "All Materials Drop Down");
+        click(Home_page.objAllMovementDropDownCeramicPolymer, getText(Home_page.objAllMovementDropDownCeramicPolymer));
+        waitTime(1000);
+        filterWatch("All");
+        extentLoggerPass("MLS_TC_69", "To Validate Material Filter function \\\"Ceramic/Polymer\\\" will display all cyramic / polymer watch");
+    }
+    public void MLS_TC_70_ValidateFilter_Gold_watch() throws Exception {
+        HeaderChildNode("MLS_TC_70, To Validate Material Filter function \"Goldl\" will display all gold watch");
+        assertionValidation(getWebDriver().getCurrentUrl(), prop.getproperty("Link"));
+        waitTime(1000);
+
+        click(Home_page.objWatchesTab, "Watch tab");
+        waitTime(3000);
+        click(Home_page.objAllMaterialsDropDown, "All Materials Drop Down");
+        click(Home_page.objAllMovementDropDownGold, getText(Home_page.objAllMovementDropDownGold));
+        waitTime(1000);
+        filterWatch("All");
+        extentLoggerPass("MLS_TC_70", "To Validate Material Filter function \\\"Goldl\\\" will display all gold watch");
+    }
+    public void MLS_TC_71_ValidateFilter_allGenders_watch() throws Exception {
+        HeaderChildNode("MLS_TC_71, To Validate watch type by \"All Genders\" filter will display all watches");
+        assertionValidation(getWebDriver().getCurrentUrl(), prop.getproperty("Link"));
+        waitTime(1000);
+        click(Home_page.objWatchesTab, "Watch tab");
+        waitTime(3000);
+        click(Home_page.objAllGendersDropDown, "All Materials Drop Down");
+        click(Home_page.objAllGendersDropDownAllGenders, getText(Home_page.objAllGendersDropDownAllGenders));
+        waitTime(1000);
+        filterWatch("All");
+        extentLoggerPass("MLS_TC_71", "To Validate watch type by \"All Genders\" filter will display all watches");
+    }
+    public void MLS_TC_72_ValidateFilter_Ladies_watch() throws Exception {
+        HeaderChildNode("MLS_TC_72, To Validate watch type by \"Ladies\" filter will display ladies watches");
+        assertionValidation(getWebDriver().getCurrentUrl(), prop.getproperty("Link"));
+        waitTime(1000);
+        click(Home_page.objWatchesTab, "Watch tab");
+        waitTime(3000);
+        click(Home_page.objAllGendersDropDown, "All Genders Drop Down");
+        click(Home_page.objAllGendersDropDownLadies, getText(Home_page.objAllGendersDropDownLadies));
+        waitTime(1000);
+        filterWatch("Ladies");
+        extentLoggerPass("MLS_TC_72", "To Validate watch type by \"Ladies\" filter will display ladies watches");
+    }
+    public void MLS_TC_73_ValidateFilter_Mens_watch() throws Exception {
+        HeaderChildNode("MLS_TC_73, To Validate watch type by \"Men's\" filter will display men's watches");
+        assertionValidation(getWebDriver().getCurrentUrl(), prop.getproperty("Link"));
+        waitTime(1000);
+        click(Home_page.objWatchesTab, "Watch tab");
+        waitTime(3000);
+        click(Home_page.objAllGendersDropDown, "All Genders Drop Down");
+        click(Home_page.objAllGendersDropDownMens, getText(Home_page.objAllGendersDropDownMens));
+        waitTime(1000);
+        filterWatch("Mens");
+        extentLoggerPass("MLS_TC_73", "To Validate watch type by \"Men's\" filter will display men's watches");
+    }
+    public void MLS_TC_74_ValidateFilter_Unisex_watch() throws Exception {
+        HeaderChildNode("MLS_TC_74, To Validate watch type by \"Unisex\" filter will display unisex watches");
+        assertionValidation(getWebDriver().getCurrentUrl(), prop.getproperty("Link"));
+        waitTime(1000);
+        click(Home_page.objWatchesTab, "Watch tab");
+        waitTime(3000);
+        click(Home_page.objAllGendersDropDown, "All Genders Drop Down");
+        click(Home_page.objAllGendersDropDownUnisex, getText(Home_page.objAllGendersDropDownUnisex));
+        waitTime(1000);
+        filterWatch("Unisex");
+        extentLoggerPass("MLS_TC_74", "To Validate watch type by \"Unisex\" filter will display unisex watches");
+    }
+
+    public void MLS_TC_79_ValidateProduct_jewelry() throws Exception {
+        HeaderChildNode("MLS_TC_79, To Validate product details in Jewelry tab home page");
+        assertionValidation(getWebDriver().getCurrentUrl(), prop.getproperty("Link"));
+        waitTime(1000);
+        click(Home_page.objJewelryTab, "Jewelry tab");
+        if(verifyElementPresent(Home_page.objitem_byIndex(1), getText(Home_page.objitemName_byIndex(1)))){
+            ExtentReporter.extentLoggerPass("MLS_TC_79", "To Validate product details in Jewelry tab home page");
+        }
+    }
+
+    public void MLS_TC_80_ValidateProduct_amaparito() throws Exception {
+        HeaderChildNode("MLS_TC_80, To Validate product details in Amparito Collections tab home page");
+        assertionValidation(getWebDriver().getCurrentUrl(), prop.getproperty("Link"));
+        waitTime(1000);
+        click(Home_page.objAmparitoCollectionsTab, "Amparito Collections tab");
+        if(verifyElementPresent(Home_page.objitem_byIndex(1), getText(Home_page.objitemName_byIndex(1)))){
+            ExtentReporter.extentLoggerPass("MLS_TC_79", "To Validate product details in Jewelry tab home page");
+        }     
+    }  
+
+    public void MLS_TC_81_ValidateProduct_watch() throws Exception {
+        HeaderChildNode("MLS_TC_81, To Validate product details in Watches tab home page");
+        assertionValidation(getWebDriver().getCurrentUrl(), prop.getproperty("Link"));
+        waitTime(1000);
+        click(Home_page.objWatchesTab, "Watch tab");
+        if(verifyElementPresent(Home_page.objitem_byIndex(1), getText(Home_page.objitemName_byIndex(1)))){
+            ExtentReporter.extentLoggerPass("MLS_TC_81", "To Validate product details in Watches tab home page");
+        }     
+    }
+    public void MLS_TC_82_ValidateProduct_jewelryDetails() throws Exception {
+        HeaderChildNode("MLS_TC_82, To Validate product details navigation after clicking a product from Jewelry tab home page");
+        assertionValidation(getWebDriver().getCurrentUrl(), prop.getproperty("Link"));
+        waitTime(1000);
+        click(Home_page.objJewelryTab, "Jewelry tab");
+        if(verifyElementPresentAndClick(Home_page.objitem_byIndex(1), getText(Home_page.objitemName_byIndex(1)))){
+            verifyElementPresent(Home_page.objitem_productDetails_title, getText(Home_page.objitem_productDetails_title));
+            verifyElementPresent(Home_page.objitem_productDetails_descriptions, getText(Home_page.objitem_productDetails_descriptions));
+            verifyElementPresent(Home_page.objitem_productDetails_stockNumber, getText(Home_page.objitem_productDetails_stockNumber));
+            verifyElementPresent(Home_page.objitem_productDetails_prices, getText(Home_page.objitem_productDetails_prices));
+            verifyElementPresent(Home_page.objitem_productDetails_spec_goldKarat, getText(Home_page.objitem_productDetails_spec_goldKarat));
+            verifyElementPresent(Home_page.objitem_productDetails_spec_goldColor, getText(Home_page.objitem_productDetails_spec_goldColor));
+            verifyElementPresent(Home_page.objitem_productDetails_spec_stone, getText(Home_page.objitem_productDetails_spec_stone));
+            verifyElementPresent(Home_page.objitem_productDetails_spec_stoneColor, getText(Home_page.objitem_productDetails_spec_stoneColor));
+            verifyElementPresent(Home_page.objitem_productDetails_spec_size, getText(Home_page.objitem_productDetails_spec_size));
+            verifyElementPresent(Home_page.objitem_productDetails_spec_itemWeight, getText(Home_page.objitem_productDetails_spec_itemWeight));
+            ExtentReporter.extentLoggerPass("MLS_TC_82", "To Validate product details navigation after clicking a product from Jewelry tab home page");
+        }
+    }
+    public void MLS_TC_83_ValidateProduct_amparitoDetails() throws Exception {
+        HeaderChildNode("MLS_TC_83, To Validate product details navigation after clicking a product from Jewelry tab home page");
+        assertionValidation(getWebDriver().getCurrentUrl(), prop.getproperty("Link"));
+        waitTime(1000);
+        click(Home_page.objAmparitoCollectionsTab, "Amparito tab");
+        if(verifyElementPresentAndClick(Home_page.objitem_byIndex(1), getText(Home_page.objitemName_byIndex(1)))){
+            verifyElementPresent(Home_page.objitem_productDetails_title, getText(Home_page.objitem_productDetails_title));
+            verifyElementPresent(Home_page.objitem_productDetails_descriptions, getText(Home_page.objitem_productDetails_descriptions));
+            verifyElementPresent(Home_page.objitem_productDetails_stockNumber, getText(Home_page.objitem_productDetails_stockNumber));
+            verifyElementPresent(Home_page.objitem_productDetails_prices, getText(Home_page.objitem_productDetails_prices));
+            verifyElementPresent(Home_page.objitem_productDetails_spec_goldKarat, getText(Home_page.objitem_productDetails_spec_goldKarat));
+            verifyElementPresent(Home_page.objitem_productDetails_spec_goldColor, getText(Home_page.objitem_productDetails_spec_goldColor));
+            verifyElementPresent(Home_page.objitem_productDetails_spec_stone, getText(Home_page.objitem_productDetails_spec_stone));
+            verifyElementPresent(Home_page.objitem_productDetails_spec_stoneColor, getText(Home_page.objitem_productDetails_spec_stoneColor));
+            verifyElementPresent(Home_page.objitem_productDetails_spec_size, getText(Home_page.objitem_productDetails_spec_size));
+            verifyElementPresent(Home_page.objitem_productDetails_spec_itemWeight, getText(Home_page.objitem_productDetails_spec_itemWeight));
+            ExtentReporter.extentLoggerPass("MLS_TC_83", "To Validate product details navigation after clicking a product from Jewelry tab home page");
+        }
+    }
+    public void MLS_TC_84_ValidateProduct_watchDetails() throws Exception {
+        HeaderChildNode("MLS_TC_84, To Validate product details navigation after clicking a product from Jewelry tab home page");
+        assertionValidation(getWebDriver().getCurrentUrl(), prop.getproperty("Link"));
+        waitTime(1000);
+        click(Home_page.objWatchesTab, "Watches tab");
+        waitTime(1000);
+        if(verifyElementPresentAndClick(Home_page.objitem_byIndex(1), getText(Home_page.objitemName_byIndex(1)))){
+            verifyElementPresent(Home_page.objitem_productDetails_title, getText(Home_page.objitem_productDetails_title));
+            verifyElementPresent(Home_page.objitem_productDetails_descriptions, getText(Home_page.objitem_productDetails_descriptions));
+            verifyElementPresent(Home_page.objitem_productDetails_stockNumber, getText(Home_page.objitem_productDetails_stockNumber));
+            verifyElementPresent(Home_page.objitem_productDetails_prices, getText(Home_page.objitem_productDetails_prices));
+            verifyElementPresent(Home_page.objitem_productDetails_spec_material, getText(Home_page.objitem_productDetails_spec_material));
+            verifyElementPresent(Home_page.objitem_productDetails_spec_movement, getText(Home_page.objitem_productDetails_spec_movement));
+            verifyElementPresent(Home_page.objitem_productDetails_spec_watchsize, getText(Home_page.objitem_productDetails_spec_watchsize));
+            verifyElementPresent(Home_page.objitem_productDetails_spec_notes, getText(Home_page.objitem_productDetails_spec_notes));
+            ExtentReporter.extentLoggerPass("MLS_TC_84", "To Validate product details navigation after clicking a product from Jewelry tab home page");
+        }
+    }
+    public void MLS_TC_85_ValidateJewelry_addToCart() throws Exception {
+        HeaderChildNode("MLS_TC_85, To Validate successful add item modal pop to shopping cart from jewelry tab");
+        assertionValidation(getWebDriver().getCurrentUrl(), prop.getproperty("Link"));
+        waitTime(1000);
+        click(Home_page.objJewelryTab, "Jewelry tab");
+        verifyElementPresentAndClick(Home_page.objitemName_byIndex(1), getText(Home_page.objitemName_byIndex(1)));
+        verifyElementPresentAndClick(Home_page.objitem_productDetails_addToCart_btn, getText(Home_page.objitem_productDetails_addToCart_btn));
+        waitTime(1000);
+        if(verifyElementPresent(Home_page.objitem_productDetails_successAddModal, getText(Home_page.objitem_productDetails_successAddModal))){
+            ExtentReporter.extentLoggerPass("MLS_TC_85", "To Validate successful add item modal pop to shopping cart from jewelry tab");
+        }      
+    }
+    public void MLS_TC_86_ValidateAmparito_addToCart() throws Exception {
+        HeaderChildNode("MLS_TC_86, To Validate successful add item modal pop to shopping cart from amparito collections tab");
+        assertionValidation(getWebDriver().getCurrentUrl(), prop.getproperty("Link"));
+        waitTime(1000);
+        click(Home_page.objAmparitoCollectionsTab, "Amparito tab");
+        waitTime(1000);
+        verifyElementPresentAndClick(Home_page.objitemName_byIndex(1), getText(Home_page.objitemName_byIndex(1)));
+        verifyElementPresentAndClick(Home_page.objitem_productDetails_addToCart_btn, getText(Home_page.objitem_productDetails_addToCart_btn));
+        waitTime(1000);
+        if(verifyElementPresent(Home_page.objitem_productDetails_successAddModal, getText(Home_page.objitem_productDetails_successAddModal))){
+            ExtentReporter.extentLoggerPass("MLS_TC_86", "To Validate successful add item modal pop to shopping cart from amparito collections tab");
+        }     
+    }
+    public void MLS_TC_87_ValidateWatch_addToCart() throws Exception {
+        HeaderChildNode("MLS_TC_87, To Validate successful add item modal pop to shopping cart from watches tab");
+        assertionValidation(getWebDriver().getCurrentUrl(), prop.getproperty("Link"));
+        waitTime(1000);
+        click(Home_page.objWatchesTab, "Watch tab");
+        waitTime(3000);
+        verifyElementPresentAndClick(Home_page.objitemName_byIndex(1), getText(Home_page.objitemName_byIndex(1)));
+        waitTime(1000);
+        verifyElementPresentAndClick(Home_page.objitem_productDetails_addToCart_btn, getText(Home_page.objitem_productDetails_addToCart_btn));
+        waitTime(1000);
+        if(verifyElementPresent(Home_page.objitem_productDetails_successAddModal, getText(Home_page.objitem_productDetails_successAddModal))){
+            ExtentReporter.extentLoggerPass("MLS_TC_87", "To Validate successful add item modal pop to shopping cart from watches tab");
+        }     
+    }
+    public void MLS_TC_89_ValidateItem_alreadyInCart() throws Exception {
+        HeaderChildNode("MLS_TC_89, To Validate successful add item modal pop to shopping cart from watches tab");
+        assertionValidation(getWebDriver().getCurrentUrl(), prop.getproperty("Link"));
+        waitTime(1000);
+        click(Home_page.objWatchesTab, "Watch tab");
+        waitTime(3000);
+        verifyElementPresentAndClick(Home_page.objitemName_byIndex(1), getText(Home_page.objitemName_byIndex(1)));
+        waitTime(1000);
+        verifyElementPresentAndClick(Home_page.objitem_productDetails_addToCart_btn, getText(Home_page.objitem_productDetails_addToCart_btn));
+        waitTime(1000);
+        if(verifyElementPresent(Home_page.objitem_productDetails_successAddModal, getText(Home_page.objitem_productDetails_successAddModal))){
+            verifyElementPresentAndClick(Home_page.objitem_productDetails_confirmBtn , "Confirm Btn");
+            waitTime(1000);
+            click(Home_page.objitem_productDetails_addToCart_btn, "Add to cart");
+            verifyElementPresent(Home_page.objitem_productDetails_alreadyInCart, getText(Home_page.objitem_productDetails_alreadyInCart));
+            ExtentReporter.extentLoggerPass("MLS_TC_89", "To Validate successful add item modal pop to shopping cart from watches tab");
+        }     
+    }
+    
+    public String[] addItemToCart(String type, int index) throws Exception {
+        String tabName;
+        waitTime(3000);
+        switch (type) {
+            case "Jewelry":
+                tabName = "Jewelry tab";
+                click(Home_page.objJewelryTab, tabName);
+                break;
+            case "Amparito":
+                tabName = "Amparito tab";
+                click(Home_page.objAmparitoCollectionsTab, tabName);
+                break;
+            case "Watch":
+                tabName = "Watches tab";
+                click(Home_page.objWatchesTab, tabName);
+                break;
+            default:
+                ExtentReporter.extentLoggerFail("Type", "Failed to find items");
+                return null; // Exit the method if the type is not recognized
+        }
+        waitTime(3000);
+        String itemName = getText(Home_page.objitemName_byIndex(index));
+        verifyElementPresentAndClick(Home_page.objitemName_byIndex(index), itemName);
+        waitTime(3000);
+        verifyElementPresentAndClick(Home_page.objitem_productDetails_addToCart_btn, "Add to Cart btn");    
+        verifyElementPresentAndClick(Home_page.objitem_productDetails_confirmBtn, "Confirm btn");
+        return new String[]{itemName};
+    }
+
     public void filterItems(String filter) throws Exception {
         List<WebElement> itemCard = getWebDriver().findElements(Home_page.objitem_all);
         int iterationCount = 0;  // Counter to track iterations
@@ -347,7 +693,7 @@ public class Home extends BaseClass{
                 WebElement item = card.findElement(Home_page.objitem_titles);
                 WebElement description = card.findElement(Home_page.objitem_descriptions);
                 String itemName = item.getText();
-    
+                
                 if (filter.equals("All") || 
                     itemName.contains(filter) || 
                     description.getText().contains("14k") || 
@@ -390,18 +736,14 @@ public class Home extends BaseClass{
     
             if (filter.equals("All") ||
                     itemName.contains(filter) ||
-                    descriptionText.contains("14k") ||
-                    descriptionText.contains("18k") ||
-                    descriptionText.contains("Yellow Gold") ||
-                    descriptionText.contains("White Gold") ||
-                    descriptionText.contains("Rose Gold") ||
-                    descriptionText.contains("Two - Tone") ||
-                    descriptionText.contains("Tri - Tone")
-            ) {
+                    descriptionText.contains("Automatic") ||
+                    descriptionText.contains("Quartz") ||
+                    descriptionText.contains("Others") ||
+                    descriptionText.contains("Stainless Steel") ||
+                    descriptionText.contains("Gold")){
                 verifyElementPresent(item, itemName);
                 verifyElementPresent(description, descriptionText);
                 iterationCount++;
-    
                 // Break the loop if the counter reaches 1
                 if (iterationCount == 1) {
                     logger.info("---Breaking Filter Loop---");
@@ -409,9 +751,9 @@ public class Home extends BaseClass{
                 }
             }
         }
-    
         // Log a message if the filter didn't match any items
         if (iterationCount == 0) {
+            ExtentReporter.extentLoggerFail("Filter", "Failed to find items");
             logger.info("No items matching the filter: " + filter);
         }
     }

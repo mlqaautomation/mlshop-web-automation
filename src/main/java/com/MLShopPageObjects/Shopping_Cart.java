@@ -11,6 +11,16 @@ public class Shopping_Cart {
             .xpath("//h3[contains(@class,'py-[5px] text-sm font-semibold 2sm:text-base 3sm:text-base sm:text-base')]");
 
     // Cart Item
+    public static By item_nameDescription(int index){
+        return By.xpath("(//div[contains(@class,'2xl:w-[600px] flex-1 pl-4 2sm:pl-0 3sm:pl-1')])["+index+"]/child::p[1]");
+    }
+    public static By item_stockNumber(int index){
+        return By.xpath("(//div[contains(@class,'2xl:w-[600px] flex-1 pl-4 2sm:pl-0 3sm:pl-1')])["+index+"]/child::p[2]");
+    }
+    public static By item_checkBox(int index){
+        return By.xpath("(//input[contains(@type,'checkbox')])["+index+"]");
+    }
+    public static By item_allDescription = By.xpath("(//div[contains(@class,'2xl:w-[600px] flex-1 pl-4 2sm:pl-0 3sm:pl-1')])");
     public static By Item_TickBox = By.xpath("//input[@type='checkbox']");
     public static By Item_ShoppingCart = By.xpath(
             "//div[contains(@class,'flex 2sm:flex-1 items-center 3sm:flex-1 3sm:items-start 2sm:items-start sm:flex-1 san:flex-col san:items-start')]");
@@ -19,11 +29,19 @@ public class Shopping_Cart {
     public static By Item_DeleteIcon = By.xpath(
             "//button[contains(@class,'flex justify-center focus:outline-none text-white bg-[#845f00] hover:bg-red-900 focus:ring-4 focus:ring-red-300 font-medium rounded-[20px] text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900 self-baseline w-auto 3sms:w-[100%] 2sms:w-[100%] san:rounded-[20px] sm:self-center 3sm:self-center 2sm:self-center san:self-center')]");
 
+    public static By Item_deleteIcon(int index){
+        return By.xpath("(//button[contains(@class,'flex justify-center focus:outline-none text-white bg-[#845f00] hover:bg-red-900 focus:ring-4 focus:ring-red-300 font-medium rounded-[20px] text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900 self-baseline w-auto 3sms:w-[100%] 2sms:w-[100%] san:rounded-[20px] sm:self-center 3sm:self-center 2sm:self-center san:self-center')])["+index+"]");
+    }     
     // Item Selected and Subtotal
     public static By Item_Selected = By.xpath("//*[contains(text(),'Item Selected : ')]");
     public static By Subtotal = By.xpath("//*[contains(text(),'subtotal')]/following-sibling::p");
     public static By Subtotal_count = By.xpath("//*[contains(text(),'subtotal')]/following-sibling::p");
-
+//p[contains(@class, 'uppercase')]
     // Checkout Btn
     public static By Checkout_Btn = By.xpath("//button[@type='button']");
+
+    //remove modal
+    public static By modal_msg= By.xpath("(//p[@class='text-lg'])[1]");
+    public static By modal_yes = By.xpath("//button[normalize-space()='Yes']");
+    public static By modal_cancel = By.xpath("//button[normalize-space()='Cancel']");
 }

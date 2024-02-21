@@ -22,7 +22,6 @@ com\utility\ConfigurationGetter.class
 com\MLShopPageObjects\MLShopWatchPage.class
 com\emailReport\SendEmail$1.class
 com\utility\BasePage.class
-com\business\mlshop\Home.class
 com\emailReport\GmailInbox$1.class
 com\emailReport\MailReport.class
 com\MLShopPageObjects\Registration_Page.class
@@ -30,9 +29,6 @@ com\metadata\ResponseInstance.class
 com\utility\Json.class
 com\metadata\APIResult.class
 com\utility\LoggingUtils.class
-com\MLShopPageObjects\Home_page.class
-com\business\mlshop\Login.class
-com\MLShopPageObjects\MLShoopShippingDetails.class
 com\utility\RetryAnalyzer.class
 com\parameters\ParameterInjector.class
 com\business\mlshop\BaseClass.class

@@ -15,9 +15,13 @@
         <classes>
             <!-- <class name="com.mlshop.test.MLWalletWebScripts">
             </class> -->
-            <class name="com.mlshop.test.Login">
-            </class>
-            <class name="com.mlshop.test.Home">
+            <!-- <class name="com.mlshop.test.Login">
+            </class> -->
+            <!-- <class name="com.mlshop.test.Home">
+            </class> -->
+            <!-- <class name="com.mlshop.test.ShoppingCart">
+            </class> -->
+             <class name="com.mlshop.test.ShippingDetails">
             </class>
         </classes>
     </test>

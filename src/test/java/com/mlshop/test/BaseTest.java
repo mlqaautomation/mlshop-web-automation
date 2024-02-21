@@ -5,6 +5,8 @@ import com.aventstack.extentreports.ExtentTest;
 import com.business.mlshop.*;
 import com.business.mlshop.Login;
 import com.business.mlshop.Home;
+import com.business.mlshop.ShoppingCart;
+import com.business.mlshop.ShippingDetails;
 
 import org.testng.annotations.*;
 import com.driverInstance.AppiumServer;
@@ -19,6 +21,8 @@ public class BaseTest {
     protected com.business.mlshop.BaseClass baseClass;
     protected Login loginTC;
     protected Home homeTC;
+    protected ShoppingCart shoppingCartTC;
+    protected ShippingDetails shippingDetailsTC;
     public static ExtentTest testLogger;
     AppiumServer server = new AppiumServer();
     protected static LoggingUtils logger = new LoggingUtils();
@@ -45,6 +49,8 @@ public class BaseTest {
         baseClass = new BaseClass("mlwallet", deviceName, portno);
         loginTC = new Login();
         homeTC = new Home();
+        shoppingCartTC = new ShoppingCart();
+        shippingDetailsTC = new ShippingDetails();
         propertyFileReader();
         softAssert = new SoftAssert();
     }

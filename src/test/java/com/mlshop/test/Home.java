@@ -109,4 +109,113 @@ public class Home extends BaseTest{
     public void MLS_TC_57_ValidateFilter_WatchAllBrand()throws Exception{
         homeTC.MLS_TC_57_ValidateFilter_WatchAllBrand();
     }
+    @Test(priority = 26)
+    public void MLS_TC_58_ValidateFilter_RolexBrand()throws Exception{
+        homeTC.MLS_TC_58_ValidateFilter_RolexBrand();
+    }
+    @Test(priority = 27)
+    public void MLS_TC_59_ValidateFilter_OmegaBrand()throws Exception{
+        homeTC.MLS_TC_59_ValidateFilter_OmegaBrand();
+    }
+    @Test(priority = 28)
+    public void MLS_TC_60_ValidateFilter_TagHeuer()throws Exception{
+        homeTC.MLS_TC_60_ValidateFilter_TagHeuer();
+    }
+    @Test(priority = 29)
+    public void MLS_TC_61_ValidateFilter_Seiko()throws Exception{
+        homeTC.MLS_TC_61_ValidateFilter_Seiko();
+    }
+    @Test(priority = 30)
+    public void MLS_TC_62_ValidateFilter_Casio()throws Exception{
+        homeTC.MLS_TC_62_ValidateFilter_Casio();
+    }
+    @Test(priority = 31)
+    public void MLS_TC_63_ValidateFilter_AllMovements_watch()throws Exception{
+        homeTC.MLS_TC_63_ValidateFilter_AllMovements_watch();
+    }
+    @Test(priority = 32)
+    public void MLS_TC_64_ValidateFilter_Automatic_watch()throws Exception{
+        homeTC.MLS_TC_64_ValidateFilter_Automatic_watch();
+    }
+    @Test(priority = 33)
+    public void MLS_TC_65_ValidateFilter_Quartz_watch()throws Exception{
+        homeTC.MLS_TC_65_ValidateFilter_Quartz_watch();
+    }
+    @Test(priority = 34)
+    public void MLS_TC_66_ValidateFilter_Others_watch()throws Exception{
+        homeTC.MLS_TC_66_ValidateFilter_Others_watch();
+    }
+    @Test(priority = 35)
+    public void MLS_TC_67_ValidateFilter_allMaterials_watch()throws Exception{
+        homeTC.MLS_TC_67_ValidateFilter_allMaterials_watch();
+    }
+    @Test(priority = 36)
+    public void MLS_TC_68_ValidateFilter_Stainless_watch()throws Exception{
+        homeTC.MLS_TC_68_ValidateFilter_Stainless_watch();
+    }
+    @Test(priority = 37)
+    public void MLS_TC_69_ValidateFilter_Ceramic_Polymer_watch()throws Exception{
+        homeTC.MLS_TC_69_ValidateFilter_Ceramic_Polymer_watch();
+    }
+    @Test(priority = 38)
+    public void MLS_TC_70_ValidateFilter_Gold_watch()throws Exception{
+        homeTC.MLS_TC_70_ValidateFilter_Gold_watch();
+    }
+    @Test(priority = 39)
+    public void MLS_TC_71_ValidateFilter_allGenders_watch()throws Exception{
+        homeTC.MLS_TC_71_ValidateFilter_allGenders_watch();
+    }
+    @Test(priority = 40)
+    public void MLS_TC_72_ValidateFilter_Ladies_watch()throws Exception{
+        homeTC.MLS_TC_72_ValidateFilter_Ladies_watch();
+    }
+    @Test(priority = 41)
+    public void MLS_TC_73_ValidateFilter_Mens_watch()throws Exception{
+        homeTC.MLS_TC_73_ValidateFilter_Mens_watch();
+    }
+    @Test(priority = 42)
+    public void MLS_TC_74_ValidateFilter_Unisex_watch()throws Exception{
+        homeTC.MLS_TC_74_ValidateFilter_Unisex_watch();
+    }
+    @Test(priority = 43)
+    public void MLS_TC_79_ValidateProduct_details()throws Exception{
+        homeTC.MLS_TC_79_ValidateProduct_jewelry();
+    }
+    @Test(priority = 44)
+    public void MLS_TC_80_ValidateProduct_amaparito()throws Exception{
+        homeTC.MLS_TC_80_ValidateProduct_amaparito();
+    }
+    @Test(priority = 45)
+    public void MLS_TC_81_ValidateProduct_watch()throws Exception{
+        homeTC.MLS_TC_81_ValidateProduct_watch();
+    }
+    @Test(priority = 46)
+    public void MLS_TC_82_ValidateProduct_jewelryDetails()throws Exception{
+        homeTC.MLS_TC_82_ValidateProduct_jewelryDetails();
+    }
+    @Test(priority = 47)
+    public void MLS_TC_83_ValidateProduct_amparitoDetails()throws Exception{
+        homeTC.MLS_TC_83_ValidateProduct_amparitoDetails();
+    }
+    @Test(priority = 48)
+    public void MLS_TC_84_ValidateProduct_watchDetails()throws Exception{
+        homeTC.MLS_TC_84_ValidateProduct_watchDetails();
+    }
+    @Test(priority = 49)
+    public void MLS_TC_85_ValidateJewelry_addToCart()throws Exception{
+        homeTC.MLS_TC_85_ValidateJewelry_addToCart();
+    }
+    @Test(priority = 50)
+    public void MLS_TC_86_ValidateAmparito_addToCart()throws Exception{
+        homeTC.MLS_TC_86_ValidateAmparito_addToCart();
+    }
+    @Test(priority = 51)
+    public void MLS_TC_87_ValidateWatch_addToCart()throws Exception{
+        homeTC.MLS_TC_87_ValidateWatch_addToCart();
+    }
+    @Test(priority = 52)
+    public void MLS_TC_89_ValidateItem_alreadyInCart()throws Exception{
+        homeTC.MLS_TC_89_ValidateItem_alreadyInCart();
+    }
+
 }

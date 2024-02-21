@@ -1,12 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 32, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 417.715 s <<< FAILURE! - in TestSuite
-MLS_TC_02_ValidateErrorPrompt_MobileNumber_Field(com.mlshop.test.Login)  Time elapsed: 4.473 s  <<< FAILURE!
-java.lang.AssertionError: expected [Mobile Number is Required] but found []
-	at com.mlshop.test.Login.MLS_TC_02_ValidateErrorPrompt_MobileNumber_Field(Login.java:13)
-
-MLS_TC_27_ValidatePurchaseHistory_Navigation(com.mlshop.test.Home)  Time elapsed: 10.717 s  <<< FAILURE!
-java.lang.AssertionError: expected [https://mlshoppreprod.mlhuillier.com/purchasehistory] but found [https://mlshoppreprod.mlhuillier.com/]
-	at com.mlshop.test.Home.MLS_TC_27_ValidatePurchaseHistory_Navigation(Home.java:17)
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 27.801 s - in TestSuite
