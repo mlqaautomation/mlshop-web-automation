@@ -13,7 +13,6 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 
-import com.MLShopPageObjects.MLShopProfileLoginPage;
 import com.driverInstance.DriverInstance;
 import com.driverInstance.DriverManager;
 

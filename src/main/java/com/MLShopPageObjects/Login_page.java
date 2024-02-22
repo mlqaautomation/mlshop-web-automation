@@ -17,4 +17,5 @@ public class Login_page {
     public static By objCancel_btn=By.xpath("//button[normalize-space()='Cancel']");
     public static By objProceed_btn=By.xpath("//button[normalize-space()='Proceed']");
     public static By objAccNotFound=By.xpath("//p[contains(text(), \"Account not found\")]");
+    public static By objOTP_exit = By.xpath("//button[@class='p-1 border-0 hover:opacity-70 transition absolute left-9']");
 }

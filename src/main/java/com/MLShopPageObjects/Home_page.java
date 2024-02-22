@@ -122,7 +122,7 @@ public  class Home_page{
     public static By objitem_productDetails=By.xpath("//div[contains(@class, 'product-card')]");
     public static By objitem_productDetails_title=By.xpath("(//p[contains(@class,'text-2xl text-[#555555] uppercase font-bold')])[1]");
     public static By objitem_productDetails_descriptions=By.xpath("(//p[contains(@class,'text-2xl text-[#555555] uppercase font-bold')])[1]/following-sibling::p[1]");
-    public static By objitem_productDetails_stockNumber=By.xpath("(//p[contains(@class,'text-2xl text-[#555555] uppercase font-bold')])[1]/following-sibling::p[2]");
+    public static By objitem_productDetails_stockNumber=By.xpath("//p[contains(text(),'Stock Number')]");
     public static By objitem_productDetails_prices=By.xpath("(//p[contains(@class,'text-2xl text-[#555555] uppercase font-bold')])[1]/following-sibling::div[1]");
     public static By objitem_productDetails_spec_goldKarat=By.xpath("(//div[contains(@class,'flex flex-1 px-5')])[1]");
     public static By objitem_productDetails_spec_goldColor=By.xpath("(//div[contains(@class,'flex flex-1 px-5')])[2]");

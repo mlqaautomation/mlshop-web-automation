@@ -676,12 +676,13 @@ public class Home extends BaseClass{
                 return null; // Exit the method if the type is not recognized
         }
         waitTime(3000);
-        String itemName = getText(Home_page.objitemName_byIndex(index));
+        String itemName = getText(Home_page.objitemName_byIndex(index));  
         verifyElementPresentAndClick(Home_page.objitemName_byIndex(index), itemName);
         waitTime(3000);
+        String itemStockNumber = getText(Home_page.objitem_productDetails_stockNumber);
         verifyElementPresentAndClick(Home_page.objitem_productDetails_addToCart_btn, "Add to Cart btn");    
         verifyElementPresentAndClick(Home_page.objitem_productDetails_confirmBtn, "Confirm btn");
-        return new String[]{itemName};
+        return new String[]{itemName, itemStockNumber};
     }
 
     public void filterItems(String filter) throws Exception {

@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-21T17:45:09 CST" name="Web" finished-at="2024-02-21T17:45:36 CST" duration-ms="26593">
+  <suite started-at="2024-02-22T19:24:47 CST" name="Web" finished-at="2024-02-22T19:25:22 CST" duration-ms="35053">
     <groups>
     </groups>
-    <test started-at="2024-02-21T17:45:09 CST" name="MLSHOP" finished-at="2024-02-21T17:45:36 CST" duration-ms="26593">
+    <test started-at="2024-02-22T19:24:47 CST" name="MLSHOP" finished-at="2024-02-22T19:25:22 CST" duration-ms="35053">
       <class name="com.mlshop.test.ShippingDetails">
-        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.ShippingDetails@6fb365ed]" started-at="2024-02-21T17:45:09 CST" name="beforeMethod" finished-at="2024-02-21T17:45:13 CST" duration-ms="3142" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.ShippingDetails@6fb365ed]" started-at="2024-02-22T19:24:47 CST" name="beforeMethod" finished-at="2024-02-22T19:24:53 CST" duration-ms="5876" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,11 +23,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="MLS_TC_101_Validate_shippingDetails_accInfoFields()[pri:5, instance:com.mlshop.test.ShippingDetails@6fb365ed]" started-at="2024-02-21T17:45:13 CST" name="MLS_TC_101_Validate_shippingDetails_accInfoFields" finished-at="2024-02-21T17:45:30 CST" duration-ms="17038" status="PASS">
+        <test-method signature="MLS_TC_110_Validate_Computation()[pri:15, instance:com.mlshop.test.ShippingDetails@6fb365ed]" started-at="2024-02-22T19:24:53 CST" name="MLS_TC_110_Validate_Computation" finished-at="2024-02-22T19:25:16 CST" duration-ms="22628" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- MLS_TC_101_Validate_shippingDetails_accInfoFields -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.ShippingDetails@6fb365ed]" started-at="2024-02-21T17:45:30 CST" name="afterTest" finished-at="2024-02-21T17:45:36 CST" duration-ms="6085" status="PASS">
+        </test-method> <!-- MLS_TC_110_Validate_Computation -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.ShippingDetails@6fb365ed]" started-at="2024-02-22T19:25:16 CST" name="afterTest" finished-at="2024-02-22T19:25:22 CST" duration-ms="6173" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->

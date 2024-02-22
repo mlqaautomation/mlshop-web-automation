@@ -64,9 +64,15 @@ public class Shipping_Details {
     public static By objCity_Town = By
             .xpath("//div[@class='city w-[30%] py-[10px] 2sm:w-[100%] 3sm:w-[100%]']//select");
     public static By objBranch_Name = By.xpath("//select[@name='Branch Name']");
-
+    public static By objBranch_Address = By.xpath("(//p[contains(@class,'text-[#444444] px-5 py-2')])[1]");
     // Payment Method Selection
+    public static By getAllPaymentMethods(){
+        return By.xpath("(//button[contains(@class,'p-1 hover:scale-100')])");
+    }
     public static By objPaymentMethodML_Wallet = By.xpath("//*[contains(text(),'ML WALLET')]");
+    public static By objChargedModal_wallet = By.xpath("(//p[@class='text-center'])[1]");
+    public static By objProceed_btn = By.xpath("//button[normalize-space()='Proceed']");
+    public static By objCancel_btn = By.xpath("//button[normalize-space()='Cancel");
     public static By objPaymentMethodE_Wallet = By.xpath("//*[contains(text(),'E-WALLET')]");
     // E-Wallet Selection
     public static By E_Wallet_GrabPay = By.xpath("//*[contains(text(),'GRAB PAY')]");
@@ -78,12 +84,15 @@ public class Shipping_Details {
 
     // Shipping Calculation
     public static By objTotalItemPurchased = By.xpath("//*[contains(text(),'Total Purchased Item')]");
-    public static By objMerchandiseTotal = By.xpath("//*[contains(text(),'Merchandise Total')]");
-    public static By objServiceTotal = By.xpath("//*[contains(text(),'Service Total')]");
-    public static By objShippingTotal = By.xpath("//*[contains(text(),'Shipping Total')]");
-    public static By objTotalPayment = By.xpath("//*[contains(text(),'Total Payment')]");
+    public static By objMerchandiseTotal = By.xpath("//*[contains(text(),'Merchandise Total')]/parent::div/following-sibling::div[2]");
+    public static By objServiceTotal = By.xpath("//*[contains(text(),'Service Total')]/parent::div/following-sibling::div[2]");
+    public static By objShippingTotal = By.xpath("//*[contains(text(),'Shipping Total')]/parent::div/following-sibling::div[2]");
+    public static By objTotalPayment = By.xpath("//*[contains(text(),'Total Payment')]/parent::div/following-sibling::div[2]");
 
     // Lower Right Buttons
     public static By objPlaceOrder = By.xpath("//*[contains(text(),'Place Order')]");
     public static By objContinueShopping = By.xpath("//div[@class='hover:border-red-400 border-2 p-2 rounded-md']");
+
+    public static By objSuccessCheckout_msg = By.xpath("//p[normalize-space()='Successfully checkout items. Thank you!']");
+
 }

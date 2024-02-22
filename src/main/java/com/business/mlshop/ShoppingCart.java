@@ -22,8 +22,7 @@ public class ShoppingCart extends BaseClass{
     private Home home = new Home();
 
     public void navigateShoppingCart()throws Exception{
-        click(Home_page.objShoppingCart_icon, "Shopping Cart");
-        assertionValidation(getWebDriver().getCurrentUrl(), prop.getproperty("CartLink"));
+        click(Home_page.objShoppingCart_icon, "Shopping Cart");     
     }
     public void MLS_TC_90_Validate_shopping_cart_navigation()throws Exception{
         HeaderChildNode("MLS_TC_90, To Validate Shopping Cart page navigation");

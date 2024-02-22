@@ -13,8 +13,8 @@
       <class name="com.mlshop.test.ShippingDetails">
         <methods>
           <include name="beforeMethod"/>
+          <include name="MLS_TC_110_Validate_Computation"/>
           <include name="afterTest"/>
-          <include name="MLS_TC_101_Validate_shippingDetails_accInfoFields"/>
         </methods>
       </class> <!-- com.mlshop.test.ShippingDetails -->
     </classes>
