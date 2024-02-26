@@ -9,7 +9,7 @@
         <listener class-name="com.utility.ExtentReporter" />
     </listeners>
 
-    <!-- <test name="MLSHOP">
+    <test name="MLSHOP">
         <parameter name="portno" value="4723"></parameter>
         <parameter name="deviceName" value="n/a"></parameter>
         <classes>       
@@ -20,7 +20,7 @@
             <class name="com.mlshop.test.ShoppingCart">
             </class>  
         </classes>
-    </test> -->
+    </test>
     <test name="MLSHOP2">
         <parameter name="portno" value="4725"></parameter>
         <parameter name="deviceName" value="n/a"></parameter>
