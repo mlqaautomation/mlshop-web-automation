@@ -9,7 +9,7 @@ public class Paymongo {
      // Value Box
      public static By objLeftContainer = By.xpath("//div[@class='--px-2xl']");
      public static By objRightContainer = By.xpath("//div[@class='checkout-payment']");
- 
+        
      // Payment section
      public static By objPay_txt = By.xpath("//h3[@class='-shade800 --m-0']");
      public static By objTotal_amt = By.xpath("//span[@class='amount --m-0']");
@@ -109,7 +109,7 @@ public class Paymongo {
      public static By objErrorMessagePrivacy = By.xpath("//p[@class='privacy-policy-checkbox__error-message']");
      // BTN
      public static By objBack = By.xpath("// button[@class='button default --mr-xs button--primary']");
-     public static By objContinuePayment = By.xpath("// span[normalize-space()='Complete payment']");
+     public static By objComplete = By.xpath("// span[normalize-space()='Complete payment']");
  
      // Extra Directory for Direct Online Banking
      public static By objAccessPrompt = By.xpath("//span[@class='f-sm']");

@@ -1813,9 +1813,13 @@ public class Utilities extends ExtentReporter {
 	 */
 	@SuppressWarnings({"unchecked", "rawtypes"})
 	public void switchTab(int tab) {
-		ArrayList<String> window = new ArrayList(DriverManager.getDriver().getWindowHandles());
-		DriverManager.getDriver().switchTo().window(window.get(tab));
-	}
+        ArrayList<String> windowHandles = new ArrayList<>(DriverManager.getDriver().getWindowHandles());    
+        if (tab >= 0 && tab < windowHandles.size()) {
+            DriverManager.getDriver().switchTo().window(windowHandles.get(tab));
+        } else {
+            throw new IllegalArgumentException("Invalid tab index: " + tab);
+        }
+    }
 
 	/**
 	 * Function to generate random integer of specified maxValue
@@ -3909,7 +3913,38 @@ public class Utilities extends ExtentReporter {
             logger.error(e);
         }
     }
+    public void switchToNextTab() {
+        String currentWindowHandle = getWebDriver().getWindowHandle();
+        Set<String> windowHandles = getWebDriver().getWindowHandles();
+        
+        for (String windowHandle : windowHandles) {
+            if (!windowHandle.equals(currentWindowHandle)) {
+                getWebDriver().switchTo().window(windowHandle);
+                logger.info("Switch to " + currentWindowHandle);
+                break;
+            }
+        }
+    }
 
+    public void switchToPreviousTab() {
+        String currentWindowHandle = getWebDriver().getWindowHandle();
+        Set<String> windowHandles = getWebDriver().getWindowHandles();
+        String previousWindowHandle = null;
+        
+        for (String windowHandle : windowHandles) {
+            if (windowHandle.equals(currentWindowHandle)) {
+                break;
+            }
+            previousWindowHandle = windowHandle;
+        }
+        
+        if (previousWindowHandle != null) {
+            getWebDriver().switchTo().window(previousWindowHandle);
+            logger.info("Switch to " + previousWindowHandle);
+        } else {
+            throw new IllegalStateException("No previous tab found");
+        }
+    }
 }
 
 

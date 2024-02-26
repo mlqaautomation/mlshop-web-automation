@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="86" passed="81" failed="5" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-22T19:24:47 CST" name="Web" finished-at="2024-02-22T19:25:22 CST" duration-ms="35053">
+  <suite started-at="2024-02-23T20:16:41 CST" name="Web" finished-at="2024-02-23T20:30:48 CST" duration-ms="847647">
     <groups>
     </groups>
-    <test started-at="2024-02-22T19:24:47 CST" name="MLSHOP" finished-at="2024-02-22T19:25:22 CST" duration-ms="35053">
-      <class name="com.mlshop.test.ShippingDetails">
-        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.ShippingDetails@6fb365ed]" started-at="2024-02-22T19:24:47 CST" name="beforeMethod" finished-at="2024-02-22T19:24:53 CST" duration-ms="5876" status="PASS">
+    <test started-at="2024-02-23T20:16:41 CST" name="MLSHOP" finished-at="2024-02-23T20:29:06 CST" duration-ms="745098">
+      <class name="com.mlshop.test.ShoppingCart">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.ShoppingCart@4f1bfe23]" started-at="2024-02-23T20:17:00 CST" name="beforeMethod" finished-at="2024-02-23T20:17:03 CST" duration-ms="2502" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,15 +23,2344 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="MLS_TC_110_Validate_Computation()[pri:15, instance:com.mlshop.test.ShippingDetails@6fb365ed]" started-at="2024-02-22T19:24:53 CST" name="MLS_TC_110_Validate_Computation" finished-at="2024-02-22T19:25:16 CST" duration-ms="22628" status="PASS">
+        <test-method signature="MLS_TC_90_Validate_shopping_cart_navigation()[pri:1, instance:com.mlshop.test.ShoppingCart@4f1bfe23]" started-at="2024-02-23T20:17:03 CST" name="MLS_TC_90_Validate_shopping_cart_navigation" finished-at="2024-02-23T20:17:03 CST" duration-ms="652" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_90_Validate_shopping_cart_navigation -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.ShoppingCart@4f1bfe23]" started-at="2024-02-23T20:17:04 CST" name="afterTest" finished-at="2024-02-23T20:17:10 CST" duration-ms="6055" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.ShoppingCart@4f1bfe23]" started-at="2024-02-23T20:17:44 CST" name="beforeMethod" finished-at="2024-02-23T20:17:47 CST" duration-ms="2304" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4723]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_91_Validate_shopping_cart_items()[pri:2, instance:com.mlshop.test.ShoppingCart@4f1bfe23]" started-at="2024-02-23T20:17:47 CST" name="MLS_TC_91_Validate_shopping_cart_items" finished-at="2024-02-23T20:17:52 CST" duration-ms="4797" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_91_Validate_shopping_cart_items -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.ShoppingCart@4f1bfe23]" started-at="2024-02-23T20:17:52 CST" name="afterTest" finished-at="2024-02-23T20:17:58 CST" duration-ms="5971" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.ShoppingCart@4f1bfe23]" started-at="2024-02-23T20:18:49 CST" name="beforeMethod" finished-at="2024-02-23T20:18:51 CST" duration-ms="2399" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4723]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_92_Validate_shopping_cart_increment()[pri:3, instance:com.mlshop.test.ShoppingCart@4f1bfe23]" started-at="2024-02-23T20:18:51 CST" name="MLS_TC_92_Validate_shopping_cart_increment" finished-at="2024-02-23T20:18:56 CST" duration-ms="4952" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_92_Validate_shopping_cart_increment -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.ShoppingCart@4f1bfe23]" started-at="2024-02-23T20:18:57 CST" name="afterTest" finished-at="2024-02-23T20:19:03 CST" duration-ms="5932" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.ShoppingCart@4f1bfe23]" started-at="2024-02-23T20:19:39 CST" name="beforeMethod" finished-at="2024-02-23T20:19:42 CST" duration-ms="2693" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4723]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_93_Validate_shopping_cart_removeItem()[pri:4, instance:com.mlshop.test.ShoppingCart@4f1bfe23]" started-at="2024-02-23T20:19:42 CST" name="MLS_TC_93_Validate_shopping_cart_removeItem" finished-at="2024-02-23T20:19:47 CST" duration-ms="4837" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_93_Validate_shopping_cart_removeItem -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.ShoppingCart@4f1bfe23]" started-at="2024-02-23T20:19:47 CST" name="afterTest" finished-at="2024-02-23T20:19:53 CST" duration-ms="6197" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.ShoppingCart@4f1bfe23]" started-at="2024-02-23T20:20:31 CST" name="beforeMethod" finished-at="2024-02-23T20:20:33 CST" duration-ms="2294" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4723]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_94_Validate_shopping_cart_modalPopup()[pri:5, instance:com.mlshop.test.ShoppingCart@4f1bfe23]" started-at="2024-02-23T20:20:33 CST" name="MLS_TC_94_Validate_shopping_cart_modalPopup" finished-at="2024-02-23T20:20:38 CST" duration-ms="5033" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_94_Validate_shopping_cart_modalPopup -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.ShoppingCart@4f1bfe23]" started-at="2024-02-23T20:20:38 CST" name="afterTest" finished-at="2024-02-23T20:20:44 CST" duration-ms="5856" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.ShoppingCart@4f1bfe23]" started-at="2024-02-23T20:21:21 CST" name="beforeMethod" finished-at="2024-02-23T20:21:24 CST" duration-ms="2908" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4723]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_95_Validate_shopping_cart_cancelRemove()[pri:6, instance:com.mlshop.test.ShoppingCart@4f1bfe23]" started-at="2024-02-23T20:21:24 CST" name="MLS_TC_95_Validate_shopping_cart_cancelRemove" finished-at="2024-02-23T20:21:29 CST" duration-ms="4797" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_95_Validate_shopping_cart_cancelRemove -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.ShoppingCart@4f1bfe23]" started-at="2024-02-23T20:21:29 CST" name="afterTest" finished-at="2024-02-23T20:21:35 CST" duration-ms="6288" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.ShoppingCart@4f1bfe23]" started-at="2024-02-23T20:21:57 CST" name="beforeMethod" finished-at="2024-02-23T20:22:00 CST" duration-ms="2774" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4723]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_96_Validate_shopping_cart_decrementFunction()[pri:7, instance:com.mlshop.test.ShoppingCart@4f1bfe23]" started-at="2024-02-23T20:22:00 CST" name="MLS_TC_96_Validate_shopping_cart_decrementFunction" finished-at="2024-02-23T20:22:05 CST" duration-ms="5865" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_96_Validate_shopping_cart_decrementFunction -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.ShoppingCart@4f1bfe23]" started-at="2024-02-23T20:22:06 CST" name="afterTest" finished-at="2024-02-23T20:22:12 CST" duration-ms="6175" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.ShoppingCart@4f1bfe23]" started-at="2024-02-23T20:22:35 CST" name="beforeMethod" finished-at="2024-02-23T20:22:37 CST" duration-ms="2688" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4723]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_97_Validate_shopping_cart_incrementFunction()[pri:8, instance:com.mlshop.test.ShoppingCart@4f1bfe23]" started-at="2024-02-23T20:22:37 CST" name="MLS_TC_97_Validate_shopping_cart_incrementFunction" finished-at="2024-02-23T20:22:44 CST" duration-ms="6868" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_97_Validate_shopping_cart_incrementFunction -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.ShoppingCart@4f1bfe23]" started-at="2024-02-23T20:22:44 CST" name="afterTest" finished-at="2024-02-23T20:22:50 CST" duration-ms="5987" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.mlshop.test.ShoppingCart -->
+      <class name="com.mlshop.test.ShippingDetails">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.ShippingDetails@691939c9]" started-at="2024-02-23T20:17:10 CST" name="beforeMethod" finished-at="2024-02-23T20:17:13 CST" duration-ms="3079" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4723]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_98_Validate_shippingDetails_pageNavigation()[pri:1, instance:com.mlshop.test.ShippingDetails@691939c9]" started-at="2024-02-23T20:17:13 CST" name="MLS_TC_98_Validate_shippingDetails_pageNavigation" finished-at="2024-02-23T20:17:20 CST" duration-ms="7165" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_98_Validate_shippingDetails_pageNavigation -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.ShippingDetails@691939c9]" started-at="2024-02-23T20:17:20 CST" name="afterTest" finished-at="2024-02-23T20:17:26 CST" duration-ms="6168" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.ShippingDetails@691939c9]" started-at="2024-02-23T20:17:58 CST" name="beforeMethod" finished-at="2024-02-23T20:18:01 CST" duration-ms="3592" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4723]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_99_Validate_shippingDetails_itemsVisiblity_jewlery()[pri:2, instance:com.mlshop.test.ShippingDetails@691939c9]" started-at="2024-02-23T20:18:01 CST" name="MLS_TC_99_Validate_shippingDetails_itemsVisiblity_jewlery" finished-at="2024-02-23T20:18:08 CST" duration-ms="7148" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_99_Validate_shippingDetails_itemsVisiblity_jewlery -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.ShippingDetails@691939c9]" started-at="2024-02-23T20:18:09 CST" name="afterTest" finished-at="2024-02-23T20:18:15 CST" duration-ms="6199" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.ShippingDetails@691939c9]" started-at="2024-02-23T20:18:38 CST" name="beforeMethod" finished-at="2024-02-23T20:18:40 CST" duration-ms="2219" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4723]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_100_Validate_shippingDetails_itemsVisiblity_watch()[pri:3, instance:com.mlshop.test.ShippingDetails@691939c9]" started-at="2024-02-23T20:18:40 CST" name="MLS_TC_100_Validate_shippingDetails_itemsVisiblity_watch" finished-at="2024-02-23T20:18:43 CST" duration-ms="2732" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Element not present]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Element not present
+at com.utility.Utilities.verifyElementPresentAndClick(Utilities.java:440)
+at com.business.mlshop.Home.addItemToCart(Home.java:678)
+at com.business.mlshop.ShippingDetails.shippingPageItemChecker(ShippingDetails.java:53)
+at com.business.mlshop.ShippingDetails.MLS_TC_100_Validate_shippingDetails_itemsVisiblity_watch(ShippingDetails.java:95)
+at com.mlshop.test.ShippingDetails.MLS_TC_100_Validate_shippingDetails_itemsVisiblity_watch(ShippingDetails.java:16)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:68)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=122.0.6261.69)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HOTGQA008', ip: '10.0.8.67', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.69, chrome: {chromedriverVersion: 122.0.6261.69 (81bc525b6a36..., userDataDir: C:\Users\MELG20~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59773}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: eager, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7b3b9a16b1cf639b182d123983c5f849
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at com.utility.Utilities.verifyElementPresentAndClick(Utilities.java:427)
+... 27 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_100_Validate_shippingDetails_itemsVisiblity_watch -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.ShippingDetails@691939c9]" started-at="2024-02-23T20:18:43 CST" name="afterTest" finished-at="2024-02-23T20:18:49 CST" duration-ms="5953" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.ShippingDetails@691939c9]" started-at="2024-02-23T20:19:23 CST" name="beforeMethod" finished-at="2024-02-23T20:19:26 CST" duration-ms="2383" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4723]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_124_Validate_shippingDetails_itemsVisiblity_amparito()[pri:4, instance:com.mlshop.test.ShippingDetails@691939c9]" started-at="2024-02-23T20:19:26 CST" name="MLS_TC_124_Validate_shippingDetails_itemsVisiblity_amparito" finished-at="2024-02-23T20:19:33 CST" duration-ms="7356" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_124_Validate_shippingDetails_itemsVisiblity_amparito -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.ShippingDetails@691939c9]" started-at="2024-02-23T20:19:33 CST" name="afterTest" finished-at="2024-02-23T20:19:39 CST" duration-ms="5962" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.ShippingDetails@691939c9]" started-at="2024-02-23T20:20:10 CST" name="beforeMethod" finished-at="2024-02-23T20:20:13 CST" duration-ms="2548" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4723]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_101_Validate_shippingDetails_accInfoFields()[pri:5, instance:com.mlshop.test.ShippingDetails@691939c9]" started-at="2024-02-23T20:20:13 CST" name="MLS_TC_101_Validate_shippingDetails_accInfoFields" finished-at="2024-02-23T20:20:25 CST" duration-ms="12101" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_101_Validate_shippingDetails_accInfoFields -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.ShippingDetails@691939c9]" started-at="2024-02-23T20:20:25 CST" name="afterTest" finished-at="2024-02-23T20:20:31 CST" duration-ms="5928" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.ShippingDetails@691939c9]" started-at="2024-02-23T20:21:00 CST" name="beforeMethod" finished-at="2024-02-23T20:21:03 CST" duration-ms="2661" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4723]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_126_Validate_shippingDetails_accInfoFields_fill()[pri:6, instance:com.mlshop.test.ShippingDetails@691939c9]" started-at="2024-02-23T20:21:03 CST" name="MLS_TC_126_Validate_shippingDetails_accInfoFields_fill" finished-at="2024-02-23T20:21:15 CST" duration-ms="11367" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_126_Validate_shippingDetails_accInfoFields_fill -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.ShippingDetails@691939c9]" started-at="2024-02-23T20:21:15 CST" name="afterTest" finished-at="2024-02-23T20:21:21 CST" duration-ms="6173" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.ShippingDetails@691939c9]" started-at="2024-02-23T20:21:35 CST" name="beforeMethod" finished-at="2024-02-23T20:21:38 CST" duration-ms="2620" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4723]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_102_Validate_shippingDetails_accInfoFields_branchAddr()[pri:7, instance:com.mlshop.test.ShippingDetails@691939c9]" started-at="2024-02-23T20:21:38 CST" name="MLS_TC_102_Validate_shippingDetails_accInfoFields_branchAddr" finished-at="2024-02-23T20:21:50 CST" duration-ms="12769" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_102_Validate_shippingDetails_accInfoFields_branchAddr -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.ShippingDetails@691939c9]" started-at="2024-02-23T20:21:51 CST" name="afterTest" finished-at="2024-02-23T20:21:57 CST" duration-ms="6171" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.ShippingDetails@691939c9]" started-at="2024-02-23T20:22:12 CST" name="beforeMethod" finished-at="2024-02-23T20:22:14 CST" duration-ms="2607" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4723]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_104_Validate_shippingDetails_paymentMethod_isClickable()[pri:8, instance:com.mlshop.test.ShippingDetails@691939c9]" started-at="2024-02-23T20:22:14 CST" name="MLS_TC_104_Validate_shippingDetails_paymentMethod_isClickable" finished-at="2024-02-23T20:22:28 CST" duration-ms="14004" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_104_Validate_shippingDetails_paymentMethod_isClickable -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.ShippingDetails@691939c9]" started-at="2024-02-23T20:22:29 CST" name="afterTest" finished-at="2024-02-23T20:22:35 CST" duration-ms="6160" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.ShippingDetails@691939c9]" started-at="2024-02-23T20:22:50 CST" name="beforeMethod" finished-at="2024-02-23T20:22:53 CST" duration-ms="2345" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4723]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_105_Validate_shippingDetails_paymentMethod_eWalletOptions_Visiblity()[pri:9, instance:com.mlshop.test.ShippingDetails@691939c9]" started-at="2024-02-23T20:22:53 CST" name="MLS_TC_105_Validate_shippingDetails_paymentMethod_eWalletOptions_Visiblity" finished-at="2024-02-23T20:23:07 CST" duration-ms="14542" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_105_Validate_shippingDetails_paymentMethod_eWalletOptions_Visiblity -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.ShippingDetails@691939c9]" started-at="2024-02-23T20:23:08 CST" name="afterTest" finished-at="2024-02-23T20:23:14 CST" duration-ms="6034" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.ShippingDetails@691939c9]" started-at="2024-02-23T20:23:14 CST" name="beforeMethod" finished-at="2024-02-23T20:23:16 CST" duration-ms="2372" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4723]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_106_Validate_shippingDetails_paymentConfirmation_popUp()[pri:10, instance:com.mlshop.test.ShippingDetails@691939c9]" started-at="2024-02-23T20:23:16 CST" name="MLS_TC_106_Validate_shippingDetails_paymentConfirmation_popUp" finished-at="2024-02-23T20:23:31 CST" duration-ms="14641" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_106_Validate_shippingDetails_paymentConfirmation_popUp -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.ShippingDetails@691939c9]" started-at="2024-02-23T20:23:31 CST" name="afterTest" finished-at="2024-02-23T20:23:37 CST" duration-ms="6153" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.ShippingDetails@691939c9]" started-at="2024-02-23T20:23:37 CST" name="beforeMethod" finished-at="2024-02-23T20:23:40 CST" duration-ms="2911" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4723]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_130_Validate_shippingDetails_totalPayment_chargedModal()[pri:11, instance:com.mlshop.test.ShippingDetails@691939c9]" started-at="2024-02-23T20:23:40 CST" name="MLS_TC_130_Validate_shippingDetails_totalPayment_chargedModal" finished-at="2024-02-23T20:23:55 CST" duration-ms="14865" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_130_Validate_shippingDetails_totalPayment_chargedModal -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.ShippingDetails@691939c9]" started-at="2024-02-23T20:23:55 CST" name="afterTest" finished-at="2024-02-23T20:24:01 CST" duration-ms="6161" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.ShippingDetails@691939c9]" started-at="2024-02-23T20:24:01 CST" name="beforeMethod" finished-at="2024-02-23T20:24:04 CST" duration-ms="2351" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4723]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_107_Validate_shippingDetails_otp_Popup()[pri:12, instance:com.mlshop.test.ShippingDetails@691939c9]" started-at="2024-02-23T20:24:04 CST" name="MLS_TC_107_Validate_shippingDetails_otp_Popup" finished-at="2024-02-23T20:24:20 CST" duration-ms="16133" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_107_Validate_shippingDetails_otp_Popup -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.ShippingDetails@691939c9]" started-at="2024-02-23T20:24:20 CST" name="afterTest" finished-at="2024-02-23T20:24:26 CST" duration-ms="6171" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.ShippingDetails@691939c9]" started-at="2024-02-23T20:24:26 CST" name="beforeMethod" finished-at="2024-02-23T20:24:29 CST" duration-ms="2624" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4723]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_108_Validate_shippingDetails_otp_popUpClose()[pri:13, instance:com.mlshop.test.ShippingDetails@691939c9]" started-at="2024-02-23T20:24:29 CST" name="MLS_TC_108_Validate_shippingDetails_otp_popUpClose" finished-at="2024-02-23T20:24:45 CST" duration-ms="16650" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_108_Validate_shippingDetails_otp_popUpClose -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.ShippingDetails@691939c9]" started-at="2024-02-23T20:24:46 CST" name="afterTest" finished-at="2024-02-23T20:24:52 CST" duration-ms="6127" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.ShippingDetails@691939c9]" started-at="2024-02-23T20:24:52 CST" name="beforeMethod" finished-at="2024-02-23T20:24:55 CST" duration-ms="2877" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4723]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_109_Validate_purchaseVia_mlWallet()[pri:14, instance:com.mlshop.test.ShippingDetails@691939c9]" started-at="2024-02-23T20:24:55 CST" name="MLS_TC_109_Validate_purchaseVia_mlWallet" finished-at="2024-02-23T20:25:17 CST" duration-ms="22935" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_109_Validate_purchaseVia_mlWallet -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.ShippingDetails@691939c9]" started-at="2024-02-23T20:25:18 CST" name="afterTest" finished-at="2024-02-23T20:25:24 CST" duration-ms="6120" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.ShippingDetails@691939c9]" started-at="2024-02-23T20:25:24 CST" name="beforeMethod" finished-at="2024-02-23T20:25:26 CST" duration-ms="2614" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4723]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_110_Validate_Computation()[pri:15, instance:com.mlshop.test.ShippingDetails@691939c9]" started-at="2024-02-23T20:25:26 CST" name="MLS_TC_110_Validate_Computation" finished-at="2024-02-23T20:25:40 CST" duration-ms="13527" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MLS_TC_110_Validate_Computation -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.ShippingDetails@6fb365ed]" started-at="2024-02-22T19:25:16 CST" name="afterTest" finished-at="2024-02-22T19:25:22 CST" duration-ms="6173" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.ShippingDetails@691939c9]" started-at="2024-02-23T20:25:40 CST" name="afterTest" finished-at="2024-02-23T20:25:46 CST" duration-ms="6146" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.ShippingDetails@691939c9]" started-at="2024-02-23T20:25:46 CST" name="beforeMethod" finished-at="2024-02-23T20:25:49 CST" duration-ms="2251" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4723]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_113_Validate_successPurchase_historyDetails()[pri:16, instance:com.mlshop.test.ShippingDetails@691939c9]" started-at="2024-02-23T20:25:49 CST" name="MLS_TC_113_Validate_successPurchase_historyDetails" finished-at="2024-02-23T20:26:23 CST" duration-ms="34365" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_113_Validate_successPurchase_historyDetails -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.ShippingDetails@691939c9]" started-at="2024-02-23T20:26:23 CST" name="afterTest" finished-at="2024-02-23T20:26:29 CST" duration-ms="6238" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.ShippingDetails@691939c9]" started-at="2024-02-23T20:26:29 CST" name="beforeMethod" finished-at="2024-02-23T20:26:32 CST" duration-ms="2470" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4723]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_114_Validate_successPurchase_grabPay()[pri:17, instance:com.mlshop.test.ShippingDetails@691939c9]" started-at="2024-02-23T20:26:32 CST" name="MLS_TC_114_Validate_successPurchase_grabPay" finished-at="2024-02-23T20:27:19 CST" duration-ms="47505" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_114_Validate_successPurchase_grabPay -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.ShippingDetails@691939c9]" started-at="2024-02-23T20:27:20 CST" name="afterTest" finished-at="2024-02-23T20:27:26 CST" duration-ms="6224" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.ShippingDetails@691939c9]" started-at="2024-02-23T20:27:26 CST" name="beforeMethod" finished-at="2024-02-23T20:27:29 CST" duration-ms="3082" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4723]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_115_Validate_successPurchase_gCash()[pri:18, instance:com.mlshop.test.ShippingDetails@691939c9]" started-at="2024-02-23T20:27:29 CST" name="MLS_TC_115_Validate_successPurchase_gCash" finished-at="2024-02-23T20:28:10 CST" duration-ms="41442" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_115_Validate_successPurchase_gCash -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.ShippingDetails@691939c9]" started-at="2024-02-23T20:28:11 CST" name="afterTest" finished-at="2024-02-23T20:28:17 CST" duration-ms="6363" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.ShippingDetails@691939c9]" started-at="2024-02-23T20:28:17 CST" name="beforeMethod" finished-at="2024-02-23T20:28:20 CST" duration-ms="2742" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4723]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_116_Validate_successPurchase_payMaya()[pri:19, instance:com.mlshop.test.ShippingDetails@691939c9]" started-at="2024-02-23T20:28:20 CST" name="MLS_TC_116_Validate_successPurchase_payMaya" finished-at="2024-02-23T20:28:59 CST" duration-ms="39651" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_116_Validate_successPurchase_payMaya -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.ShippingDetails@691939c9]" started-at="2024-02-23T20:28:59 CST" name="afterTest" finished-at="2024-02-23T20:29:06 CST" duration-ms="6295" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- com.mlshop.test.ShippingDetails -->
+      <class name="com.mlshop.test.Login">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.Login@4982cc36]" started-at="2024-02-23T20:16:41 CST" name="beforeMethod" finished-at="2024-02-23T20:16:49 CST" duration-ms="8604" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4723]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_01_ValidateUserIcon_Redirection()[pri:1, instance:com.mlshop.test.Login@4982cc36]" started-at="2024-02-23T20:16:49 CST" name="MLS_TC_01_ValidateUserIcon_Redirection" finished-at="2024-02-23T20:16:54 CST" duration-ms="4295" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_01_ValidateUserIcon_Redirection -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.Login@4982cc36]" started-at="2024-02-23T20:16:54 CST" name="afterTest" finished-at="2024-02-23T20:17:00 CST" duration-ms="6200" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.Login@4982cc36]" started-at="2024-02-23T20:17:26 CST" name="beforeMethod" finished-at="2024-02-23T20:17:30 CST" duration-ms="3226" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4723]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_02_ValidateErrorPrompt_MobileNumber_Field()[pri:2, instance:com.mlshop.test.Login@4982cc36]" started-at="2024-02-23T20:17:30 CST" name="MLS_TC_02_ValidateErrorPrompt_MobileNumber_Field" finished-at="2024-02-23T20:17:38 CST" duration-ms="8554" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_02_ValidateErrorPrompt_MobileNumber_Field -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.Login@4982cc36]" started-at="2024-02-23T20:17:38 CST" name="afterTest" finished-at="2024-02-23T20:17:44 CST" duration-ms="5976" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.Login@4982cc36]" started-at="2024-02-23T20:18:15 CST" name="beforeMethod" finished-at="2024-02-23T20:18:18 CST" duration-ms="2810" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4723]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_05_ValidateErorrPrompt_()[pri:3, instance:com.mlshop.test.Login@4982cc36]" started-at="2024-02-23T20:18:18 CST" name="MLS_TC_05_ValidateErorrPrompt_" finished-at="2024-02-23T20:18:32 CST" duration-ms="14227" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_05_ValidateErorrPrompt_ -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.Login@4982cc36]" started-at="2024-02-23T20:18:32 CST" name="afterTest" finished-at="2024-02-23T20:18:38 CST" duration-ms="5989" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.Login@4982cc36]" started-at="2024-02-23T20:19:03 CST" name="beforeMethod" finished-at="2024-02-23T20:19:05 CST" duration-ms="2205" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4723]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_06_ValidateLogin_Function()[pri:4, instance:com.mlshop.test.Login@4982cc36]" started-at="2024-02-23T20:19:05 CST" name="MLS_TC_06_ValidateLogin_Function" finished-at="2024-02-23T20:19:17 CST" duration-ms="12059" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_06_ValidateLogin_Function -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.Login@4982cc36]" started-at="2024-02-23T20:19:17 CST" name="afterTest" finished-at="2024-02-23T20:19:23 CST" duration-ms="6113" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.Login@4982cc36]" started-at="2024-02-23T20:19:53 CST" name="beforeMethod" finished-at="2024-02-23T20:19:57 CST" duration-ms="3403" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4723]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_08_ValidateLogin_RegisterRedirection()[pri:5, instance:com.mlshop.test.Login@4982cc36]" started-at="2024-02-23T20:19:57 CST" name="MLS_TC_08_ValidateLogin_RegisterRedirection" finished-at="2024-02-23T20:20:04 CST" duration-ms="7356" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_08_ValidateLogin_RegisterRedirection -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.Login@4982cc36]" started-at="2024-02-23T20:20:04 CST" name="afterTest" finished-at="2024-02-23T20:20:10 CST" duration-ms="5952" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.Login@4982cc36]" started-at="2024-02-23T20:20:44 CST" name="beforeMethod" finished-at="2024-02-23T20:20:47 CST" duration-ms="2518" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4723]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_09_ValidateLogin_CancelRegister()[pri:6, instance:com.mlshop.test.Login@4982cc36]" started-at="2024-02-23T20:20:47 CST" name="MLS_TC_09_ValidateLogin_CancelRegister" finished-at="2024-02-23T20:20:54 CST" duration-ms="7170" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_09_ValidateLogin_CancelRegister -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.Login@4982cc36]" started-at="2024-02-23T20:20:54 CST" name="afterTest" finished-at="2024-02-23T20:21:00 CST" duration-ms="6306" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.mlshop.test.Login -->
     </test> <!-- MLSHOP -->
+    <test started-at="2024-02-23T20:16:41 CST" name="MLSHOP2" finished-at="2024-02-23T20:30:48 CST" duration-ms="847647">
+      <class name="com.mlshop.test.Home">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:16:41 CST" name="beforeMethod" finished-at="2024-02-23T20:16:49 CST" duration-ms="8604" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4725]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MS_TC_25_ValidateUserName_DropDown()[pri:1, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:16:49 CST" name="MS_TC_25_ValidateUserName_DropDown" finished-at="2024-02-23T20:17:20 CST" duration-ms="30961" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MS_TC_25_ValidateUserName_DropDown -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:17:21 CST" name="afterTest" finished-at="2024-02-23T20:17:27 CST" duration-ms="6131" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:17:27 CST" name="beforeMethod" finished-at="2024-02-23T20:17:30 CST" duration-ms="3484" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4725]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_26_ValidateProfile_Navigation()[pri:2, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:17:30 CST" name="MLS_TC_26_ValidateProfile_Navigation" finished-at="2024-02-23T20:17:43 CST" duration-ms="12540" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_26_ValidateProfile_Navigation -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:17:43 CST" name="afterTest" finished-at="2024-02-23T20:17:49 CST" duration-ms="6197" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:17:49 CST" name="beforeMethod" finished-at="2024-02-23T20:17:52 CST" duration-ms="2452" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4725]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_27_ValidatePurchaseHistory_Navigation()[pri:3, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:17:52 CST" name="MLS_TC_27_ValidatePurchaseHistory_Navigation" finished-at="2024-02-23T20:18:04 CST" duration-ms="12498" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [https://mlshoppreprod.mlhuillier.com/purchasehistory] but found [https://mlshoppreprod.mlhuillier.com/]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [https://mlshoppreprod.mlhuillier.com/purchasehistory] but found [https://mlshoppreprod.mlhuillier.com/]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:575)
+at org.testng.Assert.assertEquals(Assert.java:585)
+at com.utility.Utilities.assertionValidation(Utilities.java:2790)
+at com.business.mlshop.Home.MLS_TC_27_ValidatePurchaseHistory_Navigation(Home.java:56)
+at com.mlshop.test.Home.MLS_TC_27_ValidatePurchaseHistory_Navigation(Home.java:17)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:68)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_27_ValidatePurchaseHistory_Navigation -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:18:04 CST" name="afterTest" finished-at="2024-02-23T20:18:10 CST" duration-ms="6155" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:18:10 CST" name="beforeMethod" finished-at="2024-02-23T20:18:13 CST" duration-ms="2270" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4725]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_28_ValidateLogout()[pri:4, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:18:13 CST" name="MLS_TC_28_ValidateLogout" finished-at="2024-02-23T20:18:25 CST" duration-ms="12333" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_28_ValidateLogout -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:18:25 CST" name="afterTest" finished-at="2024-02-23T20:18:32 CST" duration-ms="6471" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:18:32 CST" name="beforeMethod" finished-at="2024-02-23T20:18:34 CST" duration-ms="2642" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4725]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_29_ValidateFilter_AllTypes()[pri:5, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:18:34 CST" name="MLS_TC_29_ValidateFilter_AllTypes" finished-at="2024-02-23T20:18:36 CST" duration-ms="1707" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_29_ValidateFilter_AllTypes -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:18:37 CST" name="afterTest" finished-at="2024-02-23T20:18:43 CST" duration-ms="6160" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:18:43 CST" name="beforeMethod" finished-at="2024-02-23T20:18:45 CST" duration-ms="2565" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4725]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_30_ValidateFilter_Ring()[pri:6, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:18:45 CST" name="MLS_TC_30_ValidateFilter_Ring" finished-at="2024-02-23T20:18:48 CST" duration-ms="2625" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_30_ValidateFilter_Ring -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:18:48 CST" name="afterTest" finished-at="2024-02-23T20:18:54 CST" duration-ms="6050" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:18:54 CST" name="beforeMethod" finished-at="2024-02-23T20:18:57 CST" duration-ms="2445" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4725]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_31_ValidateFilter_Necklace()[pri:7, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:18:57 CST" name="MLS_TC_31_ValidateFilter_Necklace" finished-at="2024-02-23T20:18:59 CST" duration-ms="2497" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_31_ValidateFilter_Necklace -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:19:00 CST" name="afterTest" finished-at="2024-02-23T20:19:06 CST" duration-ms="5995" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:19:06 CST" name="beforeMethod" finished-at="2024-02-23T20:19:08 CST" duration-ms="2630" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4725]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_32_ValidateFilter_Bracelets()[pri:8, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:19:08 CST" name="MLS_TC_32_ValidateFilter_Bracelets" finished-at="2024-02-23T20:19:11 CST" duration-ms="2687" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_32_ValidateFilter_Bracelets -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:19:11 CST" name="afterTest" finished-at="2024-02-23T20:19:18 CST" duration-ms="6357" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:19:18 CST" name="beforeMethod" finished-at="2024-02-23T20:19:20 CST" duration-ms="2314" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4725]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_33_ValidateFilter_Earrings()[pri:9, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:19:20 CST" name="MLS_TC_33_ValidateFilter_Earrings" finished-at="2024-02-23T20:19:23 CST" duration-ms="2571" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_33_ValidateFilter_Earrings -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:19:23 CST" name="afterTest" finished-at="2024-02-23T20:19:29 CST" duration-ms="5978" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:19:29 CST" name="beforeMethod" finished-at="2024-02-23T20:19:31 CST" duration-ms="2506" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4725]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_34_ValidateFilter_Pendant()[pri:10, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:19:31 CST" name="MLS_TC_34_ValidateFilter_Pendant" finished-at="2024-02-23T20:19:34 CST" duration-ms="2564" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_34_ValidateFilter_Pendant -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:19:34 CST" name="afterTest" finished-at="2024-02-23T20:19:40 CST" duration-ms="6148" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:19:40 CST" name="beforeMethod" finished-at="2024-02-23T20:19:44 CST" duration-ms="3247" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4725]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_35_ValidateFilter_Brouch()[pri:11, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:19:44 CST" name="MLS_TC_35_ValidateFilter_Brouch" finished-at="2024-02-23T20:19:46 CST" duration-ms="2615" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_35_ValidateFilter_Brouch -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:19:46 CST" name="afterTest" finished-at="2024-02-23T20:19:53 CST" duration-ms="6202" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:19:53 CST" name="beforeMethod" finished-at="2024-02-23T20:19:56 CST" duration-ms="2900" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4725]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_36_ValidateFilter_Engagement()[pri:12, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:19:56 CST" name="MLS_TC_36_ValidateFilter_Engagement" finished-at="2024-02-23T20:20:29 CST" duration-ms="33025" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_36_ValidateFilter_Engagement -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:20:29 CST" name="afterTest" finished-at="2024-02-23T20:20:35 CST" duration-ms="6148" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:20:35 CST" name="beforeMethod" finished-at="2024-02-23T20:20:37 CST" duration-ms="2352" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4725]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_37_ValidateFilter_AllGoldKarat()[pri:13, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:20:37 CST" name="MLS_TC_37_ValidateFilter_AllGoldKarat" finished-at="2024-02-23T20:20:40 CST" duration-ms="2683" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_37_ValidateFilter_AllGoldKarat -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:20:40 CST" name="afterTest" finished-at="2024-02-23T20:20:47 CST" duration-ms="6187" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:20:47 CST" name="beforeMethod" finished-at="2024-02-23T20:20:49 CST" duration-ms="2557" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4725]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_38_ValidateFilter_14Karat()[pri:14, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:20:49 CST" name="MLS_TC_38_ValidateFilter_14Karat" finished-at="2024-02-23T20:20:52 CST" duration-ms="2714" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_38_ValidateFilter_14Karat -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:20:52 CST" name="afterTest" finished-at="2024-02-23T20:20:58 CST" duration-ms="6193" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:20:58 CST" name="beforeMethod" finished-at="2024-02-23T20:21:01 CST" duration-ms="2515" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4725]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_39_ValidateFilter_18Karat()[pri:14, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:21:01 CST" name="MLS_TC_39_ValidateFilter_18Karat" finished-at="2024-02-23T20:21:04 CST" duration-ms="3020" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_39_ValidateFilter_18Karat -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:21:04 CST" name="afterTest" finished-at="2024-02-23T20:21:10 CST" duration-ms="5793" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:21:10 CST" name="beforeMethod" finished-at="2024-02-23T20:21:12 CST" duration-ms="2207" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4725]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_40_ValidateFilter_AllGoldColors()[pri:15, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:21:12 CST" name="MLS_TC_40_ValidateFilter_AllGoldColors" finished-at="2024-02-23T20:21:15 CST" duration-ms="2654" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_40_ValidateFilter_AllGoldColors -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:21:15 CST" name="afterTest" finished-at="2024-02-23T20:21:21 CST" duration-ms="6050" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:21:21 CST" name="beforeMethod" finished-at="2024-02-23T20:21:24 CST" duration-ms="2882" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4725]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_41_ValidateFilter_YellowGold()[pri:16, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:21:24 CST" name="MLS_TC_41_ValidateFilter_YellowGold" finished-at="2024-02-23T20:21:27 CST" duration-ms="2583" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_41_ValidateFilter_YellowGold -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:21:27 CST" name="afterTest" finished-at="2024-02-23T20:21:33 CST" duration-ms="5903" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:21:33 CST" name="beforeMethod" finished-at="2024-02-23T20:21:36 CST" duration-ms="2647" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4725]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_42_ValidateFilter_WhiteGold()[pri:17, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:21:36 CST" name="MLS_TC_42_ValidateFilter_WhiteGold" finished-at="2024-02-23T20:21:39 CST" duration-ms="3029" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_42_ValidateFilter_WhiteGold -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:21:39 CST" name="afterTest" finished-at="2024-02-23T20:21:45 CST" duration-ms="5823" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:21:45 CST" name="beforeMethod" finished-at="2024-02-23T20:21:47 CST" duration-ms="2649" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4725]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_43_ValidateFilter_RoseGold()[pri:18, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:21:47 CST" name="MLS_TC_43_ValidateFilter_RoseGold" finished-at="2024-02-23T20:21:50 CST" duration-ms="2762" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_43_ValidateFilter_RoseGold -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:21:50 CST" name="afterTest" finished-at="2024-02-23T20:21:57 CST" duration-ms="6143" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:21:57 CST" name="beforeMethod" finished-at="2024-02-23T20:21:59 CST" duration-ms="2665" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4725]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_44_ValidateFilter_TwoTone()[pri:19, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:21:59 CST" name="MLS_TC_44_ValidateFilter_TwoTone" finished-at="2024-02-23T20:22:02 CST" duration-ms="2818" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_44_ValidateFilter_TwoTone -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:22:02 CST" name="afterTest" finished-at="2024-02-23T20:22:08 CST" duration-ms="5813" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:22:08 CST" name="beforeMethod" finished-at="2024-02-23T20:22:11 CST" duration-ms="2456" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4725]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_45_ValidateFilter_TriTone()[pri:20, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:22:11 CST" name="MLS_TC_45_ValidateFilter_TriTone" finished-at="2024-02-23T20:22:13 CST" duration-ms="2825" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_45_ValidateFilter_TriTone -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:22:14 CST" name="afterTest" finished-at="2024-02-23T20:22:20 CST" duration-ms="6285" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:22:20 CST" name="beforeMethod" finished-at="2024-02-23T20:22:23 CST" duration-ms="2455" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4725]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_46_ValidateFilter_AllGenders()[pri:21, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:22:23 CST" name="MLS_TC_46_ValidateFilter_AllGenders" finished-at="2024-02-23T20:22:25 CST" duration-ms="2722" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_46_ValidateFilter_AllGenders -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:22:26 CST" name="afterTest" finished-at="2024-02-23T20:22:32 CST" duration-ms="5882" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:22:32 CST" name="beforeMethod" finished-at="2024-02-23T20:22:34 CST" duration-ms="2423" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4725]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_47_ValidateFilter_Ladies()[pri:22, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:22:34 CST" name="MLS_TC_47_ValidateFilter_Ladies" finished-at="2024-02-23T20:22:37 CST" duration-ms="2825" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_47_ValidateFilter_Ladies -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:22:37 CST" name="afterTest" finished-at="2024-02-23T20:22:43 CST" duration-ms="5970" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:22:43 CST" name="beforeMethod" finished-at="2024-02-23T20:22:46 CST" duration-ms="2500" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4725]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_48_ValidateFilter_Mens()[pri:23, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:22:46 CST" name="MLS_TC_48_ValidateFilter_Mens" finished-at="2024-02-23T20:22:48 CST" duration-ms="2716" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_48_ValidateFilter_Mens -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:22:49 CST" name="afterTest" finished-at="2024-02-23T20:22:55 CST" duration-ms="6065" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:22:55 CST" name="beforeMethod" finished-at="2024-02-23T20:22:57 CST" duration-ms="2265" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4725]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_49_ValidateFilter_Unisex()[pri:24, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:22:57 CST" name="MLS_TC_49_ValidateFilter_Unisex" finished-at="2024-02-23T20:23:00 CST" duration-ms="2691" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_49_ValidateFilter_Unisex -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:23:00 CST" name="afterTest" finished-at="2024-02-23T20:23:06 CST" duration-ms="5885" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:23:06 CST" name="beforeMethod" finished-at="2024-02-23T20:23:08 CST" duration-ms="2478" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4725]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_57_ValidateFilter_WatchAllBrand()[pri:25, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:23:08 CST" name="MLS_TC_57_ValidateFilter_WatchAllBrand" finished-at="2024-02-23T20:23:15 CST" duration-ms="6340" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_57_ValidateFilter_WatchAllBrand -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:23:15 CST" name="afterTest" finished-at="2024-02-23T20:23:21 CST" duration-ms="6144" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:23:21 CST" name="beforeMethod" finished-at="2024-02-23T20:23:24 CST" duration-ms="2438" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4725]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_58_ValidateFilter_RolexBrand()[pri:26, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:23:24 CST" name="MLS_TC_58_ValidateFilter_RolexBrand" finished-at="2024-02-23T20:23:30 CST" duration-ms="6326" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_58_ValidateFilter_RolexBrand -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:23:30 CST" name="afterTest" finished-at="2024-02-23T20:23:37 CST" duration-ms="6187" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:23:37 CST" name="beforeMethod" finished-at="2024-02-23T20:23:39 CST" duration-ms="2784" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4725]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_59_ValidateFilter_OmegaBrand()[pri:27, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:23:39 CST" name="MLS_TC_59_ValidateFilter_OmegaBrand" finished-at="2024-02-23T20:23:46 CST" duration-ms="6543" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_59_ValidateFilter_OmegaBrand -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:23:46 CST" name="afterTest" finished-at="2024-02-23T20:23:52 CST" duration-ms="6270" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:23:52 CST" name="beforeMethod" finished-at="2024-02-23T20:23:55 CST" duration-ms="2479" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4725]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_60_ValidateFilter_TagHeuer()[pri:28, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:23:55 CST" name="MLS_TC_60_ValidateFilter_TagHeuer" finished-at="2024-02-23T20:24:02 CST" duration-ms="6599" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_60_ValidateFilter_TagHeuer -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:24:02 CST" name="afterTest" finished-at="2024-02-23T20:24:08 CST" duration-ms="5895" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:24:08 CST" name="beforeMethod" finished-at="2024-02-23T20:24:10 CST" duration-ms="2645" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4725]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_61_ValidateFilter_Seiko()[pri:29, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:24:10 CST" name="MLS_TC_61_ValidateFilter_Seiko" finished-at="2024-02-23T20:24:17 CST" duration-ms="6326" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_61_ValidateFilter_Seiko -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:24:17 CST" name="afterTest" finished-at="2024-02-23T20:24:23 CST" duration-ms="5932" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:24:23 CST" name="beforeMethod" finished-at="2024-02-23T20:24:25 CST" duration-ms="2259" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4725]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_62_ValidateFilter_Casio()[pri:30, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:24:25 CST" name="MLS_TC_62_ValidateFilter_Casio" finished-at="2024-02-23T20:24:32 CST" duration-ms="6439" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_62_ValidateFilter_Casio -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:24:32 CST" name="afterTest" finished-at="2024-02-23T20:24:38 CST" duration-ms="6158" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:24:38 CST" name="beforeMethod" finished-at="2024-02-23T20:24:41 CST" duration-ms="2748" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4725]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_63_ValidateFilter_AllMovements_watch()[pri:31, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:24:41 CST" name="MLS_TC_63_ValidateFilter_AllMovements_watch" finished-at="2024-02-23T20:24:47 CST" duration-ms="6358" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_63_ValidateFilter_AllMovements_watch -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:24:48 CST" name="afterTest" finished-at="2024-02-23T20:24:54 CST" duration-ms="6209" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:24:54 CST" name="beforeMethod" finished-at="2024-02-23T20:24:56 CST" duration-ms="2619" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4725]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_64_ValidateFilter_Automatic_watch()[pri:32, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:24:56 CST" name="MLS_TC_64_ValidateFilter_Automatic_watch" finished-at="2024-02-23T20:25:03 CST" duration-ms="6341" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_64_ValidateFilter_Automatic_watch -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:25:03 CST" name="afterTest" finished-at="2024-02-23T20:25:09 CST" duration-ms="6038" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:25:09 CST" name="beforeMethod" finished-at="2024-02-23T20:25:11 CST" duration-ms="2231" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4725]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_65_ValidateFilter_Quartz_watch()[pri:33, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:25:11 CST" name="MLS_TC_65_ValidateFilter_Quartz_watch" finished-at="2024-02-23T20:25:18 CST" duration-ms="6519" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_65_ValidateFilter_Quartz_watch -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:25:18 CST" name="afterTest" finished-at="2024-02-23T20:25:24 CST" duration-ms="6214" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:25:24 CST" name="beforeMethod" finished-at="2024-02-23T20:25:28 CST" duration-ms="3477" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4725]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_66_ValidateFilter_Others_watch()[pri:34, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:25:28 CST" name="MLS_TC_66_ValidateFilter_Others_watch" finished-at="2024-02-23T20:25:35 CST" duration-ms="6942" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Unable to click element By.xpath: //span[normalize-space()='Others']]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Unable to click element By.xpath: //span[normalize-space()='Others']
+at com.utility.Utilities.click(Utilities.java:497)
+at com.business.mlshop.Home.MLS_TC_66_ValidateFilter_Others_watch(Home.java:412)
+at com.mlshop.test.Home.MLS_TC_66_ValidateFilter_Others_watch(Home.java:146)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:68)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span>...</span> is not clickable at point (289, 436). Other element would receive the click: <p class="text-center pt-[12px] text-xs px-2 py-1 text-white  bg-red-500 w-[55px] h-[55px] rounded-full 2sm:text-[10px] 2sm:w-[35px] 2sm:h-[35px] 2sm:pt-[3px]">...</p>
+  (Session info: chrome=122.0.6261.69)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HOTGQA008', ip: '10.0.8.67', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.69, chrome: {chromedriverVersion: 122.0.6261.69 (81bc525b6a36..., userDataDir: C:\Users\MELG20~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61681}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: eager, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8b6428fd33f126ae90ad1eb33af8afb9
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at com.utility.Utilities.click(Utilities.java:489)
+... 25 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_66_ValidateFilter_Others_watch -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:25:35 CST" name="afterTest" finished-at="2024-02-23T20:25:41 CST" duration-ms="5970" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:25:41 CST" name="beforeMethod" finished-at="2024-02-23T20:25:43 CST" duration-ms="2470" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4725]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_67_ValidateFilter_allMaterials_watch()[pri:35, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:25:43 CST" name="MLS_TC_67_ValidateFilter_allMaterials_watch" finished-at="2024-02-23T20:25:50 CST" duration-ms="6563" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_67_ValidateFilter_allMaterials_watch -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:25:50 CST" name="afterTest" finished-at="2024-02-23T20:25:56 CST" duration-ms="5974" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:25:56 CST" name="beforeMethod" finished-at="2024-02-23T20:25:59 CST" duration-ms="2651" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4725]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_68_ValidateFilter_Stainless_watch()[pri:36, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:25:59 CST" name="MLS_TC_68_ValidateFilter_Stainless_watch" finished-at="2024-02-23T20:26:05 CST" duration-ms="6407" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_68_ValidateFilter_Stainless_watch -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:26:06 CST" name="afterTest" finished-at="2024-02-23T20:26:11 CST" duration-ms="5969" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:26:11 CST" name="beforeMethod" finished-at="2024-02-23T20:26:14 CST" duration-ms="2254" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4725]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_69_ValidateFilter_Ceramic_Polymer_watch()[pri:37, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:26:14 CST" name="MLS_TC_69_ValidateFilter_Ceramic_Polymer_watch" finished-at="2024-02-23T20:26:20 CST" duration-ms="6300" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_69_ValidateFilter_Ceramic_Polymer_watch -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:26:20 CST" name="afterTest" finished-at="2024-02-23T20:26:26 CST" duration-ms="5905" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:26:26 CST" name="beforeMethod" finished-at="2024-02-23T20:26:28 CST" duration-ms="2179" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4725]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_70_ValidateFilter_Gold_watch()[pri:38, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:26:28 CST" name="MLS_TC_70_ValidateFilter_Gold_watch" finished-at="2024-02-23T20:26:35 CST" duration-ms="6452" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_70_ValidateFilter_Gold_watch -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:26:35 CST" name="afterTest" finished-at="2024-02-23T20:26:41 CST" duration-ms="6138" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:26:41 CST" name="beforeMethod" finished-at="2024-02-23T20:26:44 CST" duration-ms="2759" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4725]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_71_ValidateFilter_allGenders_watch()[pri:39, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:26:44 CST" name="MLS_TC_71_ValidateFilter_allGenders_watch" finished-at="2024-02-23T20:26:50 CST" duration-ms="6349" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_71_ValidateFilter_allGenders_watch -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:26:51 CST" name="afterTest" finished-at="2024-02-23T20:26:57 CST" duration-ms="6007" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:26:57 CST" name="beforeMethod" finished-at="2024-02-23T20:26:59 CST" duration-ms="2788" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4725]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_72_ValidateFilter_Ladies_watch()[pri:40, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:26:59 CST" name="MLS_TC_72_ValidateFilter_Ladies_watch" finished-at="2024-02-23T20:27:06 CST" duration-ms="6369" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_72_ValidateFilter_Ladies_watch -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:27:06 CST" name="afterTest" finished-at="2024-02-23T20:27:12 CST" duration-ms="6175" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:27:12 CST" name="beforeMethod" finished-at="2024-02-23T20:27:15 CST" duration-ms="2861" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4725]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_73_ValidateFilter_Mens_watch()[pri:41, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:27:15 CST" name="MLS_TC_73_ValidateFilter_Mens_watch" finished-at="2024-02-23T20:27:22 CST" duration-ms="6443" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_73_ValidateFilter_Mens_watch -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:27:22 CST" name="afterTest" finished-at="2024-02-23T20:27:28 CST" duration-ms="6507" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:27:28 CST" name="beforeMethod" finished-at="2024-02-23T20:27:31 CST" duration-ms="2995" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4725]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_74_ValidateFilter_Unisex_watch()[pri:42, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:27:31 CST" name="MLS_TC_74_ValidateFilter_Unisex_watch" finished-at="2024-02-23T20:27:38 CST" duration-ms="6317" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_74_ValidateFilter_Unisex_watch -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:27:38 CST" name="afterTest" finished-at="2024-02-23T20:27:44 CST" duration-ms="5947" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:27:44 CST" name="beforeMethod" finished-at="2024-02-23T20:27:47 CST" duration-ms="2932" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4725]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_79_ValidateProduct_details()[pri:43, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:27:47 CST" name="MLS_TC_79_ValidateProduct_details" finished-at="2024-02-23T20:27:49 CST" duration-ms="1521" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_79_ValidateProduct_details -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:27:49 CST" name="afterTest" finished-at="2024-02-23T20:27:55 CST" duration-ms="5989" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:27:55 CST" name="beforeMethod" finished-at="2024-02-23T20:27:57 CST" duration-ms="2365" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4725]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_80_ValidateProduct_amaparito()[pri:44, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:27:57 CST" name="MLS_TC_80_ValidateProduct_amaparito" finished-at="2024-02-23T20:27:59 CST" duration-ms="1386" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_80_ValidateProduct_amaparito -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:27:59 CST" name="afterTest" finished-at="2024-02-23T20:28:05 CST" duration-ms="6071" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:28:05 CST" name="beforeMethod" finished-at="2024-02-23T20:28:08 CST" duration-ms="2701" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4725]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_81_ValidateProduct_watch()[pri:45, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:28:08 CST" name="MLS_TC_81_ValidateProduct_watch" finished-at="2024-02-23T20:28:10 CST" duration-ms="2295" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_81_ValidateProduct_watch -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:28:10 CST" name="afterTest" finished-at="2024-02-23T20:28:16 CST" duration-ms="6134" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:28:16 CST" name="beforeMethod" finished-at="2024-02-23T20:28:19 CST" duration-ms="2545" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4725]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_82_ValidateProduct_jewelryDetails()[pri:46, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:28:19 CST" name="MLS_TC_82_ValidateProduct_jewelryDetails" finished-at="2024-02-23T20:28:22 CST" duration-ms="3239" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_82_ValidateProduct_jewelryDetails -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:28:22 CST" name="afterTest" finished-at="2024-02-23T20:28:28 CST" duration-ms="5886" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:28:28 CST" name="beforeMethod" finished-at="2024-02-23T20:28:31 CST" duration-ms="2392" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4725]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_83_ValidateProduct_amparitoDetails()[pri:47, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:28:31 CST" name="MLS_TC_83_ValidateProduct_amparitoDetails" finished-at="2024-02-23T20:28:34 CST" duration-ms="3480" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_83_ValidateProduct_amparitoDetails -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:28:34 CST" name="afterTest" finished-at="2024-02-23T20:28:40 CST" duration-ms="5875" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:28:40 CST" name="beforeMethod" finished-at="2024-02-23T20:28:43 CST" duration-ms="2419" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4725]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_84_ValidateProduct_watchDetails()[pri:48, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:28:43 CST" name="MLS_TC_84_ValidateProduct_watchDetails" finished-at="2024-02-23T20:28:45 CST" duration-ms="2857" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_84_ValidateProduct_watchDetails -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:28:46 CST" name="afterTest" finished-at="2024-02-23T20:28:52 CST" duration-ms="5901" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:28:52 CST" name="beforeMethod" finished-at="2024-02-23T20:28:54 CST" duration-ms="2238" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4725]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_85_ValidateJewelry_addToCart()[pri:49, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:28:54 CST" name="MLS_TC_85_ValidateJewelry_addToCart" finished-at="2024-02-23T20:29:28 CST" duration-ms="33728" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Could not get text By.xpath: //p[normalize-space()='Item has been successfully added to your cart.']]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Could not get text By.xpath: //p[normalize-space()='Item has been successfully added to your cart.']
+at com.utility.Utilities.getText(Utilities.java:561)
+at com.business.mlshop.Home.MLS_TC_85_ValidateJewelry_addToCart(Home.java:607)
+at com.mlshop.test.Home.MLS_TC_85_ValidateJewelry_addToCart(Home.java:206)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:68)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[normalize-space()='Item has been successfully added to your cart.']"}
+  (Session info: chrome=122.0.6261.69)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HOTGQA008', ip: '10.0.8.67', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.69, chrome: {chromedriverVersion: 122.0.6261.69 (81bc525b6a36..., userDataDir: C:\Users\MELG20~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62593}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: eager, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ceaf8e3a479bfcac6929cdbc6146639b
+*** Element info: {Using=xpath, value=//p[normalize-space()='Item has been successfully added to your cart.']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.utility.Utilities.findElement(Utilities.java:183)
+at com.utility.Utilities.getText(Utilities.java:557)
+... 25 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_85_ValidateJewelry_addToCart -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:29:28 CST" name="afterTest" finished-at="2024-02-23T20:29:34 CST" duration-ms="5973" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:29:34 CST" name="beforeMethod" finished-at="2024-02-23T20:29:36 CST" duration-ms="2606" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4725]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_86_ValidateAmparito_addToCart()[pri:50, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:29:36 CST" name="MLS_TC_86_ValidateAmparito_addToCart" finished-at="2024-02-23T20:30:10 CST" duration-ms="33695" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Could not get text By.xpath: //p[normalize-space()='Item has been successfully added to your cart.']]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Could not get text By.xpath: //p[normalize-space()='Item has been successfully added to your cart.']
+at com.utility.Utilities.getText(Utilities.java:561)
+at com.business.mlshop.Home.MLS_TC_86_ValidateAmparito_addToCart(Home.java:620)
+at com.mlshop.test.Home.MLS_TC_86_ValidateAmparito_addToCart(Home.java:210)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:68)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[normalize-space()='Item has been successfully added to your cart.']"}
+  (Session info: chrome=122.0.6261.69)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HOTGQA008', ip: '10.0.8.67', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.69, chrome: {chromedriverVersion: 122.0.6261.69 (81bc525b6a36..., userDataDir: C:\Users\MELG20~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62685}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: eager, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f2f082b4ea1ec932915da2461168bbb4
+*** Element info: {Using=xpath, value=//p[normalize-space()='Item has been successfully added to your cart.']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.utility.Utilities.findElement(Utilities.java:183)
+at com.utility.Utilities.getText(Utilities.java:557)
+... 25 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_86_ValidateAmparito_addToCart -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:30:10 CST" name="afterTest" finished-at="2024-02-23T20:30:16 CST" duration-ms="5905" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:30:16 CST" name="beforeMethod" finished-at="2024-02-23T20:30:18 CST" duration-ms="2234" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4725]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_87_ValidateWatch_addToCart()[pri:51, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:30:18 CST" name="MLS_TC_87_ValidateWatch_addToCart" finished-at="2024-02-23T20:30:25 CST" duration-ms="7328" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_87_ValidateWatch_addToCart -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:30:25 CST" name="afterTest" finished-at="2024-02-23T20:30:32 CST" duration-ms="6234" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:30:32 CST" name="beforeMethod" finished-at="2024-02-23T20:30:34 CST" duration-ms="2611" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n/a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4725]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MLS_TC_89_ValidateItem_alreadyInCart()[pri:52, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:30:34 CST" name="MLS_TC_89_ValidateItem_alreadyInCart" finished-at="2024-02-23T20:30:42 CST" duration-ms="7600" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MLS_TC_89_ValidateItem_alreadyInCart -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.mlshop.test.Home@495fac5f]" started-at="2024-02-23T20:30:42 CST" name="afterTest" finished-at="2024-02-23T20:30:48 CST" duration-ms="6215" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.mlshop.test.Home -->
+    </test> <!-- MLSHOP2 -->
   </suite> <!-- Web -->
 </testng-results>

@@ -1,3 +1,5 @@
+com\mlshop\test\ShoppingCart.class
 com\mlshop\test\Home.class
 com\mlshop\test\Login.class
 com\mlshop\test\BaseTest.class
+com\mlshop\test\ShippingDetails.class

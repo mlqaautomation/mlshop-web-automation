@@ -1,22 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="1" name="Failed suite [Web]" guice-stage="DEVELOPMENT" verbose="0">
+<suite thread-count="2" parallel="tests" name="Failed suite [Web]" guice-stage="DEVELOPMENT" verbose="0">
   <parameter name="url" value="https://mlshoppreprod.mlhuillier.com/"/>
   <parameter name="browserType" value="chrome"/>
   <listeners>
     <listener class-name="com.utility.ExtentReporter"/>
   </listeners>
-  <test thread-count="1" name="MLSHOP(failed)" verbose="0">
+  <test thread-count="2" parallel="tests" name="MLSHOP(failed)" verbose="0">
     <parameter name="portno" value="4723"/>
     <parameter name="deviceName" value="n/a"/>
     <classes>
       <class name="com.mlshop.test.ShippingDetails">
         <methods>
+          <include name="MLS_TC_100_Validate_shippingDetails_itemsVisiblity_watch"/>
           <include name="beforeMethod"/>
-          <include name="MLS_TC_110_Validate_Computation"/>
           <include name="afterTest"/>
         </methods>
       </class> <!-- com.mlshop.test.ShippingDetails -->
     </classes>
   </test> <!-- MLSHOP(failed) -->
+  <test thread-count="2" parallel="tests" name="MLSHOP2(failed)" verbose="0">
+    <parameter name="portno" value="4725"/>
+    <parameter name="deviceName" value="n/a"/>
+    <classes>
+      <class name="com.mlshop.test.Home">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="MLS_TC_85_ValidateJewelry_addToCart"/>
+          <include name="MLS_TC_66_ValidateFilter_Others_watch"/>
+          <include name="MLS_TC_86_ValidateAmparito_addToCart"/>
+          <include name="MLS_TC_27_ValidatePurchaseHistory_Navigation"/>
+        </methods>
+      </class> <!-- com.mlshop.test.Home -->
+    </classes>
+  </test> <!-- MLSHOP2(failed) -->
 </suite> <!-- Failed suite [Web] -->

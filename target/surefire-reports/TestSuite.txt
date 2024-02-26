@@ -1,4 +1,65 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 36.745 s - in TestSuite
+Tests run: 86, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 851.782 s <<< FAILURE! - in TestSuite
+MLS_TC_27_ValidatePurchaseHistory_Navigation(com.mlshop.test.Home)  Time elapsed: 2.985 s  <<< FAILURE!
+java.lang.AssertionError: expected [https://mlshoppreprod.mlhuillier.com/purchasehistory] but found [https://mlshoppreprod.mlhuillier.com/]
+	at com.mlshop.test.Home.MLS_TC_27_ValidatePurchaseHistory_Navigation(Home.java:17)
+
+MLS_TC_100_Validate_shippingDetails_itemsVisiblity_watch(com.mlshop.test.ShippingDetails)  Time elapsed: 2.73 s  <<< FAILURE!
+java.lang.AssertionError: Element not present
+	at com.mlshop.test.ShippingDetails.MLS_TC_100_Validate_shippingDetails_itemsVisiblity_watch(ShippingDetails.java:16)
+Caused by: org.openqa.selenium.StaleElementReferenceException: 
+stale element reference: stale element not found
+  (Session info: chrome=122.0.6261.69)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HOTGQA008', ip: '10.0.8.67', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.69, chrome: {chromedriverVersion: 122.0.6261.69 (81bc525b6a36..., userDataDir: C:\Users\MELG20~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59773}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: eager, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7b3b9a16b1cf639b182d123983c5f849
+	at com.mlshop.test.ShippingDetails.MLS_TC_100_Validate_shippingDetails_itemsVisiblity_watch(ShippingDetails.java:16)
+
+MLS_TC_66_ValidateFilter_Others_watch(com.mlshop.test.Home)  Time elapsed: 6.941 s  <<< FAILURE!
+java.lang.AssertionError: Unable to click element By.xpath: //span[normalize-space()='Others']
+	at com.mlshop.test.Home.MLS_TC_66_ValidateFilter_Others_watch(Home.java:146)
+Caused by: org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <span>...</span> is not clickable at point (289, 436). Other element would receive the click: <p class="text-center pt-[12px] text-xs px-2 py-1 text-white  bg-red-500 w-[55px] h-[55px] rounded-full 2sm:text-[10px] 2sm:w-[35px] 2sm:h-[35px] 2sm:pt-[3px]">...</p>
+  (Session info: chrome=122.0.6261.69)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HOTGQA008', ip: '10.0.8.67', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.69, chrome: {chromedriverVersion: 122.0.6261.69 (81bc525b6a36..., userDataDir: C:\Users\MELG20~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61681}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: eager, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8b6428fd33f126ae90ad1eb33af8afb9
+	at com.mlshop.test.Home.MLS_TC_66_ValidateFilter_Others_watch(Home.java:146)
+
+MLS_TC_85_ValidateJewelry_addToCart(com.mlshop.test.Home)  Time elapsed: 33.729 s  <<< FAILURE!
+java.lang.AssertionError: Could not get text By.xpath: //p[normalize-space()='Item has been successfully added to your cart.']
+	at com.mlshop.test.Home.MLS_TC_85_ValidateJewelry_addToCart(Home.java:206)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//p[normalize-space()='Item has been successfully added to your cart.']"}
+  (Session info: chrome=122.0.6261.69)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HOTGQA008', ip: '10.0.8.67', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.69, chrome: {chromedriverVersion: 122.0.6261.69 (81bc525b6a36..., userDataDir: C:\Users\MELG20~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62593}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: eager, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ceaf8e3a479bfcac6929cdbc6146639b
+*** Element info: {Using=xpath, value=//p[normalize-space()='Item has been successfully added to your cart.']}
+	at com.mlshop.test.Home.MLS_TC_85_ValidateJewelry_addToCart(Home.java:206)
+
+MLS_TC_86_ValidateAmparito_addToCart(com.mlshop.test.Home)  Time elapsed: 33.696 s  <<< FAILURE!
+java.lang.AssertionError: Could not get text By.xpath: //p[normalize-space()='Item has been successfully added to your cart.']
+	at com.mlshop.test.Home.MLS_TC_86_ValidateAmparito_addToCart(Home.java:210)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//p[normalize-space()='Item has been successfully added to your cart.']"}
+  (Session info: chrome=122.0.6261.69)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HOTGQA008', ip: '10.0.8.67', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.69, chrome: {chromedriverVersion: 122.0.6261.69 (81bc525b6a36..., userDataDir: C:\Users\MELG20~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62685}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: eager, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f2f082b4ea1ec932915da2461168bbb4
+*** Element info: {Using=xpath, value=//p[normalize-space()='Item has been successfully added to your cart.']}
+	at com.mlshop.test.Home.MLS_TC_86_ValidateAmparito_addToCart(Home.java:210)
+

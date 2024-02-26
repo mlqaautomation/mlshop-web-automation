@@ -17,6 +17,7 @@ import static com.utility.Utilities.*;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Set;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -26,14 +27,20 @@ import com.MLShopPageObjects.Home_page;
 import com.MLShopPageObjects.Shopping_Cart;
 import com.MLShopPageObjects.Shipping_Details;
 import com.MLShopPageObjects.Login_page;
+import com.MLShopPageObjects.Purchase_History;
+import com.MLShopPageObjects.Paymongo;
 
 import com.utility.ExtentReporter;
+import com.utility.Utilities;
 
 public class ShippingDetails extends BaseClass{
 
     private Home home = new Home();
     private ShoppingCart cart = new ShoppingCart();
     private Login login = new Login();
+    private PurchaseHistory purchaseHistory = new PurchaseHistory();
+    private Utilities utils = new Utilities();
+    
 
     public void shippingPage_navigation()throws Exception {
         assertionValidation(getWebDriver().getCurrentUrl(), prop.getproperty("Link"));
@@ -260,57 +267,53 @@ public class ShippingDetails extends BaseClass{
     }
     public void MLS_TC_109_Validate_purchaseVia_mlWallet()throws Exception{
         HeaderChildNode("MLS_TC_109, To Validate succesful pruchase using ml wallet sa payment method");
-        shippingPageItemChecker("Jewelry");
-        typeWeb(Shipping_Details.objMobileNum_txtBox, prop.getproperty("Branch_Verified"), getText(Shipping_Details.objMobileNum_txtBox));
-        waitTime(3000);
-        selectBranch("Province", "City", "Branch");
-        scrollToBottomOfPageWEB();
-        click(Shipping_Details.objPaymentMethodML_Wallet, "ML WALLET");
-        waitTime(1000);
-        click(Shipping_Details.objPlaceOrder, "Place Order btn");
-        verifyElementPresentAndClick(Shipping_Details.objProceed_btn, getText(Shipping_Details.objProceed_btn));
-        waitTime(5000);
-        login.inputOTP();
-        if(verifyElementPresent(Shipping_Details.objSuccessCheckout_msg, getText(Shipping_Details.objSuccessCheckout_msg))){
-            ExtentReporter.extentLoggerPass("MLS_TC_109", "Purchase completed successfully");         
-        }
+        purchase_via_wallet("Jewelry");
+        ExtentReporter.extentLoggerPass("MLS_TC_109", "Successfull Purchase Item via MLWallet");
     }
     public void MLS_TC_110_Validate_Computation()throws Exception{
         HeaderChildNode("MLS_TC_110, To Validate correct computation of total payment");
         shippingPageItemChecker("Jewelry");
         typeWeb(Shipping_Details.objMobileNum_txtBox, prop.getproperty("Branch_Verified"), getText(Shipping_Details.objMobileNum_txtBox));
-        waitTime(3000);
+        waitTime(2000);
         selectBranch("Province", "City", "Branch");
-        scrollToBottomOfPageWEB();
-        waitTime(2000);
-        click(Shipping_Details.objPaymentMethodML_Wallet, "ML WALLET");
-        waitTime(2000);
+        scrollToBottomOfPageWEB();  
+        verifyElementPresentAndClick(Shipping_Details.objPaymentMethodML_Wallet, "ML WALLET");
+        waitTime(1000);
         if(isTotalCorrect()){
             ExtentReporter.extentLoggerPass(osName, "Correct computation of total payment");
         }else{
             ExtentReporter.extentLoggerFail(osName, "Incorrect computation of total payment");
         }
     }
-    public void MLS_TC_112_Validate_successPurchase_historyDetails()throws Exception{
+    public void MLS_TC_113_Validate_successPurchase_historyDetails()throws Exception{
         HeaderChildNode("MLS_TC_112, To Validate purchase history after succesful shipping details of items");
         login.loginValid("Branch_Verified");
-        shippingPageItemChecker("Jewelry");
-        selectBranch("Province", "City", "Branch");
-        scrollToBottomOfPageWEB();
-        waitTime(2000);
-        click(Shipping_Details.objPaymentMethodML_Wallet, "ML WALLET");
-        waitTime(2000);
-        click(Shipping_Details.objPlaceOrder, "Place Order btn");
-        verifyElementPresentAndClick(Shipping_Details.objProceed_btn, getText(Shipping_Details.objProceed_btn));
-        waitTime(5000);
-        login.inputOTP();
-        waitTime(2000);
-        verifyElementPresent(Shipping_Details.objSuccessCheckout_msg, getText(Shipping_Details.objSuccessCheckout_msg));
-        click(Login_page.objOkay_btn, "Okay button");
-
-
-
+        if(isItemPurchased_inHistory("Jewelry")){
+            ExtentReporter.extentLoggerPass("MLS_TC_112", "To Validate purchase history after succesful shipping details of items");
+        }
     }
+    public void MLS_TC_114_Validate_successPurchase_grabPay()throws Exception{
+        HeaderChildNode("MLS_TC_114, To Validate successful purchase using e-wallet \"grab pay\" as payment method");
+        login.loginValid("Branch_Verified"); 
+        purchase_via_e_wallet("Jewelry", prop.getproperty("Grab"));
+        
+    }
+    public void MLS_TC_115_Validate_successPurchase_gCash()throws Exception{
+        HeaderChildNode("MLS_TC_115, To Validate successful purchase using e-wallet \"gcash\" as payment method");
+        login.loginValid("Branch_Verified");
+        purchase_via_e_wallet("Jewelry", prop.getproperty("Gcash"));
+    }
+    public void MLS_TC_116_Validate_successPurchase_payMaya()throws Exception{
+        HeaderChildNode("MLS_TC_116, To Validate successful purchase using e-wallet \"paymaya\" as payment methods");
+        login.loginValid("Branch_Verified");
+        purchase_via_e_wallet("Jewelry", prop.getproperty("Paymaya"));
+    }
+    public void MLS_TC_117_Validate_successPurchase_card()throws Exception{
+        HeaderChildNode("MLS_TC_116, To Validate successful purchase using e-wallet \"paymaya\" as payment methods");
+        login.loginValid("Branch_Verified");
+        purchase_via_e_wallet("Jewelry", prop.getproperty("Paymaya"));
+    }
+
 
     public boolean isTotalCorrect() throws Exception {
         double merchTotalValue = parseTotalValue(getText(Shipping_Details.objMerchandiseTotal));
@@ -324,5 +327,151 @@ public class ShippingDetails extends BaseClass{
 
     private double parseTotalValue(String total) {
         return Double.parseDouble(total.substring(1).trim());
+    }
+
+    public boolean isItemPurchased_inHistory(String type) throws Exception {
+        String[] itemInfo = home.addItemToCart(type, 2);
+        cart.navigateShoppingCart();
+        verifyElementPresentAndClick(Shopping_Cart.Checkout_Btn, "Checkout");
+        waitTime(2000);
+        WebElement shoppingCart = findElement(Shipping_Details.getProductDescriptions());
+        List<WebElement> itemDescriptions = shoppingCart.findElements(Shipping_Details.getProductDescriptions());
+        boolean itemFound = false;   
+        for (WebElement item : itemDescriptions) {
+            if (item.getText().contains(itemInfo[0])) {
+                itemFound = true;
+                break;
+            }
+        }       
+        if (itemFound) {
+            selectBranch("Province", "City", "Branch");
+            scrollToBottomOfPageWEB();
+            verifyElementPresentAndClick(Shipping_Details.objPaymentMethodML_Wallet, "ML WALLET");   
+            waitTime(1000);        
+            verifyElementPresentAndClick(Shipping_Details.objPlaceOrder, "Place Order btn");
+            verifyElementPresentAndClick(Shipping_Details.objProceed_btn, getText(Shipping_Details.objProceed_btn));
+            waitTime(3000);
+            login.inputOTP();       
+            verifyElementPresent(Shipping_Details.objSuccessCheckout_msg, getText(Shipping_Details.objSuccessCheckout_msg));
+            verifyElementPresentAndClick(Login_page.objOkay_btn, "Okay button");
+            waitTime(2000);
+            WebElement allStockNumbers = findElement(Purchase_History.allStockNumber);
+            List<WebElement> stockNumbers = allStockNumbers.findElements(Purchase_History.allStockNumber);
+            boolean isItemInHistory = false;     
+            for (WebElement stockNo : stockNumbers) {
+                String stockNumber = stockNo.getText().trim().replaceFirst("STOCK NUMBER : ", "");
+                String itemInfoStockNumber = itemInfo[1].trim().replaceFirst("STOCK NUMBER : ", "");     
+                if (stockNumber.contains(itemInfoStockNumber)) {
+                    isItemInHistory = true;
+                    break;
+                }
+            }       
+            String itemInfoStockNumber = itemInfo[1].trim().replaceFirst("STOCK NUMBER :", "");    
+            if (isItemInHistory) {
+                logger.info(itemInfo[0] + " with Stock number: " + itemInfoStockNumber + " is present in history page");            
+                verifyElementPresentAndClick(Purchase_History.firstOrder_Details, "Firs Oreder Details btn");
+                assertionValidation(" "+getText(Purchase_History.orderDetails_stockNo), itemInfoStockNumber);
+                return true;
+            } else {
+                logger.info(itemInfoStockNumber + " not found");
+                ExtentReporter.extentLoggerFail("", "not found");
+                return false;
+            }
+        }       
+        return false;
+    }  
+    public void purchase_via_wallet(String type)throws Exception{
+        home.addItemToCart(type, 2);
+        cart.navigateShoppingCart();
+        verifyElementPresentAndClick(Shopping_Cart.Checkout_Btn, "Checkout");
+        waitTime(2000);
+        typeWeb(Shipping_Details.objMobileNum_txtBox, prop.getproperty("Branch_Verified"), "Mobile Number");
+        selectBranch("Province", "City", "Branch");
+        scrollToBottomOfPageWEB();
+        verifyElementPresentAndClick(Shipping_Details.objPaymentMethodML_Wallet, "ML WALLET");      
+        verifyElementPresentAndClick(Shipping_Details.objPlaceOrder, "Place Order btn");
+        verifyElementPresentAndClick(Shipping_Details.objProceed_btn, getText(Shipping_Details.objProceed_btn));
+        waitTime(3000);
+        login.inputOTP();       
+        verifyElementPresent(Shipping_Details.objSuccessCheckout_msg, getText(Shipping_Details.objSuccessCheckout_msg));
+        verifyElementPresentAndClick(Login_page.objOkay_btn, "Okay button");     
+    }
+    public void purchase_via_e_wallet(String itemType, String eWalletType) throws Exception {
+        home.addItemToCart(itemType, 2);
+        cart.navigateShoppingCart();
+        verifyElementPresentAndClick(Shopping_Cart.Checkout_Btn, "Checkout");
+        waitTime(2000);
+        selectBranch("Province", "City", "Branch");
+        scrollToBottomOfPageWEB();
+        verifyElementPresentAndClick(Shipping_Details.objPaymentMethodE_Wallet, "E-WALLET");    
+        waitTime(1000);
+        String option;
+        switch (eWalletType) {
+            case "PAYMAYA":
+                verifyElementPresentAndClick(Shipping_Details.E_Wallet_PayMaya, "PAY MAYA");
+                option = prop.getproperty("Paymaya");
+                break;
+            case "GRAB PAY":
+                verifyElementPresentAndClick(Shipping_Details.E_Wallet_GrabPay, "GRAB PAY");
+                option = prop.getproperty("Grab");
+                break;
+            case "GCASH":
+                verifyElementPresentAndClick(Shipping_Details.E_Wallet_GCash, "GCASH");
+                option = prop.getproperty("Gcash");
+                break;
+            default:
+                throw new IllegalArgumentException("Invalid e-wallet type: " + eWalletType);
+        }  
+        waitTime(1000);
+        verifyElementPresentAndClick(Shipping_Details.objPlaceOrder, "Place Order btn");
+        verifyElementPresentAndClick(Shipping_Details.objProceed_btn, getText(Shipping_Details.objProceed_btn));
+        waitTime(3000);
+        login.inputOTP();
+        handlePaymongoPayment_eWallet();
+        purchaseHistory.navigatePurchaseHistory();
+        if(option.contains(getText(Purchase_History.firstOrder_No))){
+            logger.info("First Order Payment Method" + option.toString());
+            ExtentReporter.extentLoggerPass("E-WALLET Payment Option: ", "Successfull Purchase");
+        }
+    }
+    public void handlePaymongoPayment_eWallet()throws Exception {
+        waitTime(5000);       
+        utils.switchToNextTab();
+        waitTime(5000);      
+        verifyElementPresent(Paymongo.objHeaderMerchant, "HEADER MERCHANT"); 
+        verifyElementPresentAndClick(Paymongo.objContinue_btn, "Continue btn"); 
+        verifyElementPresentAndClick(Paymongo.objTickBox, "Policy Checkbox");
+        verifyElementPresentAndClick(Paymongo.objComplete, "Complete btn");
+        verifyElementPresentAndClick(Paymongo.objAuth_btn, "Auth btn");
+        utils.switchToPreviousTab();
+    }
+    public void purchase_via_card(String itemType)throws Exception {
+        home.addItemToCart(itemType, 2);
+        cart.navigateShoppingCart();
+        verifyElementPresentAndClick(Shopping_Cart.Checkout_Btn, "Checkout");
+        waitTime(2000);
+        selectBranch("Province", "City", "Branch");
+        scrollToBottomOfPageWEB();
+        verifyElementPresentAndClick(Shipping_Details.objPaymentMethodVisaMasterCard, "VISA/MASTERCARD");
+        waitTime(1000);
+        verifyElementPresentAndClick(Shipping_Details.objPlaceOrder, "Place Order btn");
+        verifyElementPresentAndClick(Shipping_Details.objProceed_btn, getText(Shipping_Details.objProceed_btn));
+        waitTime(3000);
+        login.inputOTP();       
+    }
+    public void handlePaymongoPayment_card()throws Exception {
+        waitTime(5000);       
+        utils.switchToNextTab();
+        waitTime(5000);      
+        verifyElementPresent(Paymongo.objHeaderMerchant, "HEADER MERCHANT"); 
+        verifyElementPresentAndClick(Paymongo.objContinue_btn, "Continue btn"); 
+        typeWeb(Paymongo.objCardNumtxtBox, prop.getproperty("CTPWD"), "Car Number");
+        typeWeb(Paymongo.objExpiryM, prop.getproperty("CTPWD"), "Expiry MM");
+        typeWeb(Paymongo.objExpiryY, prop.getproperty("CTPWD"), "Expiry YY");
+        typeWeb(Paymongo.objCVCtxtBox, prop.getproperty("CTPWD"), "CVC");
+        verifyElementPresentAndClick(Paymongo.objTickBox, "Policy Checkbox");
+        verifyElementPresentAndClick(Paymongo.objComplete, "Complete btn");
+        verifyElementPresentAndClick(Paymongo.objAuth_btn, "Auth btn");
+        utils.switchToPreviousTab();
     }
 }
