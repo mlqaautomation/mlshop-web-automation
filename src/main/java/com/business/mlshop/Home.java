@@ -47,16 +47,14 @@ public class Home extends BaseClass{
             }
         }
     }
-    public void MLS_TC_27_ValidatePurchaseHistory_Navigation()throws Exception{
+    public void MLS_TC_27_ValidatePurchaseHistory_Navigation() throws Exception {
         HeaderChildNode("MLS_TC_27, To Validate purchase history page navigation from user drop down menu");
         login.loginValid(prop.getproperty("Branch_Verified"));
-        if(verifyElementPresentAndClick(Home_page.objUser_name, "User Name")){          
-            logger.info("Current user: "+getText(Home_page.objUser_name));       
-            verifyElementPresentAndClick(Home_page.objPurchaseHistory_option, "Pruchase History");
-            assertionValidation(getWebDriver().getCurrentUrl(), prop.getproperty("PurchaseHistoryLink"));
-            extentLogger("MLS_TC_27", "To Validate purchase history page navigation from user drop down menu");         
-        }
-    }  
+        logger.info("Current user: " + getText(Home_page.objUser_name));
+        verifyElementPresentAndClick(Home_page.objPurchaseHistory_option, "Purchase History");
+        assertionValidation(getWebDriver().getCurrentUrl(), prop.getproperty("PurchaseHistoryLink"));
+        extentLogger("MLS_TC_27", "To Validate purchase history page navigation from user drop down menu");
+    }
 
     public void MLS_TC_28_ValidateLogout()throws Exception{
         HeaderChildNode("MLS_TC_28, To Validate logout functionality from user drop down menu");
@@ -638,6 +636,7 @@ public class Home extends BaseClass{
                 ExtentReporter.extentLoggerFail("Type", "Failed to find items");
                 return null; // Exit the method if the type is not recognized
         }    
+        waitTime(1000);
         String itemName = getText(Home_page.objitemName_byIndex(index));  
         verifyElementPresentAndClick(Home_page.objitemName_byIndex(index), itemName);  
         waitTime(2000);
@@ -650,7 +649,7 @@ public class Home extends BaseClass{
     public void filterItems(String filter) throws Exception {
         List<WebElement> itemCard = getWebDriver().findElements(Home_page.objitem_all);
         int iterationCount = 0;  // Counter to track iterations
-    
+
         if (!itemCard.isEmpty()) {  // Check if itemCard is not empty
             for (WebElement card : itemCard) {
                 WebElement item = card.findElement(Home_page.objitem_titles);

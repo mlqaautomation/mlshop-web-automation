@@ -22,6 +22,8 @@ import java.util.Set;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.MLShopPageObjects.Home_page; 
 import com.MLShopPageObjects.Shopping_Cart;
@@ -267,7 +269,7 @@ public class ShippingDetails extends BaseClass{
     }
     public void MLS_TC_109_Validate_purchaseVia_mlWallet()throws Exception{
         HeaderChildNode("MLS_TC_109, To Validate succesful pruchase using ml wallet sa payment method");
-        purchase_via_wallet("Jewelry");
+        purchase_via_wallet("Jewelry", false);
         ExtentReporter.extentLoggerPass("MLS_TC_109", "Successfull Purchase Item via MLWallet");
     }
     public void MLS_TC_110_Validate_Computation()throws Exception{
@@ -313,7 +315,11 @@ public class ShippingDetails extends BaseClass{
         login.loginValid("Branch_Verified");
         purchase_via_e_wallet("Jewelry", prop.getproperty("Paymaya"));
     }
-
+    public void MLS_TC_127_Validate_sucessPurhcase_wallet()throws Exception{
+        HeaderChildNode("MLS_TC_116, To Validate successful purchase using e-wallet \"paymaya\" as payment methods");
+        login.loginValid("Branch_Verified");
+        purchase_via_wallet("Jewelry", true);
+    }
 
     public boolean isTotalCorrect() throws Exception {
         double merchTotalValue = parseTotalValue(getText(Shipping_Details.objMerchandiseTotal));
@@ -380,21 +386,27 @@ public class ShippingDetails extends BaseClass{
         }       
         return false;
     }  
-    public void purchase_via_wallet(String type)throws Exception{
+    public void purchase_via_wallet(String type, boolean isLogin)throws Exception{
         home.addItemToCart(type, 2);
         cart.navigateShoppingCart();
         verifyElementPresentAndClick(Shopping_Cart.Checkout_Btn, "Checkout");
         waitTime(2000);
-        typeWeb(Shipping_Details.objMobileNum_txtBox, prop.getproperty("Branch_Verified"), "Mobile Number");
+        if(!isLogin){
+            logger.info("<--Not logged in, inputting valid mobile number in field -->");
+            typeWeb(Shipping_Details.objMobileNum_txtBox, prop.getproperty("Branch_Verified"), "Mobile Number");
+        }        
         selectBranch("Province", "City", "Branch");
         scrollToBottomOfPageWEB();
-        verifyElementPresentAndClick(Shipping_Details.objPaymentMethodML_Wallet, "ML WALLET");      
+        verifyElementPresentAndClick(Shipping_Details.objPaymentMethodML_Wallet, "ML WALLET");     
+        waitTime(1000); 
+        isTotalCorrect();
         verifyElementPresentAndClick(Shipping_Details.objPlaceOrder, "Place Order btn");
         verifyElementPresentAndClick(Shipping_Details.objProceed_btn, getText(Shipping_Details.objProceed_btn));
         waitTime(3000);
         login.inputOTP();       
         verifyElementPresent(Shipping_Details.objSuccessCheckout_msg, getText(Shipping_Details.objSuccessCheckout_msg));
         verifyElementPresentAndClick(Login_page.objOkay_btn, "Okay button");     
+
     }
     public void purchase_via_e_wallet(String itemType, String eWalletType) throws Exception {
         home.addItemToCart(itemType, 2);
@@ -423,28 +435,47 @@ public class ShippingDetails extends BaseClass{
                 throw new IllegalArgumentException("Invalid e-wallet type: " + eWalletType);
         }  
         waitTime(1000);
+        isTotalCorrect();
         verifyElementPresentAndClick(Shipping_Details.objPlaceOrder, "Place Order btn");
         verifyElementPresentAndClick(Shipping_Details.objProceed_btn, getText(Shipping_Details.objProceed_btn));
         waitTime(3000);
         login.inputOTP();
+
         handlePaymongoPayment_eWallet();
         purchaseHistory.navigatePurchaseHistory();
         if(option.contains(getText(Purchase_History.firstOrder_No))){
-            logger.info("First Order Payment Method" + option.toString());
+            logger.info("First Order Payment Method " + option.toString());
             ExtentReporter.extentLoggerPass("E-WALLET Payment Option: ", "Successfull Purchase");
         }
     }
-    public void handlePaymongoPayment_eWallet()throws Exception {
-        waitTime(5000);       
-        utils.switchToNextTab();
-        waitTime(5000);      
-        verifyElementPresent(Paymongo.objHeaderMerchant, "HEADER MERCHANT"); 
-        verifyElementPresentAndClick(Paymongo.objContinue_btn, "Continue btn"); 
-        verifyElementPresentAndClick(Paymongo.objTickBox, "Policy Checkbox");
-        verifyElementPresentAndClick(Paymongo.objComplete, "Complete btn");
-        verifyElementPresentAndClick(Paymongo.objAuth_btn, "Auth btn");
-        utils.switchToPreviousTab();
+    public void handlePaymongoPayment_eWallet() throws Exception {
+    waitTime(5000);
+    String currentWindowHandle = getWebDriver().getWindowHandle();
+    utils.switchToNextTab();
+    
+    // Wait for the new tab to load
+    WebDriverWait wait = new WebDriverWait(getWebDriver(), 10);
+    wait.until(ExpectedConditions.numberOfWindowsToBe(2));
+    
+    // Switch to the new tab
+    Set<String> windowHandles = getWebDriver().getWindowHandles();
+    for (String windowHandle : windowHandles) {
+        if (!windowHandle.equals(currentWindowHandle)) {
+            getWebDriver().switchTo().window(windowHandle);
+            break;
+        }
     }
+
+    waitTime(5000);
+    verifyElementPresent(Paymongo.objHeaderMerchant, "HEADER MERCHANT");
+    verifyElementPresentAndClick(Paymongo.objContinue_btn, "Continue btn");
+    verifyElementPresentAndClick(Paymongo.objTickBox, "Policy Checkbox");
+    verifyElementPresentAndClick(Paymongo.objComplete, "Complete btn");
+    verifyElementPresentAndClick(Paymongo.objAuth_btn, "Auth btn");
+    
+    // Switch back to the original tab
+    getWebDriver().switchTo().window(currentWindowHandle);
+}
     public void purchase_via_card(String itemType)throws Exception {
         home.addItemToCart(itemType, 2);
         cart.navigateShoppingCart();

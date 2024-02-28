@@ -129,7 +129,7 @@ public  class Home_page{
     public static By objitem_productDetails_spec_stone=By.xpath("(//div[contains(@class,'flex flex-1 px-5')])[3]");
     public static By objitem_productDetails_spec_stoneColor=By.xpath("(//div[contains(@class,'flex flex-1 px-5')])[4]");
     public static By objitem_productDetails_spec_size=By.xpath("(//div[contains(@class,'flex flex-1 px-5')])[5]");
-    public static By objitem_productDetails_spec_itemWeight=By.xpath("(//div[contains(@class,'flex flex-1 px-5')])[6]");
+    public static By objitem_productDetails_spec_itemWeight=By.xpath("//p[contains(text(),'Item ')]/parent::div/parent::div/child::div[3]/child::p");
     public static By objitem_productDetails_addToCart_btn = By.xpath("//button[normalize-space()='Add To Cart']");
     public static By objitem_productDetails_successAddModal = By.xpath("//p[normalize-space()='Item has been successfully added to your cart.']");
     public static By objitem_productDetails_confirmBtn = By.xpath("//button[normalize-space()='Confirm']");

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Web" parallel="tests" thread-count="2">
+<suite name="Web" parallel="tests" thread-count="1">
 
     <parameter name="browserType" value="chrome"/>
     <parameter name="url" value="https://mlshoppreprod.mlhuillier.com/"></parameter>
@@ -9,24 +9,30 @@
         <listener class-name="com.utility.ExtentReporter" />
     </listeners>
 
-    <test name="MLSHOP">
+    <!-- <test name="MLSHOP">
         <parameter name="portno" value="4723"></parameter>
         <parameter name="deviceName" value="n/a"></parameter>
         <classes>       
             <class name="com.mlshop.test.Login">
-            </class>         
-             <class name="com.mlshop.test.ShippingDetails">
-            </class>
+            </class>                   
             <class name="com.mlshop.test.ShoppingCart">
-            </class>  
+            </class> 
         </classes>
-    </test>
-    <test name="MLSHOP2">
+    </test> -->
+    <!-- <test name="MLSHOP2">
         <parameter name="portno" value="4725"></parameter>
         <parameter name="deviceName" value="n/a"></parameter>
         <classes>    
             <class name="com.mlshop.test.Home">
             </class>              
+        </classes>
+    </test> -->
+    <test name="MLSHOP3">
+        <parameter name="portno" value="4727"></parameter>
+        <parameter name="deviceName" value="n/a"></parameter>
+        <classes>    
+            <class name="com.mlshop.test.ShippingDetails">
+            </class>             
         </classes>
     </test>
 </suite>

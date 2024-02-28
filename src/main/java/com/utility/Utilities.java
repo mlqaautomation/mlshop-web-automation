@@ -2849,7 +2849,7 @@ public class Utilities extends ExtentReporter {
 	}
 
 	public static void closeWebBrowser() {
-    waitTime(5000);
+    //waitTime(5000);
     WebDriver driver = getWebDriver();
     if (driver != null) {
         String currentWindowHandle = driver.getWindowHandle();
