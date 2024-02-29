@@ -398,11 +398,11 @@ public class ShippingDetails extends BaseClass{
         selectBranch("Province", "City", "Branch");
         scrollToBottomOfPageWEB();
         verifyElementPresentAndClick(Shipping_Details.objPaymentMethodML_Wallet, "ML WALLET");     
-        waitTime(1000); 
         isTotalCorrect();
+        waitTime(3000); 
         verifyElementPresentAndClick(Shipping_Details.objPlaceOrder, "Place Order btn");
         verifyElementPresentAndClick(Shipping_Details.objProceed_btn, getText(Shipping_Details.objProceed_btn));
-        waitTime(3000);
+        waitTime(5000);
         login.inputOTP();       
         verifyElementPresent(Shipping_Details.objSuccessCheckout_msg, getText(Shipping_Details.objSuccessCheckout_msg));
         verifyElementPresentAndClick(Login_page.objOkay_btn, "Okay button");     
@@ -438,9 +438,8 @@ public class ShippingDetails extends BaseClass{
         isTotalCorrect();
         verifyElementPresentAndClick(Shipping_Details.objPlaceOrder, "Place Order btn");
         verifyElementPresentAndClick(Shipping_Details.objProceed_btn, getText(Shipping_Details.objProceed_btn));
-        waitTime(3000);
+        waitTime(5000);
         login.inputOTP();
-
         handlePaymongoPayment_eWallet();
         purchaseHistory.navigatePurchaseHistory();
         if(option.contains(getText(Purchase_History.firstOrder_No))){

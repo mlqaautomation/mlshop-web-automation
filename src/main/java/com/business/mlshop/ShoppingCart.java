@@ -22,7 +22,7 @@ public class ShoppingCart extends BaseClass{
     private Home home = new Home();
 
     public void navigateShoppingCart()throws Exception{
-        click(Home_page.objShoppingCart_icon, "Shopping Cart");     
+        verifyElementPresentAndClick(Home_page.objShoppingCart_icon, "Shopping Cart");     
     }
     public void MLS_TC_90_Validate_shopping_cart_navigation()throws Exception{
         HeaderChildNode("MLS_TC_90, To Validate Shopping Cart page navigation");
@@ -66,8 +66,8 @@ public class ShoppingCart extends BaseClass{
         HeaderChildNode("MLS_TC_93, To Validate removing items from shopping cart");     
         home.addItemToCart("Jewelry", 1);
         navigateShoppingCart();
-        click(Shopping_Cart.Item_deleteIcon(1), "Garbage btn");
-        click(Shopping_Cart.modal_yes, "Yes btn");
+        verifyElementPresentAndClick(Shopping_Cart.Item_deleteIcon(1), "Garbage btn");
+        verifyElementPresentAndClick(Shopping_Cart.modal_yes, "Yes btn");
         if(verifyElementDisplayed(Shopping_Cart.item_nameDescription(1), "Item")){
             ExtentReporter.extentLoggerFail("MLS_TC_93", "Failed to delete items in shopping cart");        
         }else{
@@ -78,7 +78,7 @@ public class ShoppingCart extends BaseClass{
         HeaderChildNode("MLS_TC_94, To Validate modal popup confirmation button for removing item");     
         home.addItemToCart("Jewelry", 1);
         navigateShoppingCart();
-        click(Shopping_Cart.Item_deleteIcon(1), "Garbage btn");    
+        verifyElementPresentAndClick(Shopping_Cart.Item_deleteIcon(1), "Garbage btn");    
         if(verifyElementPresent(Shopping_Cart.modal_msg, getText(Shopping_Cart.modal_msg))){
             ExtentReporter.extentLoggerPass("MLS_TC_94", "Successfully validated modal pop up for remove item");
         }else{
@@ -89,8 +89,8 @@ public class ShoppingCart extends BaseClass{
         HeaderChildNode("MLS_TC_95, To Validate removing items from shopping cart");     
         home.addItemToCart("Jewelry", 1);
         navigateShoppingCart();
-        click(Shopping_Cart.Item_deleteIcon(1), "Garbage btn");
-        click(Shopping_Cart.modal_cancel, "Cancel btn");    
+        verifyElementPresentAndClick(Shopping_Cart.Item_deleteIcon(1), "Garbage btn");
+        verifyElementPresentAndClick(Shopping_Cart.modal_cancel, "Cancel btn");    
         if(verifyElementDisplayed(Shopping_Cart.item_nameDescription(1), "Item")){
             ExtentReporter.extentLoggerPass("MLS_TC_95", "Successfully validated delete items in shopping cart");      
         }else{
@@ -103,7 +103,7 @@ public class ShoppingCart extends BaseClass{
         navigateShoppingCart();
         String prevTotal = getText(Shopping_Cart.Item_Selected);
         String prevSubtotal = getText(Shopping_Cart.Subtotal_count);          
-        click(Shopping_Cart.item_checkBox(1), "Checkbox");  
+        verifyElementPresentAndClick(Shopping_Cart.item_checkBox(1), "Checkbox");  
         waitTime(1000); 
         String currentTotal = getText(Shopping_Cart.Item_Selected);
         String currentSubtotal = getText(Shopping_Cart.Subtotal_count);     
@@ -115,11 +115,11 @@ public class ShoppingCart extends BaseClass{
         HeaderChildNode("MLS_TC_97, To Validate check functionality will  increment the total \"item selected\" and subtotal");     
         home.addItemToCart("Jewelry", 1);
         navigateShoppingCart();    
-        click(Shopping_Cart.item_checkBox(1), "Checkbox");  
+        verifyElementPresentAndClick(Shopping_Cart.item_checkBox(1), "Checkbox");  
         waitTime(1000); 
         String prevTotal = getText(Shopping_Cart.Item_Selected);
         String prevSubtotal = getText(Shopping_Cart.Subtotal_count);    
-        click(Shopping_Cart.item_checkBox(1), "Checkbox");  
+        verifyElementPresentAndClick(Shopping_Cart.item_checkBox(1), "Checkbox");  
         waitTime(1000);  
         String currentTotal = getText(Shopping_Cart.Item_Selected);
         String currentSubtotal = getText(Shopping_Cart.Subtotal_count);     

@@ -13,9 +13,9 @@ public class Login extends BaseClass{
 
     //create method for login
     public void navigateLoginPage() throws Exception {
-        waitTime(2000);
+        waitTime(3000);
         //click on user icon
-        click(Home_page.objUser_icon, "User icon");   
+        verifyElementPresentAndClick(Home_page.objUser_icon, "User icon");   
         waitTime(2000);  
         //validate if user is in login page by using assertion validation 
         assertionValidation(getWebDriver().getCurrentUrl(), prop.getproperty("LoginLink"));
@@ -33,7 +33,7 @@ public class Login extends BaseClass{
         logger.info(account);
         navigateLoginPage();
         typeWeb(Login_page.objMobileNumber_field, prop.getproperty("Branch_Verified"), "Mobile Number");
-        click(Login_page.objLogin_btn, "Login Button");      
+        verifyElementPresentAndClick(Login_page.objLogin_btn, "Login Button");      
         verifyElementPresent(Login_page.objOTP_PleaseEnter, getText(Login_page.objOTP_PleaseEnter));
         inputOTP(); 
         waitTime(2000);

@@ -51,6 +51,9 @@ public class Home extends BaseClass{
         HeaderChildNode("MLS_TC_27, To Validate purchase history page navigation from user drop down menu");
         login.loginValid(prop.getproperty("Branch_Verified"));
         logger.info("Current user: " + getText(Home_page.objUser_name));
+        waitTime(1000);
+        verifyElementPresentAndClick(Home_page.objUser_name, getText(Home_page.objUser_name));
+        waitTime(1000);
         verifyElementPresentAndClick(Home_page.objPurchaseHistory_option, "Purchase History");
         assertionValidation(getWebDriver().getCurrentUrl(), prop.getproperty("PurchaseHistoryLink"));
         extentLogger("MLS_TC_27", "To Validate purchase history page navigation from user drop down menu");
