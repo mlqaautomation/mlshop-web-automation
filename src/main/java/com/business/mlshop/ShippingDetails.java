@@ -288,10 +288,10 @@ public class ShippingDetails extends BaseClass{
         }
     }
     public void MLS_TC_113_Validate_successPurchase_historyDetails()throws Exception{
-        HeaderChildNode("MLS_TC_112, To Validate purchase history after succesful shipping details of items");
+        HeaderChildNode("MLS_TC_113, To Validate purchase history after succesful shipping details of items");
         login.loginValid("Branch_Verified");
         if(isItemPurchased_inHistory("Jewelry")){
-            ExtentReporter.extentLoggerPass("MLS_TC_112", "To Validate purchase history after succesful shipping details of items");
+            ExtentReporter.extentLoggerPass("MLS_TC_113", "To Validate purchase history after succesful shipping details of items");
         }
     }
     public void MLS_TC_114_Validate_successPurchase_grabPay()throws Exception{
@@ -311,12 +311,12 @@ public class ShippingDetails extends BaseClass{
         purchase_via_e_wallet("Jewelry", prop.getproperty("Paymaya"));
     }
     public void MLS_TC_117_Validate_successPurchase_card()throws Exception{
-        HeaderChildNode("MLS_TC_116, To Validate successful purchase using e-wallet \"paymaya\" as payment methods");
+        HeaderChildNode("MLS_TC_117, To Validate successful purchase using e-wallet \"paymaya\" as payment methods");
         login.loginValid("Branch_Verified");
         purchase_via_e_wallet("Jewelry", prop.getproperty("Paymaya"));
     }
     public void MLS_TC_127_Validate_sucessPurhcase_wallet()throws Exception{
-        HeaderChildNode("MLS_TC_116, To Validate successful purchase using e-wallet \"paymaya\" as payment methods");
+        HeaderChildNode("MLS_TC_127, To Validate successful purchase using wallet as payment method while logged in");
         login.loginValid("Branch_Verified");
         purchase_via_wallet("Jewelry", true);
     }

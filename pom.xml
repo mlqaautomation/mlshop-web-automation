@@ -304,7 +304,7 @@
 					<groups>${groups}</groups>
 					<suiteXmlFiles>
 						<suiteXmlFile>MLShopWeb.xml</suiteXmlFile>
-						<!-- <suiteXmlFile>mlwalletios.xml</suiteXmlFile> -->
+						<!-- <suiteXmlFile>happyPath.xml</suiteXmlFile> -->
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>

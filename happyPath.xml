@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Web" parallel="tests" thread-count="2">
+    <parameter name="browserType" value="chrome"/>
+    <parameter name="url" value="https://mlshoppreprod.mlhuillier.com/"></parameter>
+    <listeners>
+        <listener class-name="com.utility.ExtentReporter" />
+        <listener class-name="com.utility.MyTransformer" />
+    </listeners>
+    <test name="Purchase">
+        <parameter name="portno" value="4723"></parameter>
+        <parameter name="deviceName" value="n/a"></parameter>
+        <classes>    
+            <class name="com.mlshop.test.Purchase_happyPath">
+            </class>             
+        </classes>
+    </test>
+</suite>
