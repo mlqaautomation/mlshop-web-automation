@@ -251,6 +251,7 @@ public class DriverInstance extends Drivertools {
 			case "chrome":
 				WebDriverManager.chromedriver().setup();
 				ChromeOptions options = new ChromeOptions();
+				options.addArguments("start-maximized");
 				options.addArguments("enable-automation");
 				options.addArguments("--no-sandbox");
 				options.addArguments("--disable-extensions");
