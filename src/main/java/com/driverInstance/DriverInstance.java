@@ -259,8 +259,9 @@ public class DriverInstance extends Drivertools {
 				options.addArguments("--disable-dev-shm-usage");
 				options.addArguments("--disable-browser-side-navigation");
 				options.addArguments("--disable-gpu");
+				options.addArguments("--window-size=1920,1080"); // Set window size to 1920x1080
 				options.setPageLoadStrategy(PageLoadStrategy.EAGER);
-				options.setHeadless(false);			
+				options.setHeadless(true);			
 			if (osName.contains("mac") || osName.contains("linux")) {
 				WebDriverManager.chromedriver().setup();							
 				tlWebDriver.set(new ChromeDriver(options));
