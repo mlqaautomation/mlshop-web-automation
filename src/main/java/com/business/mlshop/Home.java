@@ -286,7 +286,7 @@ public class Home extends BaseClass{
     }
     public void MLS_TC_57_ValidateFilter_WatchAllBrand()throws Exception{
         HeaderChildNode("MLS_TC_57, To Validate Brand Filter function \"All brands\" will display all types of brand");     
-        waitTime(2000);
+        waitTime(3000);
         verifyElementPresentAndClick(Home_page.objWatchesTab, "Watch tab");
         waitTime(3000);
         verifyElementPresentAndClick(Home_page.objAllBrandsDropDown, "All Brands Drop Down");
@@ -297,7 +297,7 @@ public class Home extends BaseClass{
     }
     public void MLS_TC_58_ValidateFilter_RolexBrand()throws Exception{
         HeaderChildNode("MLS_TC_58, To Validate Brand Filter function \"Rolex\" will display rolex watch");       
-        waitTime(2000);
+        waitTime(3000);
         verifyElementPresentAndClick(Home_page.objWatchesTab, "Watch tab");
         waitTime(3000);
         verifyElementPresentAndClick(Home_page.objAllBrandsDropDown, "All Brands Drop Down");
@@ -308,7 +308,7 @@ public class Home extends BaseClass{
     }
     public void MLS_TC_59_ValidateFilter_OmegaBrand()throws Exception{
         HeaderChildNode("MLS_TC_59, To Validate Brand Filter function \"Omega\" will display Omega watch");       
-        waitTime(2000);
+        waitTime(3000);
         verifyElementPresentAndClick(Home_page.objWatchesTab, "Watch tab");
         waitTime(3000);
         verifyElementPresentAndClick(Home_page.objAllBrandsDropDown, "All Brands Drop Down");
@@ -319,7 +319,7 @@ public class Home extends BaseClass{
     }
     public void MLS_TC_60_ValidateFilter_TagHeuer()throws Exception{
         HeaderChildNode("MLS_TC_60, To Validate Brand Filter function \"Tag Heuer\" will display Tag Heuer watch");       
-        waitTime(2000);
+        waitTime(3000);
         verifyElementPresentAndClick(Home_page.objWatchesTab, "Watch tab");
         waitTime(3000);
         verifyElementPresentAndClick(Home_page.objAllBrandsDropDown, "All Brands Drop Down");
@@ -331,7 +331,7 @@ public class Home extends BaseClass{
     
     public void MLS_TC_61_ValidateFilter_Seiko() throws Exception {
         HeaderChildNode("MLS_TC_61, To Validate Brand Filter function \"Seiko\" will display Seiko watch");       
-        waitTime(2000);
+        waitTime(3000);
         verifyElementPresentAndClick(Home_page.objWatchesTab, "Watch tab");
         waitTime(3000);
         verifyElementPresentAndClick(Home_page.objAllBrandsDropDown, "All Brands Drop Down");
@@ -342,7 +342,7 @@ public class Home extends BaseClass{
     }
     public void MLS_TC_62_ValidateFilter_Casio() throws Exception {
         HeaderChildNode("MLS_TC_62, To Validate Brand Filter function \"Casio\" will display Casio watch");        
-        waitTime(2000);
+        waitTime(3000);
         verifyElementPresentAndClick(Home_page.objWatchesTab, "Watch tab");
         waitTime(3000);
         verifyElementPresentAndClick(Home_page.objAllBrandsDropDown, "All Brands Drop Down");
@@ -353,7 +353,7 @@ public class Home extends BaseClass{
     }
     public void MLS_TC_63_ValidateFilter_AllMovements_watch() throws Exception {
         HeaderChildNode("MLS_TC_63, To Validate Movements Filter function \"All Movements\" will display all watch");
-        waitTime(2000);
+        waitTime(3000);
         verifyElementPresentAndClick(Home_page.objWatchesTab, "Watch tab");
         waitTime(3000);
         verifyElementPresentAndClick(Home_page.objAllMovementDropDown, "All Movements Drop Down");
@@ -364,7 +364,7 @@ public class Home extends BaseClass{
     }
     public void MLS_TC_64_ValidateFilter_Automatic_watch() throws Exception {
         HeaderChildNode("MLS_TC_64, To Validate Movements Filter function \"Automatic\" will display all watch");
-        waitTime(2000);
+        waitTime(3000);
         verifyElementPresentAndClick(Home_page.objWatchesTab, "Watch tab");
         waitTime(3000);
         verifyElementPresentAndClick(Home_page.objAllMovementDropDown, "All Movements Drop Down");
@@ -375,7 +375,7 @@ public class Home extends BaseClass{
     }
     public void MLS_TC_65_ValidateFilter_Quartz_watch() throws Exception {
         HeaderChildNode("MLS_TC_65, To Validate Movements Filter function \"Quartz\" will display all watch");  
-        waitTime(2000);
+        waitTime(3000);
         verifyElementPresentAndClick(Home_page.objWatchesTab, "Watch tab");
         waitTime(3000);
         verifyElementPresentAndClick(Home_page.objAllMovementDropDown, "All Movements Drop Down");
@@ -386,7 +386,7 @@ public class Home extends BaseClass{
     }
     public void MLS_TC_66_ValidateFilter_Others_watch() throws Exception {
         HeaderChildNode("MLS_TC_66, To Validate Movements Filter function \"Others\" will display all watch");
-        waitTime(2000);
+        waitTime(3000);
         verifyElementPresentAndClick(Home_page.objWatchesTab, "Watch tab");
         waitTime(3000);
         verifyElementPresentAndClick(Home_page.objAllMovementDropDown, "All Movements Drop Down");
@@ -398,7 +398,7 @@ public class Home extends BaseClass{
     }
     public void MLS_TC_67_ValidateFilter_allMaterials_watch() throws Exception {
         HeaderChildNode("MLS_TC_67, To Validate Material Filter function \"All Materials\" will display all materials watch");  
-        waitTime(2000);
+        waitTime(3000);
         verifyElementPresentAndClick(Home_page.objWatchesTab, "Watch tab");
         waitTime(3000);
         verifyElementPresentAndClick(Home_page.objAllMaterialsDropDown, "All Materials Drop Down");
@@ -409,7 +409,7 @@ public class Home extends BaseClass{
     }
     public void MLS_TC_68_ValidateFilter_Stainless_watch() throws Exception {
         HeaderChildNode("MLS_TC_68, To Validate Material Filter function \"Stainless\" will display all stainless watch");
-        waitTime(2000);
+        waitTime(3000);
         verifyElementPresentAndClick(Home_page.objWatchesTab, "Watch tab");
         waitTime(3000);
         verifyElementPresentAndClick(Home_page.objAllMaterialsDropDown, "All Materials Drop Down");
@@ -420,7 +420,7 @@ public class Home extends BaseClass{
     }
     public void MLS_TC_69_ValidateFilter_Ceramic_Polymer_watch() throws Exception {
         HeaderChildNode("MLS_TC_69, To Validate Material Filter function \"Ceramic/Polymer\" will display all cyramic / polymer watch");
-        waitTime(2000);
+        waitTime(3000);
         verifyElementPresentAndClick(Home_page.objWatchesTab, "Watch tab");
         waitTime(3000);
         verifyElementPresentAndClick(Home_page.objAllMaterialsDropDown, "All Materials Drop Down");
@@ -431,7 +431,7 @@ public class Home extends BaseClass{
     }
     public void MLS_TC_70_ValidateFilter_Gold_watch() throws Exception {
         HeaderChildNode("MLS_TC_70, To Validate Material Filter function \"Goldl\" will display all gold watch");
-        waitTime(2000);
+        waitTime(3000);
         verifyElementPresentAndClick(Home_page.objWatchesTab, "Watch tab");
         waitTime(3000);
         verifyElementPresentAndClick(Home_page.objAllMaterialsDropDown, "All Materials Drop Down");
@@ -442,7 +442,7 @@ public class Home extends BaseClass{
     }
     public void MLS_TC_71_ValidateFilter_allGenders_watch() throws Exception {
         HeaderChildNode("MLS_TC_71, To Validate watch type by \"All Genders\" filter will display all watches");
-        waitTime(2000);
+        waitTime(3000);
         verifyElementPresentAndClick(Home_page.objWatchesTab, "Watch tab");
         waitTime(3000);
         verifyElementPresentAndClick(Home_page.objAllGendersDropDown, "All Materials Drop Down");
@@ -453,7 +453,7 @@ public class Home extends BaseClass{
     }
     public void MLS_TC_72_ValidateFilter_Ladies_watch() throws Exception {
         HeaderChildNode("MLS_TC_72, To Validate watch type by \"Ladies\" filter will display ladies watches");
-        waitTime(2000);
+        waitTime(3000);
         verifyElementPresentAndClick(Home_page.objWatchesTab, "Watch tab");
         waitTime(3000);
         verifyElementPresentAndClick(Home_page.objAllGendersDropDown, "All Genders Drop Down");
@@ -464,7 +464,7 @@ public class Home extends BaseClass{
     }
     public void MLS_TC_73_ValidateFilter_Mens_watch() throws Exception {
         HeaderChildNode("MLS_TC_73, To Validate watch type by \"Men's\" filter will display men's watches");
-        waitTime(2000);
+        waitTime(3000);
         verifyElementPresentAndClick(Home_page.objWatchesTab, "Watch tab");
         waitTime(3000);
         verifyElementPresentAndClick(Home_page.objAllGendersDropDown, "All Genders Drop Down");
@@ -475,7 +475,7 @@ public class Home extends BaseClass{
     }
     public void MLS_TC_74_ValidateFilter_Unisex_watch() throws Exception {
         HeaderChildNode("MLS_TC_74, To Validate watch type by \"Unisex\" filter will display unisex watches");
-        waitTime(2000);
+        waitTime(3000);
         verifyElementPresentAndClick(Home_page.objWatchesTab, "Watch tab");
         waitTime(3000);
         verifyElementPresentAndClick(Home_page.objAllGendersDropDown, "All Genders Drop Down");
@@ -505,7 +505,7 @@ public class Home extends BaseClass{
 
     public void MLS_TC_81_ValidateProduct_watch() throws Exception {
         HeaderChildNode("MLS_TC_81, To Validate product details in Watches tab home page");
-        waitTime(2000);
+        waitTime(3000);
         verifyElementPresentAndClick(Home_page.objWatchesTab, "Watch tab");
         if(verifyElementPresent(Home_page.objitem_byIndex(1), getText(Home_page.objitemName_byIndex(1)))){
             ExtentReporter.extentLoggerPass("MLS_TC_81", "To Validate product details in Watches tab home page");
@@ -588,8 +588,7 @@ public class Home extends BaseClass{
     }
     public void MLS_TC_87_ValidateWatch_addToCart() throws Exception {
         HeaderChildNode("MLS_TC_87, To Validate successful add item modal pop to shopping cart from watches tab");
-        
-        waitTime(2000);
+        waitTime(3000);
         verifyElementPresentAndClick(Home_page.objWatchesTab, "Watch tab");
         waitTime(3000);
         verifyElementPresentAndClick(Home_page.objitemName_byIndex(1), getText(Home_page.objitemName_byIndex(1)));
@@ -602,7 +601,6 @@ public class Home extends BaseClass{
     }
     public void MLS_TC_89_ValidateItem_alreadyInCart() throws Exception {
         HeaderChildNode("MLS_TC_89, To Validate successful add item modal pop to shopping cart from watches tab");
-        
         waitTime(1000);
         verifyElementPresentAndClick(Home_page.objWatchesTab, "Watch tab");
         waitTime(3000);

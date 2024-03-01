@@ -287,7 +287,7 @@ public class ShippingDetails extends BaseClass{
             ExtentReporter.extentLoggerFail(osName, "Incorrect computation of total payment");
         }
     }
-    public void MLS_TC_113_Validate_successPurchase_historyDetails()throws Exception{
+    public void MLS_TC_113_Validate_successPurchase_wallet_historyDetails()throws Exception{
         HeaderChildNode("MLS_TC_113, To Validate purchase history after succesful shipping details of items");
         login.loginValid("Branch_Verified");
         if(isItemPurchased_inHistory("Jewelry")){

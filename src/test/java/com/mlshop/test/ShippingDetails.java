@@ -61,7 +61,7 @@ public class ShippingDetails extends BaseTest{
     }
     @Test(priority =16)
     public void MLS_TC_113_Validate_successPurchase_historyDetails()throws Exception{
-        shippingDetailsTC.MLS_TC_113_Validate_successPurchase_historyDetails();
+        shippingDetailsTC.MLS_TC_113_Validate_successPurchase_wallet_historyDetails();
     }
 
 }
