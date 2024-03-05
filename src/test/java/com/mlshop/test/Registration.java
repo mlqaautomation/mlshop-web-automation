@@ -4,11 +4,6 @@ import org.testng.annotations.Test;
 
 public class Registration extends BaseTest {
    @Test(priority = 1)
-   public void navigateRegistration() throws Exception {
-      registrationTC.navigateRegistration();
-   }
-
-   @Test(priority = 1)
    public void MLS_TC_10_Validate_InvalidNum_RegistrationPage() throws Exception {
       registrationTC.MLS_TC_10_Validate_InvalidNum_RegistrationPage();
    }
