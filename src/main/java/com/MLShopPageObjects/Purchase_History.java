@@ -23,7 +23,7 @@ public class Purchase_History {
     public static By Stock_No = By.xpath("//*[contains(text(),'Stock Number')]");
     public static By ItemPrice = By.xpath("//*[contains(text(),'Price:')][1]");
     public static By Sub_Price = By.xpath("//*[contains(text(),'SubTotal Price : ')]");
-    public static By Order_Total = By.xpath("//*[contains(text(),'Order Total : ')]");
+    public static By Order_Total = By.xpath("//*[contains(text(),'Order Total : ')]/child::span");
     public static By firstOrder_Details = By.xpath("(//button[contains(text(),'Order Details')])[1]");
 
     public static By allStockNumber = By.xpath("(//*[contains(text(),'Stock Number')]/child::span)");

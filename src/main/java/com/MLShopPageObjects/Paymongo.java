@@ -108,8 +108,8 @@ public class Paymongo {
      public static By objTickBox = By.xpath("//input[@id='privacy-policy']");
      public static By objErrorMessagePrivacy = By.xpath("//p[@class='privacy-policy-checkbox__error-message']");
      // BTN
-     public static By objBack = By.xpath("// button[@class='button default --mr-xs button--primary']");
-     public static By objComplete = By.xpath("// span[normalize-space()='Complete payment']");
+     public static By objBack = By.xpath("//button[@class='button default --mr-xs button--primary']");
+     public static By objComplete = By.xpath("//span[contains(text(),'Complete')]");
  
      // Extra Directory for Direct Online Banking
      public static By objAccessPrompt = By.xpath("//span[@class='f-sm']");
@@ -130,4 +130,5 @@ public class Paymongo {
      public static By objFooter2 = By.xpath("//span[contains(text(),'Safe • Secure • Simple')]");
      public static By objFooterimg2 = By.xpath("//img[@alt='PayMongo Logo']");
 
+     public static By objTotal = By.xpath("//h4[contains(text(), 'Total: ')]/following-sibling::h1/child::span");
 }

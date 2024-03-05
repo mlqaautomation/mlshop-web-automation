@@ -313,7 +313,12 @@ public class ShippingDetails extends BaseClass{
     public void MLS_TC_117_Validate_successPurchase_card()throws Exception{
         HeaderChildNode("MLS_TC_117, To Validate successful purchase using e-wallet \"paymaya\" as payment methods");
         login.loginValid("Branch_Verified");
-        purchase_via_e_wallet("Jewelry", prop.getproperty("Paymaya"));
+        purchase_via_card("Jewelry");
+    }
+    public void MLS_TC_118_Validate_successPurchase_directOnlineBanking()throws Exception{
+        HeaderChildNode("MLS_TC_118, To Validate successful purhcase using direct online banking as payment method");
+        login.loginValid("Branch_Verified");
+        purchaseviaOnlineBank("Jewelry");
     }
     public void MLS_TC_127_Validate_sucessPurhcase_wallet()throws Exception{
         HeaderChildNode("MLS_TC_127, To Validate successful purchase using wallet as payment method while logged in");
@@ -327,11 +332,13 @@ public class ShippingDetails extends BaseClass{
         double shipTotalValue = parseTotalValue(getText(Shipping_Details.objShippingTotal));
         double totalPaymentValue = parseTotalValue(getText(Shipping_Details.objTotalPayment));
         double expectedTotal = merchTotalValue + servTotalValue + shipTotalValue;
-        logger.info("Expected total: "+ expectedTotal + ", actual: "+ totalPaymentValue);
-        return expectedTotal == totalPaymentValue;
+        assertionValidation(totalPaymentValue, expectedTotal);
+        logger.info("Expected total: " + expectedTotal + ", actual: " + totalPaymentValue);
+        return Math.abs(expectedTotal - totalPaymentValue) < 0.0001;
     }
-
+    
     private double parseTotalValue(String total) {
+        total = total.replaceAll(",", "");
         return Double.parseDouble(total.substring(1).trim());
     }
 
@@ -398,15 +405,14 @@ public class ShippingDetails extends BaseClass{
         selectBranch("Province", "City", "Branch");
         scrollToBottomOfPageWEB();
         verifyElementPresentAndClick(Shipping_Details.objPaymentMethodML_Wallet, "ML WALLET");     
-        isTotalCorrect();
         waitTime(3000); 
+        isTotalCorrect();
         verifyElementPresentAndClick(Shipping_Details.objPlaceOrder, "Place Order btn");
         verifyElementPresentAndClick(Shipping_Details.objProceed_btn, getText(Shipping_Details.objProceed_btn));
         waitTime(5000);
         login.inputOTP();       
         verifyElementPresent(Shipping_Details.objSuccessCheckout_msg, getText(Shipping_Details.objSuccessCheckout_msg));
         verifyElementPresentAndClick(Login_page.objOkay_btn, "Okay button");     
-
     }
     public void purchase_via_e_wallet(String itemType, String eWalletType) throws Exception {
         home.addItemToCart(itemType, 2);
@@ -440,41 +446,44 @@ public class ShippingDetails extends BaseClass{
         verifyElementPresentAndClick(Shipping_Details.objProceed_btn, getText(Shipping_Details.objProceed_btn));
         waitTime(5000);
         login.inputOTP();
-        handlePaymongoPayment_eWallet();
-        purchaseHistory.navigatePurchaseHistory();
-        if(option.contains(getText(Purchase_History.firstOrder_No))){
-            logger.info("First Order Payment Method " + option.toString());
-            ExtentReporter.extentLoggerPass("E-WALLET Payment Option: ", "Successfull Purchase");
-        }
+        handlePaymongoPayment(eWalletType, getTotal(Shipping_Details.objTotalPayment));  
     }
-    public void handlePaymongoPayment_eWallet() throws Exception {
-    waitTime(5000);
-    String currentWindowHandle = getWebDriver().getWindowHandle();
-    utils.switchToNextTab();
-    
-    // Wait for the new tab to load
-    WebDriverWait wait = new WebDriverWait(getWebDriver(), 10);
-    wait.until(ExpectedConditions.numberOfWindowsToBe(2));
-    
-    // Switch to the new tab
-    Set<String> windowHandles = getWebDriver().getWindowHandles();
-    for (String windowHandle : windowHandles) {
-        if (!windowHandle.equals(currentWindowHandle)) {
-            getWebDriver().switchTo().window(windowHandle);
-            break;
+    public void handlePaymongoPayment(String type, double prevTotal) throws Exception {
+        waitTime(5000);
+        String currentWindowHandle = getWebDriver().getWindowHandle();
+        utils.switchToNextTab();
+        WebDriverWait wait = new WebDriverWait(getWebDriver(), 10);
+        wait.until(ExpectedConditions.numberOfWindowsToBe(2));  
+        Set<String> windowHandles = getWebDriver().getWindowHandles();
+        for (String windowHandle : windowHandles) {
+            if (!windowHandle.equals(currentWindowHandle)) {
+                getWebDriver().switchTo().window(windowHandle);
+                break;
+            }
         }
+        waitTime(5000);
+        verifyElementPresent(Paymongo.objHeaderMerchant, "HEADER MERCHANT");
+        verifyElementPresentAndClick(Paymongo.objContinue_btn, "Continue btn");
+        Double paymongoTotal = getTotal(Paymongo.objTotal); 
+        if (type.equals("GCASH") || type.equals("PAYMAYA") || type.equals("GRAB PAY")) {
+            click(Paymongo.objTickBox, "Policy Checkbox");
+            click(Paymongo.objComplete, "Complete btn");
+            click(Paymongo.objAuth_btn, "Auth btn");
+        } else if (type.equals("VISA/MASTERCARD")) {   
+            typeWeb(Paymongo.objCardNumtxtBox, prop.getproperty("CardNumber"), "Car Number");
+            typeWeb(Paymongo.objExpiryM, prop.getproperty("Exp_MM"), "Expiry MM");
+            typeWeb(Paymongo.objExpiryY, prop.getproperty("Exp_YY"), "Expiry YY");
+            typeWeb(Paymongo.objCVCtxtBox, prop.getproperty("CVC"), "CVC");
+            scrollToBottomOfPageWEB();
+            click(Paymongo.objTickBox, "Policy Checkbox");
+            click(Paymongo.objComplete, "Complete btn");     
+        } else if (type.equals("DIRECT ONLINE BANKING")) {
+            click(Paymongo.objTickBox, "Policy Checkbox");
+            click(Paymongo.objComplete, "Complete btn");
+        }            
+        utils.switchToPreviousTab();   
+        verifyItemTotalFromPaymongo_to_mlShop(type, paymongoTotal);
     }
-
-    waitTime(5000);
-    verifyElementPresent(Paymongo.objHeaderMerchant, "HEADER MERCHANT");
-    verifyElementPresentAndClick(Paymongo.objContinue_btn, "Continue btn");
-    verifyElementPresentAndClick(Paymongo.objTickBox, "Policy Checkbox");
-    verifyElementPresentAndClick(Paymongo.objComplete, "Complete btn");
-    verifyElementPresentAndClick(Paymongo.objAuth_btn, "Auth btn");
-    
-    // Switch back to the original tab
-    getWebDriver().switchTo().window(currentWindowHandle);
-}
     public void purchase_via_card(String itemType)throws Exception {
         home.addItemToCart(itemType, 2);
         cart.navigateShoppingCart();
@@ -484,24 +493,59 @@ public class ShippingDetails extends BaseClass{
         scrollToBottomOfPageWEB();
         verifyElementPresentAndClick(Shipping_Details.objPaymentMethodVisaMasterCard, "VISA/MASTERCARD");
         waitTime(1000);
+        isTotalCorrect();
+        double totalShop = getTotal(Shipping_Details.objTotalPayment);
         verifyElementPresentAndClick(Shipping_Details.objPlaceOrder, "Place Order btn");
         verifyElementPresentAndClick(Shipping_Details.objProceed_btn, getText(Shipping_Details.objProceed_btn));
         waitTime(3000);
-        login.inputOTP();       
+        login.inputOTP();    
+        handlePaymongoPayment(prop.getproperty("CARD"), totalShop);      
     }
-    public void handlePaymongoPayment_card()throws Exception {
+    public void handleDirectOnlineBank() throws Exception {
         waitTime(5000);       
         utils.switchToNextTab();
         waitTime(5000);      
         verifyElementPresent(Paymongo.objHeaderMerchant, "HEADER MERCHANT"); 
         verifyElementPresentAndClick(Paymongo.objContinue_btn, "Continue btn"); 
-        typeWeb(Paymongo.objCardNumtxtBox, prop.getproperty("CTPWD"), "Car Number");
-        typeWeb(Paymongo.objExpiryM, prop.getproperty("CTPWD"), "Expiry MM");
-        typeWeb(Paymongo.objExpiryY, prop.getproperty("CTPWD"), "Expiry YY");
-        typeWeb(Paymongo.objCVCtxtBox, prop.getproperty("CTPWD"), "CVC");
         verifyElementPresentAndClick(Paymongo.objTickBox, "Policy Checkbox");
         verifyElementPresentAndClick(Paymongo.objComplete, "Complete btn");
-        verifyElementPresentAndClick(Paymongo.objAuth_btn, "Auth btn");
-        utils.switchToPreviousTab();
+    }
+    public Double getTotal(By object) throws Exception {
+        double total = parseTotalValue(getText(object));
+        return total;
+    }
+    public Double getPaymongoTotalDouble(By object) throws Exception {
+        String text = getText(object);
+        String cleanedText = text.replace("₱", "").replace(" ", "");
+        double total = parseTotalValue(cleanedText);
+        return total;
+    }  
+    public void verifyItemTotalFromPaymongo_to_mlShop(String paymentMethod, Double total)throws Exception{
+        purchaseHistory.navigatePurchaseHistory();
+        if(paymentMethod.toLowerCase().contains(getText(Purchase_History.firstOrder_No).toLowerCase())){
+            assertionValidation(getTotal(Purchase_History.Order_Total), total);
+            logger.info("First Order Payment Method " + paymentMethod.toString());
+            ExtentReporter.extentLoggerPass("Selected Paymongo Payment Option: "+paymentMethod.toString() , "Successfully verified payment method");
+        }else{
+            logger.info("Failed to verify payment option: " + paymentMethod.toString() +", "+ getText(Purchase_History.firstOrder_No));
+            ExtentReporter.extentLoggerFail("Paymongo Payment Option: ", "Failed to verify payment method");
+        }
+    }
+    public void purchaseviaOnlineBank(String itemType)throws Exception{
+        home.addItemToCart(itemType, 2);
+        cart.navigateShoppingCart();
+        verifyElementPresentAndClick(Shopping_Cart.Checkout_Btn, "Checkout");
+        waitTime(2000);
+        selectBranch("Province", "City", "Branch");
+        scrollToBottomOfPageWEB();
+        verifyElementPresentAndClick(Shipping_Details.objPaymentMethodOnlineBanking, "DIRECT ONLINE BANKING");
+        waitTime(1000);
+        isTotalCorrect();
+        double totalShop = getTotal(Shipping_Details.objTotalPayment);
+        verifyElementPresentAndClick(Shipping_Details.objPlaceOrder, "Place Order btn");
+        verifyElementPresentAndClick(Shipping_Details.objProceed_btn, getText(Shipping_Details.objProceed_btn));
+        waitTime(3000);
+        login.inputOTP();    
+        handlePaymongoPayment(prop.getproperty("OnlineBank"), totalShop);      
     }
 }

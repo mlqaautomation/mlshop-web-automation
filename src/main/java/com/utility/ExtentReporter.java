@@ -26,7 +26,7 @@ import com.deviceDetails.DeviceDetails;
 import com.driverInstance.DriverInstance;
 import com.driverInstance.DriverManager;
 import com.excel.ExcelUpdate;
-import com.helger.commons.codec.Base64Codec;
+// import com.helger.commons.codec.Base64Codec;
 import com.propertyfilereader.PropertyFileReader;
 import io.appium.java_client.AppiumDriver;
 

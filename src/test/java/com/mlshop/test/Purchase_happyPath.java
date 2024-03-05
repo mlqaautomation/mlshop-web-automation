@@ -27,7 +27,13 @@ public class Purchase_happyPath extends BaseTest{
     public void MLS_TC_116_Validate_successPurchase_payMaya()throws Exception{
         shippingDetailsTC.MLS_TC_116_Validate_successPurchase_payMaya();
     }
-   
-
-    //tbd card and direct online banking
+    @Test(priority =6)
+    public void MLS_TC_117_Validate_successPurchase_card()throws Exception{
+        shippingDetailsTC.MLS_TC_117_Validate_successPurchase_card();
+    }
+    @Test(priority =7)
+    public void MLS_TC_118_Validate_successPurchase_directOnlineBanking()throws Exception{
+        shippingDetailsTC.MLS_TC_118_Validate_successPurchase_directOnlineBanking();
+    }
+    
 }

@@ -7,6 +7,7 @@ import com.business.mlshop.Login;
 import com.business.mlshop.Home;
 import com.business.mlshop.ShoppingCart;
 import com.business.mlshop.ShippingDetails;
+import com.business.mlshop.Registration;
 
 import org.testng.annotations.*;
 import com.driverInstance.AppiumServer;
@@ -23,6 +24,7 @@ public class BaseTest {
     protected Home homeTC;
     protected ShoppingCart shoppingCartTC;
     protected ShippingDetails shippingDetailsTC;
+    protected Registration registrationTC;
     public static ExtentTest testLogger;
     AppiumServer server = new AppiumServer();
     protected static LoggingUtils logger = new LoggingUtils();
@@ -51,6 +53,7 @@ public class BaseTest {
         homeTC = new Home();
         shoppingCartTC = new ShoppingCart();
         shippingDetailsTC = new ShippingDetails();
+        registrationTC = new Registration();
         propertyFileReader();
         softAssert = new SoftAssert();
     }

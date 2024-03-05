@@ -10,36 +10,18 @@
     </listeners>
 
     <test name="ShoppingCart">
-        <parameter name="portno" value="4723"></parameter>
+        <parameter name="portno" value="4727"></parameter>
         <parameter name="deviceName" value="n/a"></parameter>
-        <classes>       
-            <class name="com.mlshop.test.Login">
-            </class>                   
+        <classes>                              
             <class name="com.mlshop.test.ShoppingCart">
             </class> 
         </classes>
     </test>
-    <test name="Home" >
-        <parameter name="portno" value="4725"></parameter>
-        <parameter name="deviceName" value="n/a"></parameter>
-        <classes>    
-            <class name="com.mlshop.test.Home">
-            </class>              
-        </classes>
-    </test>
     <test name="Shipping">
-        <parameter name="portno" value="4727"></parameter>
-        <parameter name="deviceName" value="n/a"></parameter>
-        <classes>    
-            <class name="com.mlshop.test.ShippingDetails">
-            </class>             
-        </classes>
-    </test>
-    <test name="Purchase">
         <parameter name="portno" value="4729"></parameter>
         <parameter name="deviceName" value="n/a"></parameter>
         <classes>    
-            <class name="com.mlshop.test.Purchase_happyPath">
+            <class name="com.mlshop.test.ShippingDetails">
             </class>             
         </classes>
     </test>
