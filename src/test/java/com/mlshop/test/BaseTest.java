@@ -42,9 +42,6 @@ public class BaseTest {
 
     }
 
-
-
-    //Start Application
     @Parameters({"deviceName", "portno"})
     @BeforeMethod(alwaysRun = true)
     public void beforeMethod(String deviceName, String portno) throws Exception {
@@ -59,11 +56,8 @@ public class BaseTest {
     }
 
 
-//    Stop Application
     @AfterMethod
     public void afterTest() {
         baseClass.tearDown();
     }
-
-
 }

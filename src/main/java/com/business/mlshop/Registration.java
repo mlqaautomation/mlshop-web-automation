@@ -102,7 +102,7 @@ public class Registration extends BaseClass{
     public void MLS_TC_17_Validate_ProvinceDropdown_Empty_RegistrationPage()throws Exception{
         HeaderChildNode("MLS_TC_17, To Validate the error prompt message when province dropdown is empty");
         navigateRegistration();
-        click(Registration_Page.ProveStateDropDown, "");
+        click(Registration_Page.ProveStateDropDown, "State Drop Down ");
         waitTime(2000);
         if(verifyElementPresent(Registration_Page.ProveStateDropDown, "Province is Required")){
             extentLoggerPass("MLS_TC_17","Successfully validated the error prompt message when province dropdown is empty");
@@ -118,7 +118,7 @@ public class Registration extends BaseClass{
     public void MLS_TC_18_Validate_CityTownDropdown_Empty_RegistrationPage()throws Exception{
         HeaderChildNode("MLS_TC_18, To Validate the error prompt message when City/Town dropdown is empty");
         navigateRegistration();
-        click(Registration_Page.CityTownDropDown, "");
+        click(Registration_Page.CityTownDropDown, "City Drop Down");
         waitTime(2000);
         if(verifyElementPresent(Registration_Page.CityTownDropDown, "City is Required")){
             extentLoggerPass("MLS_TC_18","Successfully validated the error prompt message when City/Town dropdown is empty");
@@ -134,7 +134,7 @@ public class Registration extends BaseClass{
     public void MLS_TC_19_Validate_StreetField_Empty_RegistrationPage()throws Exception{
         HeaderChildNode("MLS_TC_19, To Validate the error prompt message when street field is empty");
         navigateRegistration();
-        click(Registration_Page.Street, "");
+        click(Registration_Page.Street, "Street Field");
         waitTime(2000);
         if(verifyElementPresent(Registration_Page.Street, "Street is Required")){
             extentLoggerPass("MLS_TC_19","Successfully validated the error prompt message when Street field is empty");

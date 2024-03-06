@@ -45,17 +45,8 @@ public class BaseClass {
 	public void tearDown() {
 		if (platform.equalsIgnoreCase("Web")) {
 			closeWebBrowser();
-		} else {
-			logger.info("Session ID: " + ((RemoteWebDriver) DriverManager.getAppiumDriver()).getSessionId());
-			ExtentReporter.extentLogger("",
-					"Session ID: " + ((RemoteWebDriver) DriverManager.getAppiumDriver()).getSessionId());
-			logger.info("Session is quit");
-			ExtentReporter.extentLogger("", "Session is quit");
-			setScreenshotSource();
-			DriverManager.getAppiumDriver().quit();
-		}
+		} 
 	}
-
 	@BeforeTest
 	public void beforeTest() {
 		getDriver().manage().deleteAllCookies();
