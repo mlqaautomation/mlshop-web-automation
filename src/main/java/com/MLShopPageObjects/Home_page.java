@@ -105,6 +105,9 @@ public  class Home_page{
     public static By objitemName_byIndex(int index) {
         return By.xpath("(//div[contains(@class, 'product-card')][1]/child::div[3]/child::h1)["+index+"]");
     }
+    public static By objitemPrice_byIndex(int index) {
+        return By.xpath("(//div[contains(@class, 'product-card')][1]/child::div[3]/child::h1)["+index+"]/following-sibling::div/child::div/child::p");
+    }
     public static By objitem_all=By.xpath("//div[contains(@class, 'product-card')]");
     public static By objitem_discountBanners=By.xpath("//div[@class='product-card  w-100%  relative bg-[white]']/child::div[1]");
     public static By objitem_titles=By.xpath("//div[@class='product-card  w-100%  relative bg-[white]']/child::div[3]/child::h1");

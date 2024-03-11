@@ -105,6 +105,14 @@ public class Home extends BaseTest{
     public void MLS_TC_49_ValidateFilter_Unisex()throws Exception{
         homeTC.MLS_TC_49_ValidateFilter_Unisex();
     }
+    @Test(priority = 24)
+    public void MLS_TC_50_ValidateFilter_HightoLow()throws Exception{
+        homeTC.MLS_TC_50_ValidateFilter_HightoLow();
+    }
+    @Test(priority = 24)
+    public void MLS_TC_51_ValidateFilter_LowtoHigh()throws Exception{
+        homeTC.MLS_TC_51_ValidateFilter_LowtoHigh();
+    }
     @Test(priority = 25)
     public void MLS_TC_57_ValidateFilter_WatchAllBrand()throws Exception{
         homeTC.MLS_TC_57_ValidateFilter_WatchAllBrand();
@@ -217,5 +225,5 @@ public class Home extends BaseTest{
     public void MLS_TC_89_ValidateItem_alreadyInCart()throws Exception{
         homeTC.MLS_TC_89_ValidateItem_alreadyInCart();
     }
-
+   
 }

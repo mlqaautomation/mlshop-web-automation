@@ -5,11 +5,15 @@ import static com.utility.ExtentReporter.HeaderChildNode;
 import static com.utility.ExtentReporter.ReportName;
 import static com.utility.ExtentReporter.buildVersion;
 import static com.utility.ExtentReporter.extentLogger;
+import static com.utility.ExtentReporter.extentLoggerFail;
 import static com.utility.ExtentReporter.extentLoggerPass;
 import static com.utility.ExtentReporter.getWebDriver;
 import static com.utility.Utilities.*;
 
+import java.text.NumberFormat;
+import java.text.ParseException;
 import java.util.List;
+import java.util.Locale;
 
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
@@ -257,16 +261,34 @@ public class Home extends BaseClass{
         verifyElementPresentAndClick(Home_page.objSortByDropDown, "Sort By Drop Down");
         verifyElementPresentAndClick(Home_page.objSortByDropDownHighLow, getText(Home_page.objSortByDropDownHighLow)); 
         waitTime(1000);
-        filterItems("All");
-        extentLoggerPass("MLS_TC_50", "To Validate jewelry type by price \"High to Low\" will filter high to low");
+        String firstPrice = getText(Home_page.objitemPrice_byIndex(1));
+        double fprice = convertPriceStringToDouble(firstPrice);
+        String secondPrice = getText(Home_page.objitemPrice_byIndex(2));
+        double sprice = convertPriceStringToDouble(secondPrice);
+        logger.info("firstPrice: " + firstPrice + ", secondPrice: " + secondPrice);
+        if(fprice >= sprice){
+            extentLoggerPass("MLS_TC_50", "First price is " + firstPrice + " is greater than second price" + secondPrice);
+        }
+        else{
+            extentLoggerFail("MLS_TC_50", "High to low filtering is not working");
+        }
     }
     public void MLS_TC_51_ValidateFilter_LowtoHigh()throws Exception{
         HeaderChildNode("MLS_TC_51, To Validate jewelry type by price \"High to Low\" will filter high to low");
         verifyElementPresentAndClick(Home_page.objSortByDropDown, "Sort By Drop Down");
         verifyElementPresentAndClick(Home_page.objSortByDropDownLowHigh, getText(Home_page.objSortByDropDownLowHigh)); 
         waitTime(1000);
-        filterItems("All");
-        extentLoggerPass("MLS_TC_51", "To Validate jewelry type by price \"High to Low\" will filter high to low");
+        String firstPrice = getText(Home_page.objitemPrice_byIndex(1));
+        double fprice = convertPriceStringToDouble(firstPrice);
+        String secondPrice = getText(Home_page.objitemPrice_byIndex(2));
+        double sprice = convertPriceStringToDouble(secondPrice);
+        logger.info("firstPrice: " + firstPrice + ", secondPrice: " + secondPrice);
+        if(fprice <= sprice){
+            extentLoggerPass("MLS_TC_51", "First price is " + firstPrice + " is less than second price" + secondPrice);
+        }
+        else{
+            extentLoggerFail("MLS_TC_51", "Low to high filtering is not working");
+        }
     }
     public void MLS_TC_52_ValidateFilter_NewestOldest()throws Exception{
         HeaderChildNode("MLS_TC_52, To Validate jewelry type by price \"Newest to Oldest\" will filter newest to oldest");   
@@ -718,6 +740,20 @@ public class Home extends BaseClass{
         if (iterationCount == 0) {
             ExtentReporter.extentLoggerFail("Filter", "Failed to find items");
             logger.info("No items matching the filter: " + filter);
+        }
+    }
+    public static double convertPriceStringToDouble(String priceString) {
+    // Remove non-numeric characters except for the decimal separator
+    String cleanedString = priceString.replaceAll("[^\\d.]", "");
+
+    // Parse the cleaned string into a double
+    try {
+        NumberFormat format = NumberFormat.getInstance(Locale.US);
+        return format.parse(cleanedString).doubleValue();
+    } catch (ParseException ex) {
+        // Handle the exception (e.g., log an error message or throw a custom exception)
+        // Return a default value or rethrow the exception, depending on your requirements
+        return 0.0;
         }
     }
 }
